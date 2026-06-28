@@ -1,13 +1,18 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
 
-const title = 'Contact | Paraguay Investor Pass | Lincoln Partners';
-const description =
-  "Speak to Lincoln Global Partners about Paraguay residency by investment. Tell us your goals and we'll recommend the right route. Enquire today.";
+const page = await getPage('contact');
+const settings = await getSettings();
 
-// TODO: replace with the real Formspree form ID (https://formspree.io/f/<id>)
-const formspreeId = 'YOUR_FORM_ID';
+const title = pick(page?.seoTitle, 'Contact | Paraguay Investor Pass | Lincoln Partners');
+const description = pick(
+  page?.seoDescription,
+  "Speak to Lincoln Global Partners about Paraguay residency by investment. Tell us your goals and we'll recommend the right route. Enquire today."
+);
+// Set the real Formspree id in the CMS (Site settings → Formspree form ID).
+const formspreeId = pick(settings?.formspreeId, 'YOUR_FORM_ID');
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Contact', path: '/contact/' }]),

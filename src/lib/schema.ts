@@ -13,14 +13,15 @@ export function breadcrumb(items: { name: string; path: string }[]) {
   };
 }
 
-export function faqPage(faqs: { q: string; a: string }[]) {
+type Faq = { q?: string; a?: string; question?: string; answer?: string };
+export function faqPage(faqs: Faq[]) {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
+      name: f.question ?? f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer ?? f.a },
     })),
   };
 }

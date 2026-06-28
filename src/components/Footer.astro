@@ -1,12 +1,22 @@
 ---
+import { getSettings, pick } from '../lib/content';
 const year = new Date().getFullYear();
+const s = await getSettings();
+const tagline = pick(
+  s?.tagline,
+  'One qualifying investment opens the door to permanent residency in the heart of the Southern Cone — and, in time, to a second citizenship by naturalisation. The complete, accurate guide to the programme.'
+);
+const disclaimer = pick(
+  s?.footerDisclaimer,
+  'This guide is provided for general information only and is not legal, tax, or investment advice. Investment thresholds, processing times, and eligibility criteria are determined by, and subject to the discretion of, the competent Paraguayan authorities and may change. The Foreign Investor Certificate (CIE) and permanent residency are distinct credentials with separate processes and timelines. Citizenship is obtained through naturalisation after the qualifying period of residence and is not granted by investment alone. Tax outcomes depend on individual circumstances; legal residency and tax residency are separate matters. Verify all details with qualified Paraguayan legal counsel before acting.'
+);
 ---
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
         <b>PARAGUAY INVESTOR PASS</b>
-        <p>One qualifying investment opens the door to permanent residency in the heart of the Southern Cone — and, in time, to a second citizenship by naturalisation. The complete, accurate guide to the programme.</p>
+        <p>{tagline}</p>
         <p style="font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-top:1rem">República del Paraguay · Residency by Investment</p>
       </div>
       <div class="foot-col">
@@ -30,7 +40,7 @@ const year = new Date().getFullYear();
         <a href="/contact/">Book a consultation</a>
       </div>
     </div>
-    <p class="foot-disclaimer">This guide is provided for general information only and is not legal, tax, or investment advice. Investment thresholds, processing times, and eligibility criteria are determined by, and subject to the discretion of, the competent Paraguayan authorities and may change. The Foreign Investor Certificate (CIE) and permanent residency are distinct credentials with separate processes and timelines. Citizenship is obtained through naturalisation after the qualifying period of residence and is not granted by investment alone. Tax outcomes depend on individual circumstances; legal residency and tax residency are separate matters. Verify all details with qualified Paraguayan legal counsel before acting.</p>
+    <p class="foot-disclaimer">{disclaimer}</p>
     <div class="foot-bottom">
       <span>© <span id="yr">{year}</span> Paraguay Investor Pass. All rights reserved.</span>
       <span>República del Paraguay</span>

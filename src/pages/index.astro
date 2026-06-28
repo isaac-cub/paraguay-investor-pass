@@ -1,54 +1,42 @@
 ---
 import Base from '../layouts/Base.astro';
+import { faqPage } from '../lib/schema';
+import { getPage, pick, type Faq } from '../lib/content';
 
-const title = 'Paraguay Residency by Investment | Investor Pass';
-const description =
-  'Get permanent residency in Paraguay through investment from USD 70,000. Routes to residency and a path to citizenship by naturalisation. Guidance from Lincoln.';
-
-const faqs = [
-  {
-    q: 'What is the Paraguay Investor Pass?',
-    a: "It is Paraguay's investment-linked residency framework, established by Resolution N° 0283/2026. A qualifying investment through an approved route gives you access to the Foreign Investor Certificate (CIE) and the permanent residency process — and, after the constitutional residence period, the right to apply for citizenship by naturalisation.",
-  },
-  {
-    q: 'How much do I need to invest?',
-    a: 'Resolution 0283/2026 sets four routes: a company capitalised through SUACE from USD 70,000, approved tourism projects from USD 150,000, real estate from USD 200,000, and financial instruments from USD 200,000. A separate, pre-existing pathway via Paraguay’s audiovisual institute allows residency through a film-production contribution from approximately USD 40,000. We help you choose the route that matches your strategy, not just your budget.',
-  },
-  {
-    q: 'Is the Foreign Investor Certificate the same as residency?',
-    a: 'No. The MIC must issue the Foreign Investor Certificate (CIE) within five business days of a complete application, but it is a distinct investor credential. Permanent residency is a separate status granted by the migration authority, with its own process and timeline. We keep the two clearly apart — and so does the law.',
-  },
-  {
-    q: 'When can I apply for Paraguayan citizenship?',
-    a: "Paraguay's Constitution (Art. 148) permits an application for naturalisation after three years of permanent residence, subject to language, civics, and physical-presence requirements, with further administrative processing time. Citizenship is granted through naturalisation — it is not conferred by the investment itself.",
-  },
-  {
-    q: 'Will Paraguay tax my worldwide income?',
-    a: 'Paraguay applies a territorial tax system, so income arising outside Paraguay is generally outside the scope of Paraguayan income tax. Legal residency and tax residency are separate concepts: holding an Investor Pass does not by itself determine where you are tax resident. We assess that individually, within your wider structure.',
-  },
-  {
-    q: 'Can I include my family?',
-    a: 'Family members can generally be included in an Investor Pass application. The specifics depend on your circumstances and the route chosen, and are confirmed before anything is committed.',
-  },
-];
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: faqs.map((f) => ({
-    '@type': 'Question',
-    name: f.q,
-    acceptedAnswer: { '@type': 'Answer', text: f.a },
-  })),
+const fb = {
+  seoTitle: 'Paraguay Residency by Investment | Investor Pass',
+  seoDescription:
+    'Get permanent residency in Paraguay through investment from USD 70,000. Routes to residency and a path to citizenship by naturalisation. Guidance from Lincoln.',
+  h1: 'Paraguay residency by investment.',
+  heroEyebrow: 'República del Paraguay · Residency by Investment',
+  heroLead:
+    "A single qualifying investment grants <strong>direct permanent residency</strong> in one of South America's fastest-growing economies. Established under <strong>Resolution N° 0283/2026</strong>, the Investor Pass bypasses the temporary-residency stage entirely — with a clear pathway, in time, to citizenship by naturalisation.",
+  faqs: [
+    { question: 'What is the Paraguay Investor Pass?', answer: "It is Paraguay's investment-linked residency framework, established by Resolution N° 0283/2026. A qualifying investment through an approved route gives you access to the Foreign Investor Certificate (CIE) and the permanent residency process — and, after the constitutional residence period, the right to apply for citizenship by naturalisation." },
+    { question: 'How much do I need to invest?', answer: "Resolution 0283/2026 sets four routes: a company capitalised through SUACE from USD 70,000, approved tourism projects from USD 150,000, real estate from USD 200,000, and financial instruments from USD 200,000. A separate, pre-existing pathway via Paraguay's audiovisual institute allows residency through a film-production contribution from approximately USD 40,000. We help you choose the route that matches your strategy, not just your budget." },
+    { question: 'Is the Foreign Investor Certificate the same as residency?', answer: 'No. The MIC must issue the Foreign Investor Certificate (CIE) within five business days of a complete application, but it is a distinct investor credential. Permanent residency is a separate status granted by the migration authority, with its own process and timeline. We keep the two clearly apart — and so does the law.' },
+    { question: 'When can I apply for Paraguayan citizenship?', answer: "Paraguay's Constitution (Art. 148) permits an application for naturalisation after three years of permanent residence, subject to language, civics, and physical-presence requirements, with further administrative processing time. Citizenship is granted through naturalisation — it is not conferred by the investment itself." },
+    { question: 'Will Paraguay tax my worldwide income?', answer: 'Paraguay applies a territorial tax system, so income arising outside Paraguay is generally outside the scope of Paraguayan income tax. Legal residency and tax residency are separate concepts: holding an Investor Pass does not by itself determine where you are tax resident. We assess that individually, within your wider structure.' },
+    { question: 'Can I include my family?', answer: 'Family members can generally be included in an Investor Pass application. The specifics depend on your circumstances and the route chosen, and are confirmed before anything is committed.' },
+  ] as Faq[],
 };
+
+const page = await getPage('home');
+const title = pick(page?.seoTitle, fb.seoTitle);
+const description = pick(page?.seoDescription, fb.seoDescription);
+const h1 = pick(page?.h1, fb.h1);
+const heroEyebrow = pick(page?.heroEyebrow, fb.heroEyebrow);
+const heroLead = pick(page?.heroLead, fb.heroLead);
+const faqs = pick(page?.faqs as Faq[] | undefined, fb.faqs);
+const ogImage = page?.ogImage ?? undefined;
 ---
-<Base title={title} description={description} jsonld={faqSchema}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={faqPage(faqs)}>
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">República del Paraguay · Residency by Investment</p>
-      <h1>Paraguay residency by investment.</h1>
-      <p class="lead">A single qualifying investment grants <strong>direct permanent residency</strong> in one of South America's fastest-growing economies. Established under <strong>Resolution N° 0283/2026</strong>, the Investor Pass bypasses the temporary-residency stage entirely — with a clear pathway, in time, to citizenship by naturalisation.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1>{h1}</h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="#routes">Explore the options <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/contact/">Request information</a>
@@ -212,8 +200,8 @@ const faqSchema = {
       <div class="faq prose">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>
