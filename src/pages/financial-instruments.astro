@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import { breadcrumb, faqPage, service } from '../lib/schema';
+
+const title = 'Paraguay Financial Instruments Residency | from $200K';
+const description =
+  'Qualify for Paraguay residency by investing from USD 200,000 in regulated financial instruments held for two years. The passive, hands-off route. Talk to Lincoln.';
+
+const faqs = [
+  { q: 'How much do I need to invest, and for how long?', a: 'The financial instruments route requires at least USD 200,000 (or the guaraní equivalent) deployed into qualifying regulated instruments, maintained for a minimum of two years.' },
+  { q: 'What instruments qualify?', a: 'Sources indicate qualifying instruments are those regulated by the securities superintendency (Superintendencia de Valores) of the Central Bank of Paraguay — broadly corporate bonds, equities, certificates of deposit, and investment funds. The precise approved list is being finalised in the regulation of Resolution 0283/2026, so the exact eligible instruments should be confirmed with counsel before committing.' },
+  { q: 'Do I have to actively manage anything?', a: 'No. There is no business plan, job-creation, or active-management requirement — this is the only purely passive route to direct permanent residency under the Investor Pass. You hold the qualifying instruments for the required period and file annual compliance reporting.' },
+  { q: 'How is the investment evidenced?', a: 'By a certificate from an entity authorised by the Central Bank, confirming the value and the minimum two-year term, dated within 180 days of the application. We prepare and verify this with you.' },
+  { q: 'What are the honest risks?', a: 'The capital is locked for two years and the instruments can fluctuate; Paraguay’s capital market is comparatively small and less liquid than major exchanges, so options are more limited. We size and structure the holding to keep you comfortably above the threshold throughout.' },
+];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Financial Instruments', path: '/financial-instruments/' }]),
+  faqPage(faqs),
+  service({ name: 'Paraguay residency through financial instruments', description, price: 200000, path: '/financial-instruments/' }),
+];
+---
+<Base title={title} description={description} jsonld={jsonld}>
+  <section class="hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Financial Instruments</nav>
+      <p class="eyebrow">Financial instruments · from USD 200,000</p>
+      <h1>Paraguay residency via financial instruments.</h1>
+      <p class="lead">Deploy qualifying capital into regulated Paraguayan instruments, hold it for the required period, and earn direct permanent residency — the Investor Pass's one genuinely passive route, with nothing to build or operate.</p>
+      <div class="hero-cta">
+        <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
+        <a class="btn btn--ghost" href="/#routes">Compare routes</a>
+      </div>
+      <div class="hero-meta">
+        <div class="stat"><b>$200K</b><span>Minimum investment</span></div>
+        <div class="stat"><b>2 years</b><span>Minimum holding period</span></div>
+        <div class="stat"><b>Passive</b><span>No company, no management</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow">The route</p>
+        <h2>Residency, without running anything.</h2>
+        <p>The financial instruments route qualifies you for the Investor Pass by deploying <strong>USD 200,000</strong> — or the guaraní equivalent — into instruments regulated by the <strong>securities superintendency of the Central Bank of Paraguay</strong>, maintained for a <strong>minimum of two years</strong>. It is the route for liquid investors who want the residency without a property to manage or a company to run.</p>
+        <p>There is no business plan, no job-creation obligation, and no active management. You hold the qualifying instruments, file the required annual reporting, and let the framework do its work — making this the only fully <strong>passive</strong> route to direct permanent residency under Resolution N° 0283/2026.</p>
+      </div>
+      <div class="reveal">
+        <table class="spec">
+          <tr><th>Minimum investment</th><td>USD 200,000 (or guaraní equivalent)</td></tr>
+          <tr><th>Holding period</th><td>Minimum 2 years</td></tr>
+          <tr><th>Instruments</th><td>Regulated by the BCP securities superintendency</td></tr>
+          <tr><th>Evidence</th><td>Certificate from a BCP-authorised entity (≤180 days)</td></tr>
+          <tr><th>Obligations</th><td>Annual compliance reporting; no management</td></tr>
+          <tr><th>Best suited to</th><td>Liquid HNW investors &amp; family offices</td></tr>
+        </table>
+        <div class="notice" style="margin-top:1.4rem"><b>Detail still being regulated</b>The exact approved instrument list is being finalised in the regulation of Resolution 0283/2026. We confirm eligibility and structure with Paraguayan counsel before any capital is committed.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-paper">
+    <div class="wrap">
+      <p class="eyebrow">Why this route</p>
+      <h2 style="max-width:18ch">The hands-off way in.</h2>
+      <div class="grid grid-3" style="margin-top:2.5rem">
+        <div class="card reveal"><span class="num">01</span><h3>Genuinely passive</h3><p>No company to operate, no property to manage, no team to hire. You qualify by holding, not by building.</p></div>
+        <div class="card reveal"><span class="num">02</span><h3>Capital stays invested</h3><p>Your USD 200,000 remains your capital in regulated instruments — not a fee or a contribution that disappears.</p></div>
+        <div class="card reveal"><span class="num">03</span><h3>Clean to evidence</h3><p>A certificate from a Central Bank-authorised entity documents the holding — straightforward for the file.</p></div>
+        <div class="card reveal"><span class="num">04</span><h3>No operational footprint</h3><p>Ideal for investors who want the residency and the territorial tax footing without a presence to run.</p></div>
+        <div class="card reveal"><span class="num">05</span><h3>Defined horizon</h3><p>A clear two-year minimum hold — known from the outset and planned into your wider structure.</p></div>
+        <div class="card reveal"><span class="num">06</span><h3>Same destination</h3><p>The financial instruments route leads to the identical residency and citizenship pathway as every other route.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap split--rev">
+      <div class="reveal">
+        <div class="steps">
+          <div class="step"><div><h4>Strategy &amp; eligibility</h4><p>We confirm the passive route fits your goals and verify qualifying instruments with Paraguayan counsel.</p></div></div>
+          <div class="step"><div><h4>Deployment</h4><p>The USD 200,000 is deployed into qualifying regulated instruments through an authorised entity.</p></div></div>
+          <div class="step"><div><h4>Certification</h4><p>A certificate evidencing the value and the two-year term is obtained, dated within 180 days of filing.</p></div></div>
+          <div class="step"><div><h4>Foreign Investor Certificate</h4><p>With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days.</p></div></div>
+          <div class="step"><div><h4>Permanent residency</h4><p>We progress the permanent residency process and your Paraguayan cédula.</p></div></div>
+          <div class="step"><div><h4>Hold &amp; report</h4><p>You maintain the holding and annual reporting through the two-year term, building toward naturalisation eligibility.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">The process</p>
+        <h2>Deploy, certify, reside.</h2>
+        <p>The passive route is the cleanest sequence in the programme: deploy the capital into qualifying instruments, certify it, then move through the certificate, residency, and — in time — naturalisation.</p>
+        <div class="notice"><b>One honest caveat</b>The capital is genuinely locked for two years and instruments can move in value. We structure the holding to stay comfortably above the threshold for the full term.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap prose"><p class="eyebrow">Financial instruments route</p><h2>Frequently asked.</h2>
+      <div class="faq">
+        {faqs.map((f, i) => (
+          <details open={i === 0}>
+            <summary>{f.q} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.a}</p></div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-navy cta-band">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">The passive route</p>
+      <p class="pull">Residency you hold, <span class="gold">not residency you run.</span></p>
+      <div class="hero-cta"><a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a><a class="btn btn--ghost" href="/#routes">See other routes</a></div>
+    </div>
+  </section>
+</Base>

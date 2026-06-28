@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import { breadcrumb, faqPage, service } from '../lib/schema';
+
+const title = 'SUACE Paraguay: Company Residency Route | from $70K';
+const description =
+  'Gain Paraguay residency by forming a company via SUACE from USD 70,000. How the business route works, steps and requirements. Speak to Lincoln.';
+
+const faqs = [
+  { q: 'What is SUACE?', a: "SUACE is Paraguay's Unified System for Opening and Closing Companies (Sistema Unificado de Apertura y Cierre de Empresas) — a one-stop process that streamlines company formation. The route involves establishing and capitalising a Paraguayan company through this system." },
+  { q: 'How much do I need?', a: 'The SUACE company route requires establishing and capitalising a company with at least USD 70,000.' },
+  { q: 'Do I have to actively run the company?', a: 'The route is built for operators who want a genuine, active business with real economic substance. The company should reflect real activity rather than exist only on paper — which is exactly how we structure it.' },
+  { q: 'What can the company do?', a: 'That depends on your plans. We design the company around legitimate activity that fits both your commercial objectives and the substance the route calls for.' },
+  { q: 'Does it lead to the same citizenship pathway?', a: 'Yes. The SUACE route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period.' },
+];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'SUACE', path: '/suace/' }]),
+  faqPage(faqs),
+  service({ name: 'Paraguay residency through SUACE company formation', description, price: 70000, path: '/suace/' }),
+];
+---
+<Base title={title} description={description} jsonld={jsonld}>
+  <section class="hero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>SUACE</nav>
+      <p class="eyebrow">SUACE business investment · from USD 70,000</p>
+      <h1>Paraguay residency through SUACE company formation.</h1>
+      <p class="lead">Establish and capitalise a Paraguayan company through SUACE — the unified one-stop system — and earn your residency by building a real business in the Southern Cone.</p>
+      <div class="hero-cta">
+        <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
+        <a class="btn btn--ghost" href="/#routes">Compare routes</a>
+      </div>
+      <div class="hero-meta">
+        <div class="stat"><b>$70K</b><span>Minimum capital</span></div>
+        <div class="stat"><b>Active</b><span>A real, operating company</span></div>
+        <div class="stat"><b>Substance</b><span>Local economic presence</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap split">
+      <div class="reveal">
+        <p class="eyebrow">The route</p>
+        <h2>For people who build, not just hold.</h2>
+        <p><strong>SUACE</strong> — the <em>Sistema Unificado de Apertura y Cierre de Empresas</em>, Paraguay's Unified System for Opening and Closing Companies — is the one-stop process that makes incorporating in Paraguay genuinely fast. The SUACE route qualifies you for the Investor Pass by establishing and capitalising a Paraguayan company with at least <strong>USD 70,000</strong>.</p>
+        <p>This is the operator's route. You end up with an active business, real economic substance on the ground, and a <strong>territorial tax footing</strong> to build from — the cleanest foundation for anyone who wants to actually do something in the region, not just qualify for a certificate.</p>
+      </div>
+      <div class="reveal">
+        <table class="spec">
+          <tr><th>Minimum capital</th><td>USD 70,000 into a Paraguayan company</td></tr>
+          <tr><th>Vehicle</th><td>Company formed via SUACE</td></tr>
+          <tr><th>You hold</th><td>An active, capitalised business</td></tr>
+          <tr><th>Residency framework</th><td>Investor Pass → permanent residency</td></tr>
+          <tr><th>Citizenship</th><td>Naturalisation after the residence period</td></tr>
+          <tr><th>Best suited to</th><td>Founders, operators, entrepreneurs</td></tr>
+        </table>
+        <div class="notice" style="margin-top:1.4rem"><b>Substance matters</b>The company should reflect genuine activity, not exist only on paper. We structure it to stand up — commercially and to the authorities.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-paper">
+    <div class="wrap">
+      <p class="eyebrow">Why this route</p>
+      <h2 style="max-width:18ch">A business and a base, in one move.</h2>
+      <div class="grid grid-3" style="margin-top:2.5rem">
+        <div class="card reveal"><span class="num">01</span><h3>Lowest active route</h3><p>At USD 70,000 it is the most capital-efficient way to qualify while ending up with something you control.</p></div>
+        <div class="card reveal"><span class="num">02</span><h3>Real substance</h3><p>An operating company is the strongest form of economic presence — useful far beyond the residency itself.</p></div>
+        <div class="card reveal"><span class="num">03</span><h3>Territorial footing</h3><p>A Paraguayan company sits inside a territorial system — efficient when structured correctly within your wider plan.</p></div>
+        <div class="card reveal"><span class="num">04</span><h3>Fast formation</h3><p>SUACE is purpose-built to streamline incorporation, consolidating the steps into a single coordinated process.</p></div>
+        <div class="card reveal"><span class="num">05</span><h3>Mercosur access</h3><p>A company anchored in Paraguay sits at the centre of the Mercosur bloc — a launchpad, not a cul-de-sac.</p></div>
+        <div class="card reveal"><span class="num">06</span><h3>Same destination</h3><p>The SUACE route leads to the identical residency and citizenship pathway as every other route.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap split--rev">
+      <div class="reveal">
+        <div class="steps">
+          <div class="step"><div><h4>Strategy &amp; structuring</h4><p>We confirm the SUACE route fits and design the company so it carries real substance.</p></div></div>
+          <div class="step"><div><h4>Formation via SUACE</h4><p>The Paraguayan company is incorporated through the unified one-stop system.</p></div></div>
+          <div class="step"><div><h4>Capitalisation</h4><p>The company is capitalised to meet the USD 70,000 qualifying threshold and documented.</p></div></div>
+          <div class="step"><div><h4>Foreign Investor Certificate</h4><p>With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days.</p></div></div>
+          <div class="step"><div><h4>Permanent residency</h4><p>We progress the permanent residency process and your Paraguayan cédula.</p></div></div>
+          <div class="step"><div><h4>Toward citizenship</h4><p>You maintain residence and your company, building toward naturalisation eligibility after three years.</p></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">The process</p>
+        <h2>Incorporate, capitalise, reside.</h2>
+        <p>The SUACE route turns company formation into your residency engine: build the business properly, capitalise it to threshold, then move through the certificate, residency, and, in time, naturalisation.</p>
+        <div class="notice"><b>One honest caveat</b>The five-business-day figure applies only to the Foreign Investor Certificate. Permanent residency is a separate process with its own timeline.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-cream">
+    <div class="wrap prose"><p class="eyebrow">SUACE route</p><h2>Frequently asked.</h2>
+      <div class="faq">
+        {faqs.map((f, i) => (
+          <details open={i === 0}>
+            <summary>{f.q} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.a}</p></div>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-navy cta-band">
+    <div class="wrap">
+      <p class="eyebrow eyebrow--center">Build your base</p>
+      <p class="pull">A company. A footing. <span class="gold">A residency you operate.</span></p>
+      <div class="hero-cta"><a class="btn btn--gold" href="/contact/">Start your SUACE file <span class="arr">→</span></a><a class="btn btn--ghost" href="/#routes">See other routes</a></div>
+    </div>
+  </section>
+</Base>

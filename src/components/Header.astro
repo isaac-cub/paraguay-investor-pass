@@ -1,0 +1,27 @@
+---
+const path = Astro.url.pathname;
+const isCurrent = (href: string) =>
+  href === '/' ? path === '/' : path.startsWith(href);
+
+const nav = [
+  { href: '/', label: 'Guide' },
+  { href: '/real-estate/', label: 'Real Estate' },
+  { href: '/financial-instruments/', label: 'Financial' },
+  { href: '/tourism/', label: 'Tourism' },
+  { href: '/suace/', label: 'SUACE' },
+  { href: '/film/', label: 'Film' },
+  { href: '/about/', label: 'About' },
+];
+---
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="Paraguay Investor Pass — home"><b>PARAGUAY</b><small>Investor Pass</small></a>
+    <nav class="nav" aria-label="Primary">
+      {nav.map((item) => (
+        <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
+      <a class="btn btn--gold" href="/contact/">Begin <span class="arr">→</span></a>
+    </nav>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>

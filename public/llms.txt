@@ -1,0 +1,22 @@
+# Paraguay Investor Pass
+
+> The complete, accurate guide to Paraguay residency by investment — the "Investor Pass" established by Resolution N° 0283/2026 (Ministry of Industry and Commerce, signed 21 April 2026). A qualifying investment grants direct permanent residency, with a later path to citizenship by naturalisation (not citizenship by investment).
+
+Key facts:
+- Permanent residency is granted directly, bypassing the usual two-year temporary stage.
+- The Foreign Investor Certificate (CIE) is issued by the MIC within 5 business days of a complete application; permanent residency is a separate, later step at the migration authority.
+- Citizenship is by naturalisation after 3 years of permanent residence (subject to language, civics and physical-presence requirements) — it is NOT granted by investment.
+- Paraguay uses a territorial tax system (foreign-source income generally untaxed) with flat 10% rates; reached investment grade with Moody's (Baa3, 2024) and S&P (BBB-, 2025).
+
+Investment routes:
+- Real estate — from USD 200,000: /real-estate/
+- Approved tourism projects — from USD 150,000: /tourism/
+- SUACE company formation — from USD 70,000: /suace/
+- Film / audiovisual contribution — from ~USD 40,000 (separate INAP pathway): /film/
+
+Pages:
+- Programme overview: /
+- Why Paraguay (tax, benefits, how it works): /about/
+- Enquiry / consultation: /contact/
+
+Provider: Lincoln Global Partners. Informational only; not legal or tax advice.
