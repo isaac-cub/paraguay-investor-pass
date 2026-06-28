@@ -1,16 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'Why Paraguay: Residency, Tax & Benefits | Lincoln';
-const description =
+const fbTitle = 'Why Paraguay: Residency, Tax & Benefits | Lincoln';
+const description0 =
   'Why HNW families choose Paraguay: territorial tax, low cost, fast permanent residency and a path to citizenship. How the programme works, explained.';
 
-const faqs = [
+const fbFaqs = [
   { q: 'Is this citizenship by investment?', a: 'No — and this distinction matters. Paraguay does not sell passports. The Investor Pass grants permanent residency by investment; citizenship is obtained later, by naturalisation, after the constitutional period of residence and subject to language, civics and physical-presence requirements.' },
   { q: 'What is the territorial tax system?', a: 'Under a territorial system, income arising outside Paraguay is generally outside the scope of Paraguayan income tax. Domestic rates are a flat 10%. Legal residency and tax residency are separate questions, assessed on your individual facts.' },
   { q: 'How is an application handled?', a: 'Applications are prepared end-to-end and submitted in Paraguay, to the standard the competent authorities require, with realistic timelines stated at the outset. Where another route — or another country — would serve you better, that is said plainly.' },
 ];
+
+const page = await getPage('about');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Why Paraguay: residency, tax &amp; citizenship.');
+const heroEyebrow = pick(page?.heroEyebrow, 'The programme');
+const heroLead = pick(page?.heroLead, 'One qualifying investment opens the door to permanent residency in the heart of the Southern Cone — and, in time, to a second citizenship by naturalisation. Here is what the Investor Pass is, why Paraguay is uniquely compelling, and how the path actually works.');
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'About', path: '/about/' }]),
@@ -24,13 +34,13 @@ const jsonld = [
   },
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>About</nav>
-      <p class="eyebrow">The programme</p>
-      <h1>Why Paraguay: residency, tax &amp; citizenship.</h1>
-      <p class="lead">One qualifying investment opens the door to permanent residency in the heart of the Southern Cone — and, in time, to a second citizenship by naturalisation. Here is what the Investor Pass is, why Paraguay is uniquely compelling, and how the path actually works.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Request information <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">See the routes</a>
@@ -106,8 +116,8 @@ const jsonld = [
       <div class="faq">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>

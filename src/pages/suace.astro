@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'SUACE Paraguay: Company Residency Route | from $70K';
-const description =
+const fbTitle = 'SUACE Paraguay: Company Residency Route | from $70K';
+const description0 =
   'Gain Paraguay residency by forming a company via SUACE from USD 70,000. How the business route works, steps and requirements. Speak to Lincoln.';
 
-const faqs = [
+const fbFaqs = [
   { q: 'What is SUACE?', a: "SUACE is Paraguay's Unified System for Opening and Closing Companies (Sistema Unificado de Apertura y Cierre de Empresas) — a one-stop process that streamlines company formation. The route involves establishing and capitalising a Paraguayan company through this system." },
   { q: 'How much do I need?', a: 'The SUACE company route requires establishing and capitalising a company with at least USD 70,000.' },
   { q: 'Do I have to actively run the company?', a: 'The route is built for operators who want a genuine, active business with real economic substance. The company should reflect real activity rather than exist only on paper — which is exactly how we structure it.' },
@@ -14,19 +15,28 @@ const faqs = [
   { q: 'Does it lead to the same citizenship pathway?', a: 'Yes. The SUACE route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period.' },
 ];
 
+const page = await getPage('suace');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Paraguay residency through SUACE company formation.');
+const heroEyebrow = pick(page?.heroEyebrow, 'SUACE business investment · from USD 70,000');
+const heroLead = pick(page?.heroLead, 'Establish and capitalise a Paraguayan company through SUACE — the unified one-stop system — and earn your residency by building a real business in the Southern Cone.');
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'SUACE', path: '/suace/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency through SUACE company formation', description, price: 70000, path: '/suace/' }),
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>SUACE</nav>
-      <p class="eyebrow">SUACE business investment · from USD 70,000</p>
-      <h1>Paraguay residency through SUACE company formation.</h1>
-      <p class="lead">Establish and capitalise a Paraguayan company through SUACE — the unified one-stop system — and earn your residency by building a real business in the Southern Cone.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">Compare routes</a>
@@ -102,8 +112,8 @@ const jsonld = [
       <div class="faq">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>

@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'Paraguay Tourism Investment Residency | from $150K';
-const description =
+const fbTitle = 'Paraguay Tourism Investment Residency | from $150K';
+const description0 =
   'Earn Paraguay residency by investing from USD 150,000 in approved tourism projects. Eligibility, projects and the application path. Talk to Lincoln.';
 
-const faqs = [
+const fbFaqs = [
   { q: 'How much do I need to invest?', a: 'The tourism route requires an investment of at least USD 150,000 into an approved tourism project.' },
   { q: 'Can it generate a return?', a: 'It can. The route is built around developments that carry the potential for a project-linked return, so your qualifying capital can work while it supports your residency. Returns depend on the specific project and are never guaranteed.' },
   { q: 'What counts as an approved tourism project?', a: "Approved tourism developments are projects recognised within Paraguay's tourism framework. We curate and diligence eligible projects so your investment both qualifies for residency and stands on its own merits." },
@@ -14,19 +15,28 @@ const faqs = [
   { q: 'Does it lead to the same citizenship pathway?', a: 'Yes. The tourism route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period.' },
 ];
 
+const page = await getPage('tourism');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Paraguay residency via approved tourism projects.');
+const heroEyebrow = pick(page?.heroEyebrow, 'Approved touristic projects · from USD 150,000');
+const heroLead = pick(page?.heroLead, 'Invest into an approved Paraguayan tourism project and earn your residency through capital that has the potential to return — not capital that simply sits.');
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Tourism', path: '/tourism/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency via approved tourism projects', description, price: 150000, path: '/tourism/' }),
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Touristic Projects</nav>
-      <p class="eyebrow">Approved touristic projects · from USD 150,000</p>
-      <h1>Paraguay residency via approved tourism projects.</h1>
-      <p class="lead">Invest into an approved Paraguayan tourism project and earn your residency through capital that has the potential to return — not capital that simply sits.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">Compare routes</a>
@@ -104,8 +114,8 @@ const jsonld = [
       <div class="faq">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>

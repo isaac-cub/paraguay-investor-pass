@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'Paraguay Real Estate Residency Route | from $200K';
-const description =
+const fbTitle = 'Paraguay Real Estate Residency Route | from $200K';
+const description0 =
   'Qualify for Paraguay residency with a real estate investment from USD 200,000. How the property route works, requirements and timelines. Speak to Lincoln.';
 
-const faqs = [
+const fbFaqs = [
   { q: 'How much do I need to invest?', a: 'The real estate route requires a qualifying, income-generating property investment of at least USD 200,000.' },
   { q: 'Can foreigners own property in Paraguay?', a: 'Yes. Paraguay broadly permits foreign ownership on a passport alone, held in your name or through a properly structured vehicle. Certain border-zone and rural restrictions apply, which we screen for before any purchase.' },
   { q: 'Can I rent the property out?', a: 'Yes. The route in fact requires the property be destined to economic activity — personal or family use is excluded — so an income-generating unit is exactly what qualifies.' },
@@ -14,19 +15,28 @@ const faqs = [
   { q: 'Will owning property make me tax resident in Paraguay?', a: "Not automatically. Legal residency and tax residency are distinct. Paraguay's territorial system generally leaves foreign-source income untaxed locally, but your tax residency is assessed on your individual facts." },
 ];
 
+const page = await getPage('real-estate');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Paraguay residency through real&nbsp;estate.');
+const heroEyebrow = pick(page?.heroEyebrow, 'Eligible real estate · from USD 200,000');
+const heroLead = pick(page?.heroLead, 'Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.');
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Real Estate', path: '/real-estate/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency through real estate investment', description, price: 200000, path: '/real-estate/' }),
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Real Estate</nav>
-      <p class="eyebrow">Eligible real estate · from USD 200,000</p>
-      <h1>Paraguay residency through real&nbsp;estate.</h1>
-      <p class="lead">Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">Compare routes</a>
@@ -138,8 +148,8 @@ const jsonld = [
       <div class="faq prose">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>

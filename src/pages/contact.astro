@@ -11,6 +11,10 @@ const description = pick(
   page?.seoDescription,
   "Speak to Lincoln Global Partners about Paraguay residency by investment. Tell us your goals and we'll recommend the right route. Enquire today."
 );
+const h1 = pick(page?.h1, 'Enquire about your Paraguay residency.');
+const heroEyebrow = pick(page?.heroEyebrow, 'Request information');
+const heroLead = pick(page?.heroLead, 'Tell us about your circumstances and what you are trying to achieve. Every enquiry is read by a person, not a queue. You will receive guidance on the route best suited to you — and a plain answer if Paraguay is not the right fit.');
+const ogImage = page?.ogImage ?? undefined;
 // Set the real Formspree id in the CMS (Site settings → Formspree form ID).
 const formspreeId = pick(settings?.formspreeId, 'YOUR_FORM_ID');
 
@@ -25,13 +29,13 @@ const jsonld = [
   },
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Contact</nav>
-      <p class="eyebrow">Request information</p>
-      <h1>Enquire about your Paraguay residency.</h1>
-      <p class="lead">Tell us about your circumstances and what you are trying to achieve. Every enquiry is read by a person, not a queue. You will receive guidance on the route best suited to you — and a plain answer if Paraguay is not the right fit.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
     </div>
   </section>
 

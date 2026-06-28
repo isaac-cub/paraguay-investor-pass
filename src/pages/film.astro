@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'Paraguay Film Investment Residency | from $40K';
-const description =
+const fbTitle = 'Paraguay Film Investment Residency | from $40K';
+const description0 =
   "Paraguay's lowest-cost route: residency via a film/audiovisual contribution from USD 40,000, through a separate INAP pathway. How it works and the honest caveats. Contact Lincoln.";
 
-const faqs = [
+const fbFaqs = [
   { q: 'How much does the film route cost?', a: 'It requires a USD 40,000 contribution into an approved Paraguayan film production, plus separately demonstrating at least USD 80,000 in available bank funds (a show-of-funds, not a second investment). It is the lowest-cost entry point to Paraguayan residency.' },
   { q: 'Do I get the money back?', a: 'You should treat the USD 40,000 as a contribution, not a recoverable investment. The funds remain in the production; any return depends entirely on the film’s commercial performance and is speculative. If you want a recoverable asset, the real estate, financial instruments, or SUACE routes fit better — and we will tell you so.' },
   { q: 'Is this part of the Investor Pass resolution?', a: 'No. The film route is a separate, pre-existing pathway administered via Paraguay’s audiovisual institute (INAP), whose enabling statute is Ley N° 6106/2018. It sits alongside — not within — Resolution 0283/2026. The exact regulation granting the immigration benefit should be confirmed with counsel before you commit.' },
@@ -14,19 +15,28 @@ const faqs = [
   { q: 'Does my family get permanent residency too?', a: 'An important distinction: the main applicant receives direct permanent residency, but dependent family members typically receive two-year temporary residency first, with the standard conversion pathway thereafter. We map this out for your family specifically.' },
 ];
 
+const page = await getPage('film');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Paraguay residency via film &amp; audiovisual.');
+const heroEyebrow = pick(page?.heroEyebrow, 'Film cultural contribution · from USD 40,000 · separate INAP pathway');
+const heroLead = pick(page?.heroLead, 'Contribute USD 40,000 to qualifying Paraguayan film production through a separate, pre-existing pathway — the most accessible threshold to direct permanent residency, with the honest trade-offs stated plainly.');
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Film', path: '/film/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency via film & audiovisual contribution', description, price: 40000, path: '/film/' }),
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Film &amp; Audiovisual</nav>
-      <p class="eyebrow">Film cultural contribution · from USD 40,000 · separate INAP pathway</p>
-      <h1>Paraguay residency via film &amp; audiovisual.</h1>
-      <p class="lead">Contribute USD 40,000 to qualifying Paraguayan film production through a separate, pre-existing pathway — the most accessible threshold to direct permanent residency, with the honest trade-offs stated plainly.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">Compare routes</a>
@@ -102,8 +112,8 @@ const jsonld = [
       <div class="faq">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>

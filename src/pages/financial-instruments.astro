@@ -1,12 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
+import { getPage, pick } from '../lib/content';
 
-const title = 'Paraguay Financial Instruments Residency | from $200K';
-const description =
+const fbTitle = 'Paraguay Financial Instruments Residency | from $200K';
+const description0 =
   'Qualify for Paraguay residency by investing from USD 200,000 in regulated financial instruments held for two years. The passive, hands-off route. Talk to Lincoln.';
 
-const faqs = [
+const fbFaqs = [
   { q: 'How much do I need to invest, and for how long?', a: 'The financial instruments route requires at least USD 200,000 (or the guaraní equivalent) deployed into qualifying regulated instruments, maintained for a minimum of two years.' },
   { q: 'What instruments qualify?', a: 'Sources indicate qualifying instruments are those regulated by the securities superintendency (Superintendencia de Valores) of the Central Bank of Paraguay — broadly corporate bonds, equities, certificates of deposit, and investment funds. The precise approved list is being finalised in the regulation of Resolution 0283/2026, so the exact eligible instruments should be confirmed with counsel before committing.' },
   { q: 'Do I have to actively manage anything?', a: 'No. There is no business plan, job-creation, or active-management requirement — this is the only purely passive route to direct permanent residency under the Investor Pass. You hold the qualifying instruments for the required period and file annual compliance reporting.' },
@@ -14,19 +15,28 @@ const faqs = [
   { q: 'What are the honest risks?', a: 'The capital is locked for two years and the instruments can fluctuate; Paraguay’s capital market is comparatively small and less liquid than major exchanges, so options are more limited. We size and structure the holding to keep you comfortably above the threshold throughout.' },
 ];
 
+const page = await getPage('financial-instruments');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const h1 = pick(page?.h1, 'Paraguay residency via financial instruments.');
+const heroEyebrow = pick(page?.heroEyebrow, 'Financial instruments · from USD 200,000');
+const heroLead = pick(page?.heroLead, "Deploy qualifying capital into regulated Paraguayan instruments, hold it for the required period, and earn direct permanent residency — the Investor Pass's one genuinely passive route, with nothing to build or operate.");
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Financial Instruments', path: '/financial-instruments/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency through financial instruments', description, price: 200000, path: '/financial-instruments/' }),
 ];
 ---
-<Base title={title} description={description} jsonld={jsonld}>
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <section class="hero">
     <div class="wrap">
       <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Financial Instruments</nav>
-      <p class="eyebrow">Financial instruments · from USD 200,000</p>
-      <h1>Paraguay residency via financial instruments.</h1>
-      <p class="lead">Deploy qualifying capital into regulated Paraguayan instruments, hold it for the required period, and earn direct permanent residency — the Investor Pass's one genuinely passive route, with nothing to build or operate.</p>
+      <p class="eyebrow">{heroEyebrow}</p>
+      <h1 set:html={h1}></h1>
+      <p class="lead" set:html={heroLead}></p>
       <div class="hero-cta">
         <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
         <a class="btn btn--ghost" href="/#routes">Compare routes</a>
@@ -102,8 +112,8 @@ const jsonld = [
       <div class="faq">
         {faqs.map((f, i) => (
           <details open={i === 0}>
-            <summary>{f.q} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.a}</p></div>
+            <summary>{f.question} <span class="ic">+</span></summary>
+            <div class="faq-body"><p>{f.answer}</p></div>
           </details>
         ))}
       </div>
