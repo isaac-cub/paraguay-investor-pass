@@ -1,9 +1,16 @@
 import { config, fields, singleton, collection } from '@keystatic/core';
 
-// Storage: local now (edits write to ./src/content on disk).
-// Switch to { kind: 'github', repo: 'isaac-cub/paraguay-investor-pass' } for browser editing.
+// Storage: local in dev (edits write to ./src/content on disk),
+// GitHub mode in production (browser editing → commits to the repo).
+// On first prod visit to /keystatic, Keystatic walks you through creating the
+// GitHub App and gives you the env vars to add in Vercel.
+const storage =
+  process.env.NODE_ENV === 'production'
+    ? ({ kind: 'github', repo: 'isaac-cub/paraguay-investor-pass' } as const)
+    : ({ kind: 'local' } as const);
+
 export default config({
-  storage: { kind: 'local' },
+  storage,
   ui: {
     brand: { name: 'Paraguay Investor Pass' },
   },
