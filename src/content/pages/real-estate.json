@@ -2,9 +2,6 @@
   "slug": "real-estate",
   "seoTitle": "Paraguay Real Estate Residency Route | from $200K",
   "seoDescription": "Qualify for Paraguay residency with a real estate investment from USD 200,000. How the property route works, requirements and timelines. Speak to Lincoln.",
-  "h1": "Paraguay residency through real&nbsp;estate.",
-  "heroEyebrow": "Eligible real estate · from USD 200,000",
-  "heroLead": "Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.",
   "ogImage": null,
   "faqs": [
     {
@@ -26,6 +23,110 @@
     {
       "question": "Will owning property make me tax resident in Paraguay?",
       "answer": "Not automatically. Legal residency and tax residency are distinct. Paraguay's territorial system generally leaves foreign-source income untaxed locally, but your tax residency is assessed on your individual facts."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Real Estate",
+      "eyebrow": "Eligible real estate · from USD 200,000",
+      "h1": "Paraguay residency through real&nbsp;estate.",
+      "lead": "Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.",
+      "ctas": [
+        { "label": "Start your file", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "stats": [
+        { "value": "$200K", "label": "Minimum investment" },
+        { "value": "Owned", "label": "Hard asset, in your name" },
+        { "value": "Yield", "label": "Rental &amp; appreciation" }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The route",
+      "heading": "A residency you can stand on — literally.",
+      "paragraphs": [
+        { "text": "Under the real estate route, a qualifying property investment of <strong>USD 200,000</strong> serves as the qualifying investment for the Investor Pass. Unlike a contribution, the capital does not disappear — it becomes a hard asset held in your name, in one of the most affordable property markets in the Americas." },
+        { "text": "One detail matters: under Resolution N° 0283/2026 the property must be destined to <strong>economic activity</strong> — purely personal or family-use housing is excluded. In practice that means an income-generating unit. You can file with a registered transfer deed <strong>or</strong> a notarised contract once at least <strong>30% of the declared value</strong> is paid." }
+      ],
+      "asideTable": [
+        { "label": "Minimum investment", "value": "USD 200,000 in qualifying property" },
+        { "label": "Use", "value": "Income-generating — personal/family use excluded" },
+        { "label": "Two pathways", "value": "Registered deed, or notarised contract with ≥30% paid" },
+        { "label": "Income", "value": "Rental yield and capital appreciation" },
+        { "label": "Residency framework", "value": "Investor Pass → permanent residency" },
+        { "label": "Ownership", "value": "Foreigners may buy on a passport alone" }
+      ],
+      "asideNotice": { "title": "Title done properly", "body": "Foreign buyers can own Paraguayan property on a passport alone, but title diligence, the economic-use requirement, and vehicle choice matter. Every purchase is screened before a guaraní is committed." },
+      "asideNoticeFirst": false
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Why this route",
+      "heading": "Capital that keeps its shape.",
+      "headingMax": "18ch",
+      "cards": [
+        { "num": "01", "title": "You own it", "text": "This is not a fee or a donation. It is title to an asset that remains yours — to hold, let, sell, or pass on." },
+        { "num": "02", "title": "It can earn", "text": "Qualifying property can produce rental income and appreciate over time, so your residency capital stays productive." },
+        { "num": "03", "title": "Low entry cost", "text": "Paraguay's property prices remain a fraction of comparable markets — your USD 200,000 buys real footprint, not a studio." },
+        { "num": "04", "title": "Tangible substance", "text": "An owned asset is the cleanest form of economic presence in a jurisdiction — easy to evidence, hard to dispute." },
+        { "num": "05", "title": "A real base", "text": "Somewhere to actually land. A focus city, a coastal escape, a home — residency you can live in, not just file." },
+        { "num": "06", "title": "Same destination", "text": "The real estate route leads to the identical residency and citizenship pathway as every other route." }
+      ]
+    },
+    {
+      "_template": "projects",
+      "band": "cream",
+      "eyebrow": "Featured developments",
+      "heading": "Where the qualifying capital can go.",
+      "headingMax": "24ch",
+      "lead": "A selection of landmark developments from two of Paraguay's leading developers, CIVIS and Petra Urbana — illustrative of the income-generating property that can satisfy the USD 200,000 real estate route.",
+      "leadMax": "60ch",
+      "items": [
+        { "developer": "CIVIS", "location": "Las Lomas, Asunción", "name": "Aether", "description": "A 50-storey mixed-use landmark and one of the tallest towers under development in Paraguay, in the Las Lomas corporate district.", "footMain": "50 floors", "footSub": "Under development", "image": null },
+        { "developer": "CIVIS", "location": "Las Lomas, Asunción", "name": "Civis X", "description": "An approximately 150m tower of design-led apartments on the Las Lomas corporate axis, built for sustained executive rental demand.", "footMain": "~36–40 floors", "footSub": "~150 m · in construction", "image": null },
+        { "developer": "Petra Urbana", "location": "Las Lomas, Asunción", "name": "Petra Tower", "description": "Paraguay's current tallest completed building at 172m, topped out in 2025 — loft-style residences in the new economic district.", "footMain": "172 m", "footSub": "Completed 2025", "image": null },
+        { "developer": "Petra Urbana", "location": "Asunción", "name": "Petra Imperiale", "description": "Planned to become Paraguay's tallest residential tower at 250m — a mixed-use \"resort living\" complex, currently in early development.", "footMain": "250 m", "footSub": "Announced · in development", "image": null }
+      ],
+      "disclaimer": "Developments shown are independent third-party projects, included for illustration only. Inclusion is not an endorsement, and qualification for the Investor Pass depends on meeting the programme's criteria for the specific unit and structure. Availability, pricing, and specifications are set by each developer and should be verified directly."
+    },
+    {
+      "_template": "steps",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "The process",
+      "heading": "From purchase to passport, sequenced.",
+      "paragraphs": [
+        { "text": "The real estate route is straightforward when the order is right: confirm the strategy, buy the right asset cleanly, then move through the certificate, residency, and — in time — citizenship." }
+      ],
+      "notice": { "title": "One honest caveat", "body": "The five-business-day figure applies only to the Foreign Investor Certificate. Permanent residency is a separate process with its own timeline. We never blur the two." },
+      "items": [
+        { "title": "Strategy &amp; route confirmation", "text": "We confirm real estate is the right route for your goals and map the structure end to end." },
+        { "title": "Sourcing &amp; due diligence", "text": "We identify qualifying property and run title, zoning, and border-zone diligence before you commit." },
+        { "title": "Acquisition", "text": "The purchase is completed and documented to evidence the qualifying USD 200,000 investment." },
+        { "title": "Foreign Investor Certificate", "text": "With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days." },
+        { "title": "Permanent residency", "text": "We progress the permanent residency process and your Paraguayan cédula." },
+        { "title": "Toward citizenship", "text": "You maintain residence and your asset, building toward naturalisation eligibility after three years." }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "eyebrow": "Real estate route",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Real estate route",
+      "pull": "Residency, secured by <span class=\"gold\">an asset you own.</span>",
+      "ctas": [
+        { "label": "Start your real estate file", "href": "/contact/", "variant": "gold" },
+        { "label": "See other routes", "href": "/#routes", "variant": "ghost" }
+      ]
     }
   ]
 }

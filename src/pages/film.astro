@@ -1,28 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
 import { getPage, pick } from '../lib/content';
 
-const fbTitle = 'Paraguay Film Investment Residency | from $40K';
-const description0 =
-  "Paraguay's lowest-cost route: residency via a film/audiovisual contribution from USD 40,000, through a separate INAP pathway. How it works and the honest caveats. Contact Lincoln.";
-
-const fbFaqs = [
-  { q: 'How much does the film route cost?', a: 'It requires a USD 40,000 contribution into an approved Paraguayan film production, plus separately demonstrating at least USD 80,000 in available bank funds (a show-of-funds, not a second investment). It is the lowest-cost entry point to Paraguayan residency.' },
-  { q: 'Do I get the money back?', a: 'You should treat the USD 40,000 as a contribution, not a recoverable investment. The funds remain in the production; any return depends entirely on the film’s commercial performance and is speculative. If you want a recoverable asset, the real estate, financial instruments, or SUACE routes fit better — and we will tell you so.' },
-  { q: 'Is this part of the Investor Pass resolution?', a: 'No. The film route is a separate, pre-existing pathway administered via Paraguay’s audiovisual institute (INAP), whose enabling statute is Ley N° 6106/2018. It sits alongside — not within — Resolution 0283/2026. The exact regulation granting the immigration benefit should be confirmed with counsel before you commit.' },
-  { q: 'How fast is it, and how long must I be in Paraguay?', a: 'Advisors indicate roughly 60 days from contribution and submission, with approximately eight business days in Asunción. We confirm the current requirements for your nationality before you travel.' },
-  { q: 'Does my family get permanent residency too?', a: 'An important distinction: the main applicant receives direct permanent residency, but dependent family members typically receive two-year temporary residency first, with the standard conversion pathway thereafter. We map this out for your family specifically.' },
-];
-
 const page = await getPage('film');
-const title = pick(page?.seoTitle, fbTitle);
-const description = pick(page?.seoDescription, description0);
-const h1 = pick(page?.h1, 'Paraguay residency via film &amp; audiovisual.');
-const heroEyebrow = pick(page?.heroEyebrow, 'Film cultural contribution · from USD 40,000 · separate INAP pathway');
-const heroLead = pick(page?.heroLead, 'Contribute USD 40,000 to qualifying Paraguayan film production through a separate, pre-existing pathway — the most accessible threshold to direct permanent residency, with the honest trade-offs stated plainly.');
+const title = pick(page?.seoTitle, 'Paraguay Film Investment Residency | from $40K');
+const description = pick(page?.seoDescription, "Paraguay's lowest-cost route: residency via a film/audiovisual contribution from USD 40,000, through a separate INAP pathway. How it works and the honest caveats. Contact Lincoln.");
 const ogImage = page?.ogImage ?? undefined;
-const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const faqs = ((page?.faqs as any[] | undefined) ?? []).map((f: any) => ({ question: f.question, answer: f.answer }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Film', path: '/film/' }]),
@@ -31,100 +18,5 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
-  <section class="hero">
-    <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Film &amp; Audiovisual</nav>
-      <p class="eyebrow">{heroEyebrow}</p>
-      <h1 set:html={h1}></h1>
-      <p class="lead" set:html={heroLead}></p>
-      <div class="hero-cta">
-        <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
-        <a class="btn btn--ghost" href="/#routes">Compare routes</a>
-      </div>
-      <div class="hero-meta">
-        <div class="stat"><b>$40K</b><span>Qualifying contribution</span></div>
-        <div class="stat"><b>+$80K</b><span>Funds to demonstrate</span></div>
-        <div class="stat"><b>Lowest</b><span>Entry point to residency</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap split">
-      <div class="reveal">
-        <p class="eyebrow">The route</p>
-        <h2>The most accessible way in — clearly explained.</h2>
-        <p>The film route qualifies you for direct permanent residency through a <strong>USD 40,000 contribution</strong> to an approved Paraguayan film production, channelled through a registered local production company. You also <strong>demonstrate at least USD 80,000 in available bank funds</strong> — a solvency check, not a second investment. At this threshold it is the <strong>lowest-cost entry point</strong> to Paraguayan residency.</p>
-        <p>Be precise about what this is. Unlike the resolution's investment routes, this is a <strong>contribution, not a recoverable asset</strong>. The funds remain in the production; any financial return is speculative. You are converting the smallest possible amount of capital into a clean path to residency — and you should view the USD 40,000 as the price of that path.</p>
-      </div>
-      <div class="reveal">
-        <table class="spec">
-          <tr><th>Contribution</th><td>USD 40,000 to approved film production</td></tr>
-          <tr><th>Funds to demonstrate</th><td>USD 80,000 available (show-of-funds)</td></tr>
-          <tr><th>Nature</th><td>Contribution — not a recoverable investment</td></tr>
-          <tr><th>Framework</th><td>Separate INAP pathway (Ley N° 6106/2018)</td></tr>
-          <tr><th>Main applicant</th><td>Direct permanent residency</td></tr>
-          <tr><th>Dependents</th><td>2-year temporary residency, then conversion</td></tr>
-        </table>
-        <div class="notice" style="margin-top:1.4rem"><b>A separate pathway — verify the detail</b>This route sits alongside, not inside, Resolution 0283/2026. The precise regulation granting the immigration benefit is not publicly published; we confirm it with Paraguayan counsel before you commit.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-paper">
-    <div class="wrap">
-      <p class="eyebrow">Why this route</p>
-      <h2 style="max-width:18ch">Lowest cost. Same destination — with caveats.</h2>
-      <div class="grid grid-3" style="margin-top:2.5rem">
-        <div class="card reveal"><span class="num">01</span><h3>Lowest entry point</h3><p>At USD 40,000 it is the most accessible threshold — the cheapest way to begin a Paraguayan residency file.</p></div>
-        <div class="card reveal"><span class="num">02</span><h3>Capital-efficient</h3><p>If your objective is the residency and the pathway to citizenship, this commits the least capital to get there.</p></div>
-        <div class="card reveal"><span class="num">03</span><h3>Direct PR for the applicant</h3><p>The main applicant receives direct permanent residency, bypassing the temporary stage.</p></div>
-        <div class="card reveal"><span class="num">04</span><h3>Simple to structure</h3><p>A contribution is administratively straightforward — no property to manage, no company to operate.</p></div>
-        <div class="card reveal"><span class="num">05</span><h3>Supports local industry</h3><p>Your contribution goes toward Paraguay's growing audiovisual sector rather than sitting idle.</p></div>
-        <div class="card reveal"><span class="num">06</span><h3>Eyes open</h3><p>Funds are not recoverable, dependents start on temporary residency, and ~8 days in-country are needed. We say so up front.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap split--rev">
-      <div class="reveal">
-        <div class="steps">
-          <div class="step"><div><h4>Strategy &amp; fit</h4><p>We confirm the film route is the right call — and are candid when an asset-backed route would serve you better.</p></div></div>
-          <div class="step"><div><h4>Qualifying contribution</h4><p>The USD 40,000 contribution to an approved production is arranged and documented; available funds are evidenced.</p></div></div>
-          <div class="step"><div><h4>File assembly</h4><p>We compile the complete application, including any Ministry of Foreign Affairs letter for visa-restricted nationalities.</p></div></div>
-          <div class="step"><div><h4>Submission &amp; travel</h4><p>The file is submitted; roughly eight business days in Asunción are typically required.</p></div></div>
-          <div class="step"><div><h4>Permanent residency</h4><p>The main applicant's permanent residency is progressed — generally around 60 days from contribution and submission.</p></div></div>
-          <div class="step"><div><h4>Toward citizenship</h4><p>You maintain residence, building toward naturalisation eligibility after three years.</p></div></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow">The process</p>
-        <h2>Contribute, qualify, reside.</h2>
-        <p>The film route is the most direct sequence in cost terms: make the qualifying contribution, assemble the file, spend the required days in-country, then receive residency — the same destination every route reaches.</p>
-        <div class="notice"><b>Timelines are indicative</b>The ~60-day and ~8-business-day figures come from practitioners, not a published regulation. We confirm current requirements before you travel.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap prose"><p class="eyebrow">Film &amp; audiovisual route</p><h2>Frequently asked.</h2>
-      <div class="faq">
-        {faqs.map((f, i) => (
-          <details open={i === 0}>
-            <summary>{f.question} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.answer}</p></div>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-navy cta-band">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--center">Begin at the lowest threshold</p>
-      <p class="pull">The smallest step. <span class="gold">The same destination.</span></p>
-      <div class="hero-cta"><a class="btn btn--gold" href="/contact/">Start your film file <span class="arr">→</span></a><a class="btn btn--ghost" href="/#routes">See other routes</a></div>
-    </div>
-  </section>
+  <Blocks blocks={blocks} faqs={faqs} />
 </Base>

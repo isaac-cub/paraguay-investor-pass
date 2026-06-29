@@ -1,21 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
 import { breadcrumb } from '../lib/schema';
 import { getPage, getSettings, pick } from '../lib/content';
 
 const page = await getPage('contact');
 const settings = await getSettings();
-
 const title = pick(page?.seoTitle, 'Contact | Paraguay Investor Pass | Lincoln Partners');
-const description = pick(
-  page?.seoDescription,
-  "Speak to Lincoln Global Partners about Paraguay residency by investment. Tell us your goals and we'll recommend the right route. Enquire today."
-);
-const h1 = pick(page?.h1, 'Enquire about your Paraguay residency.');
-const heroEyebrow = pick(page?.heroEyebrow, 'Request information');
-const heroLead = pick(page?.heroLead, 'Tell us about your circumstances and what you are trying to achieve. Every enquiry is read by a person, not a queue. You will receive guidance on the route best suited to you — and a plain answer if Paraguay is not the right fit.');
+const description = pick(page?.seoDescription, "Speak to Lincoln Global Partners about Paraguay residency by investment. Tell us your goals and we'll recommend the right route. Enquire today.");
 const ogImage = page?.ogImage ?? undefined;
-// Set the real Formspree id in the CMS (Site settings → Formspree form ID).
+const faqs = ((page?.faqs as any[] | undefined) ?? []).map((f: any) => ({ question: f.question, answer: f.answer }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
 const formspreeId = pick(settings?.formspreeId, 'YOUR_FORM_ID');
 
 const jsonld = [
@@ -30,85 +25,5 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
-  <section class="hero">
-    <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Contact</nav>
-      <p class="eyebrow">{heroEyebrow}</p>
-      <h1 set:html={h1}></h1>
-      <p class="lead" set:html={heroLead}></p>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap split">
-      <div class="reveal">
-        <p class="eyebrow">What to expect</p>
-        <h2>Clear, confidential, no obligation.</h2>
-        <p>Sharing a little about your situation lets the first reply be genuinely useful — with a view on which route, and which structure, actually fits your circumstances.</p>
-        <p>Everything you send is treated in strict confidence. The fields are a starting point, not a test; share as much or as little as you are comfortable with.</p>
-        <div class="notice" style="margin-top:1.4rem"><b>One republic, several routes</b>The first step is establishing whether Paraguay — and which route — is genuinely right for you. There is no charge and no obligation for an initial enquiry.</div>
-        <table class="spec" style="margin-top:1.6rem">
-          <tr><th>Focus</th><td>Paraguay residency &amp; citizenship</td></tr>
-          <tr><th>Routes</th><td>Real Estate · Financial · Tourism · SUACE · Film</td></tr>
-          <tr><th>Intake</th><td>By enquiry &amp; referral</td></tr>
-        </table>
-      </div>
-      <div class="reveal">
-        <form class="form-card" action={`https://formspree.io/f/${formspreeId}`} method="POST">
-          <div class="form-grid">
-            <div class="field">
-              <label for="name">Full name</label>
-              <input type="text" id="name" name="name" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" autocomplete="email" required />
-            </div>
-            <div class="field">
-              <label for="nationality">Nationality / citizenship</label>
-              <input type="text" id="nationality" name="nationality" autocomplete="country-name" />
-            </div>
-            <div class="field">
-              <label for="route">Route of interest</label>
-              <select id="route" name="route">
-                <option value="Undecided">Undecided — advise me</option>
-                <option value="Real Estate (USD 200K)">Real Estate · USD 200K</option>
-                <option value="Financial Instruments (USD 200K)">Financial Instruments · USD 200K</option>
-                <option value="Tourism Projects (USD 150K)">Tourism Projects · USD 150K</option>
-                <option value="SUACE Company (USD 70K)">SUACE Company · USD 70K</option>
-                <option value="Film Production (USD 40K)">Film Production · USD 40K</option>
-              </select>
-            </div>
-            <div class="field row2">
-              <label for="networth">Approximate net worth band (optional, confidential)</label>
-              <select id="networth" name="net_worth_band">
-                <option value="Prefer not to say">Prefer not to say</option>
-                <option value="Under USD 500K">Under USD 500K</option>
-                <option value="USD 500K – 1M">USD 500K – 1M</option>
-                <option value="USD 1M – 5M">USD 1M – 5M</option>
-                <option value="USD 5M+">USD 5M+</option>
-              </select>
-            </div>
-            <div class="field row2">
-              <label for="message">Tell us about your situation</label>
-              <textarea id="message" name="message" placeholder="Where are you based, what are you trying to solve, and what is your timeline?"></textarea>
-            </div>
-          </div>
-          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-          <div class="hero-cta" style="margin-top:1.6rem">
-            <button type="submit" class="btn btn--gold">Send enquiry <span class="arr">→</span></button>
-          </div>
-          <p class="form-note">By sending this enquiry you agree to be contacted about your request. Your information is kept confidential and is never sold or shared. This form does not create a client or advisory relationship.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-navy cta-band">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--center">Not ready to enquire?</p>
-      <p class="pull">Read the guide first. <span class="gold">Then decide.</span></p>
-      <div class="hero-cta"><a class="btn btn--gold" href="/">The Investor Pass guide <span class="arr">→</span></a><a class="btn btn--ghost" href="/#routes">Compare the routes</a></div>
-    </div>
-  </section>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
 </Base>

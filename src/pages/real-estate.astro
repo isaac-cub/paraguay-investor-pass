@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
 import { getPage, pick } from '../lib/content';
 
@@ -18,11 +19,9 @@ const fbFaqs = [
 const page = await getPage('real-estate');
 const title = pick(page?.seoTitle, fbTitle);
 const description = pick(page?.seoDescription, description0);
-const h1 = pick(page?.h1, 'Paraguay residency through real&nbsp;estate.');
-const heroEyebrow = pick(page?.heroEyebrow, 'Eligible real estate · from USD 200,000');
-const heroLead = pick(page?.heroLead, 'Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.');
 const ogImage = page?.ogImage ?? undefined;
 const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Real Estate', path: '/real-estate/' }]),
@@ -31,136 +30,5 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
-  <section class="hero">
-    <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span>Real Estate</nav>
-      <p class="eyebrow">{heroEyebrow}</p>
-      <h1 set:html={h1}></h1>
-      <p class="lead" set:html={heroLead}></p>
-      <div class="hero-cta">
-        <a class="btn btn--gold" href="/contact/">Start your file <span class="arr">→</span></a>
-        <a class="btn btn--ghost" href="/#routes">Compare routes</a>
-      </div>
-      <div class="hero-meta">
-        <div class="stat"><b>$200K</b><span>Minimum investment</span></div>
-        <div class="stat"><b>Owned</b><span>Hard asset, in your name</span></div>
-        <div class="stat"><b>Yield</b><span>Rental &amp; appreciation</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap split">
-      <div class="reveal">
-        <p class="eyebrow">The route</p>
-        <h2>A residency you can stand on — literally.</h2>
-        <p>Under the real estate route, a qualifying property investment of <strong>USD 200,000</strong> serves as the qualifying investment for the Investor Pass. Unlike a contribution, the capital does not disappear — it becomes a hard asset held in your name, in one of the most affordable property markets in the Americas.</p>
-        <p>One detail matters: under Resolution N° 0283/2026 the property must be destined to <strong>economic activity</strong> — purely personal or family-use housing is excluded. In practice that means an income-generating unit. You can file with a registered transfer deed <strong>or</strong> a notarised contract once at least <strong>30% of the declared value</strong> is paid.</p>
-      </div>
-      <div class="reveal">
-        <table class="spec">
-          <tr><th>Minimum investment</th><td>USD 200,000 in qualifying property</td></tr>
-          <tr><th>Use</th><td>Income-generating — personal/family use excluded</td></tr>
-          <tr><th>Two pathways</th><td>Registered deed, or notarised contract with ≥30% paid</td></tr>
-          <tr><th>Income</th><td>Rental yield and capital appreciation</td></tr>
-          <tr><th>Residency framework</th><td>Investor Pass → permanent residency</td></tr>
-          <tr><th>Ownership</th><td>Foreigners may buy on a passport alone</td></tr>
-        </table>
-        <div class="notice" style="margin-top:1.4rem"><b>Title done properly</b>Foreign buyers can own Paraguayan property on a passport alone, but title diligence, the economic-use requirement, and vehicle choice matter. Every purchase is screened before a guaraní is committed.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-paper">
-    <div class="wrap">
-      <p class="eyebrow">Why this route</p>
-      <h2 style="max-width:18ch">Capital that keeps its shape.</h2>
-      <div class="grid grid-3" style="margin-top:2.5rem">
-        <div class="card reveal"><span class="num">01</span><h3>You own it</h3><p>This is not a fee or a donation. It is title to an asset that remains yours — to hold, let, sell, or pass on.</p></div>
-        <div class="card reveal"><span class="num">02</span><h3>It can earn</h3><p>Qualifying property can produce rental income and appreciate over time, so your residency capital stays productive.</p></div>
-        <div class="card reveal"><span class="num">03</span><h3>Low entry cost</h3><p>Paraguay's property prices remain a fraction of comparable markets — your USD 200,000 buys real footprint, not a studio.</p></div>
-        <div class="card reveal"><span class="num">04</span><h3>Tangible substance</h3><p>An owned asset is the cleanest form of economic presence in a jurisdiction — easy to evidence, hard to dispute.</p></div>
-        <div class="card reveal"><span class="num">05</span><h3>A real base</h3><p>Somewhere to actually land. A focus city, a coastal escape, a home — residency you can live in, not just file.</p></div>
-        <div class="card reveal"><span class="num">06</span><h3>Same destination</h3><p>The real estate route leads to the identical residency and citizenship pathway as every other route.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap">
-      <p class="eyebrow">Featured developments</p>
-      <h2 style="max-width:24ch">Where the qualifying capital can go.</h2>
-      <p class="lead" style="max-width:60ch">A selection of landmark developments from two of Paraguay's leading developers, CIVIS and Petra Urbana — illustrative of the income-generating property that can satisfy the USD 200,000 real estate route.</p>
-      <div class="projects">
-        <article class="pcard reveal">
-          <div class="pcard-top"><span class="pcard-dev">CIVIS</span><span class="pcard-tag">Las Lomas, Asunción</span></div>
-          <h3>Aether</h3>
-          <p>A 50-storey mixed-use landmark and one of the tallest towers under development in Paraguay, in the Las Lomas corporate district.</p>
-          <div class="pcard-foot"><b>50 floors</b><span>Under development</span></div>
-        </article>
-        <article class="pcard reveal">
-          <div class="pcard-top"><span class="pcard-dev">CIVIS</span><span class="pcard-tag">Las Lomas, Asunción</span></div>
-          <h3>Civis X</h3>
-          <p>An approximately 150m tower of design-led apartments on the Las Lomas corporate axis, built for sustained executive rental demand.</p>
-          <div class="pcard-foot"><b>~36–40 floors</b><span>~150 m · in construction</span></div>
-        </article>
-        <article class="pcard reveal">
-          <div class="pcard-top"><span class="pcard-dev">Petra Urbana</span><span class="pcard-tag">Las Lomas, Asunción</span></div>
-          <h3>Petra Tower</h3>
-          <p>Paraguay's current tallest completed building at 172m, topped out in 2025 — loft-style residences in the new economic district.</p>
-          <div class="pcard-foot"><b>172 m</b><span>Completed 2025</span></div>
-        </article>
-        <article class="pcard reveal">
-          <div class="pcard-top"><span class="pcard-dev">Petra Urbana</span><span class="pcard-tag">Asunción</span></div>
-          <h3>Petra Imperiale</h3>
-          <p>Planned to become Paraguay's tallest residential tower at 250m — a mixed-use "resort living" complex, currently in early development.</p>
-          <div class="pcard-foot"><b>250 m</b><span>Announced · in development</span></div>
-        </article>
-      </div>
-      <p class="form-note" style="margin-top:1.4rem">Developments shown are independent third-party projects, included for illustration only. Inclusion is not an endorsement, and qualification for the Investor Pass depends on meeting the programme's criteria for the specific unit and structure. Availability, pricing, and specifications are set by each developer and should be verified directly.</p>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap split--rev">
-      <div class="reveal">
-        <div class="steps">
-          <div class="step"><div><h4>Strategy &amp; route confirmation</h4><p>We confirm real estate is the right route for your goals and map the structure end to end.</p></div></div>
-          <div class="step"><div><h4>Sourcing &amp; due diligence</h4><p>We identify qualifying property and run title, zoning, and border-zone diligence before you commit.</p></div></div>
-          <div class="step"><div><h4>Acquisition</h4><p>The purchase is completed and documented to evidence the qualifying USD 200,000 investment.</p></div></div>
-          <div class="step"><div><h4>Foreign Investor Certificate</h4><p>With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days.</p></div></div>
-          <div class="step"><div><h4>Permanent residency</h4><p>We progress the permanent residency process and your Paraguayan cédula.</p></div></div>
-          <div class="step"><div><h4>Toward citizenship</h4><p>You maintain residence and your asset, building toward naturalisation eligibility after three years.</p></div></div>
-        </div>
-      </div>
-      <div class="reveal">
-        <p class="eyebrow">The process</p>
-        <h2>From purchase to passport, sequenced.</h2>
-        <p>The real estate route is straightforward when the order is right: confirm the strategy, buy the right asset cleanly, then move through the certificate, residency, and — in time — citizenship.</p>
-        <div class="notice"><b>One honest caveat</b>The five-business-day figure applies only to the Foreign Investor Certificate. Permanent residency is a separate process with its own timeline. We never blur the two.</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-cream">
-    <div class="wrap">
-      <div class="prose"><p class="eyebrow">Real estate route</p><h2>Frequently asked.</h2></div>
-      <div class="faq prose">
-        {faqs.map((f, i) => (
-          <details open={i === 0}>
-            <summary>{f.question} <span class="ic">+</span></summary>
-            <div class="faq-body"><p>{f.answer}</p></div>
-          </details>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <section class="section band-navy cta-band">
-    <div class="wrap">
-      <p class="eyebrow eyebrow--center">Real estate route</p>
-      <p class="pull">Residency, secured by <span class="gold">an asset you own.</span></p>
-      <div class="hero-cta"><a class="btn btn--gold" href="/contact/">Start your real estate file <span class="arr">→</span></a><a class="btn btn--ghost" href="/#routes">See other routes</a></div>
-    </div>
-  </section>
+  <Blocks blocks={blocks} faqs={faqs} />
 </Base>

@@ -2,30 +2,54 @@
   "slug": "film",
   "seoTitle": "Paraguay Film Investment Residency | from $40K",
   "seoDescription": "Paraguay's lowest-cost route: residency via a film/audiovisual contribution from USD 40,000, through a separate INAP pathway. How it works and the honest caveats. Contact Lincoln.",
-  "h1": "Paraguay residency via film &amp; audiovisual.",
-  "heroEyebrow": "Film cultural contribution · from USD 40,000 · separate INAP pathway",
-  "heroLead": "Contribute USD 40,000 to qualifying Paraguayan film production through a separate, pre-existing pathway — the most accessible threshold to direct permanent residency, with the honest trade-offs stated plainly.",
   "ogImage": null,
   "faqs": [
-    {
-      "question": "How much does the film route cost?",
-      "answer": "It requires a USD 40,000 contribution into an approved Paraguayan film production, plus separately demonstrating at least USD 80,000 in available bank funds (a show-of-funds, not a second investment). It is the lowest-cost entry point to Paraguayan residency."
-    },
-    {
-      "question": "Do I get the money back?",
-      "answer": "You should treat the USD 40,000 as a contribution, not a recoverable investment. The funds remain in the production; any return depends entirely on the film’s commercial performance and is speculative. If you want a recoverable asset, the real estate, financial instruments, or SUACE routes fit better — and we will tell you so."
-    },
-    {
-      "question": "Is this part of the Investor Pass resolution?",
-      "answer": "No. The film route is a separate, pre-existing pathway administered via Paraguay’s audiovisual institute (INAP), whose enabling statute is Ley N° 6106/2018. It sits alongside — not within — Resolution 0283/2026. The exact regulation granting the immigration benefit should be confirmed with counsel before you commit."
-    },
-    {
-      "question": "How fast is it, and how long must I be in Paraguay?",
-      "answer": "Advisors indicate roughly 60 days from contribution and submission, with approximately eight business days in Asunción. We confirm the current requirements for your nationality before you travel."
-    },
-    {
-      "question": "Does my family get permanent residency too?",
-      "answer": "An important distinction: the main applicant receives direct permanent residency, but dependent family members typically receive two-year temporary residency first, with the standard conversion pathway thereafter. We map this out for your family specifically."
-    }
+    { "question": "How much does the film route cost?", "answer": "It requires a USD 40,000 contribution into an approved Paraguayan film production, plus separately demonstrating at least USD 80,000 in available bank funds (a show-of-funds, not a second investment). It is the lowest-cost entry point to Paraguayan residency." },
+    { "question": "Do I get the money back?", "answer": "You should treat the USD 40,000 as a contribution, not a recoverable investment. The funds remain in the production; any return depends entirely on the film’s commercial performance and is speculative. If you want a recoverable asset, the real estate, financial instruments, or SUACE routes fit better — and we will tell you so." },
+    { "question": "Is this part of the Investor Pass resolution?", "answer": "No. The film route is a separate, pre-existing pathway administered via Paraguay’s audiovisual institute (INAP), whose enabling statute is Ley N° 6106/2018. It sits alongside — not within — Resolution 0283/2026. The exact regulation granting the immigration benefit should be confirmed with counsel before you commit." },
+    { "question": "How fast is it, and how long must I be in Paraguay?", "answer": "Advisors indicate roughly 60 days from contribution and submission, with approximately eight business days in Asunción. We confirm the current requirements for your nationality before you travel." },
+    { "question": "Does my family get permanent residency too?", "answer": "An important distinction: the main applicant receives direct permanent residency, but dependent family members typically receive two-year temporary residency first, with the standard conversion pathway thereafter. We map this out for your family specifically." }
+  ],
+  "blocks": [
+    { "_template": "hero", "crumb": "Film &amp; Audiovisual", "eyebrow": "Film cultural contribution · from USD 40,000 · separate INAP pathway", "h1": "Paraguay residency via film &amp; audiovisual.", "lead": "Contribute USD 40,000 to qualifying Paraguayan film production through a separate, pre-existing pathway — the most accessible threshold to direct permanent residency, with the honest trade-offs stated plainly.",
+      "ctas": [ { "label": "Start your file", "href": "/contact/", "variant": "gold" }, { "label": "Compare routes", "href": "/#routes", "variant": "ghost" } ],
+      "stats": [ { "value": "$40K", "label": "Qualifying contribution" }, { "value": "+$80K", "label": "Funds to demonstrate" }, { "value": "Lowest", "label": "Entry point to residency" } ] },
+    { "_template": "split", "band": "cream", "reverse": false, "eyebrow": "The route", "heading": "The most accessible way in — clearly explained.",
+      "paragraphs": [
+        { "text": "The film route qualifies you for direct permanent residency through a <strong>USD 40,000 contribution</strong> to an approved Paraguayan film production, channelled through a registered local production company. You also <strong>demonstrate at least USD 80,000 in available bank funds</strong> — a solvency check, not a second investment. At this threshold it is the <strong>lowest-cost entry point</strong> to Paraguayan residency." },
+        { "text": "Be precise about what this is. Unlike the resolution's investment routes, this is a <strong>contribution, not a recoverable asset</strong>. The funds remain in the production; any financial return is speculative. You are converting the smallest possible amount of capital into a clean path to residency — and you should view the USD 40,000 as the price of that path." }
+      ],
+      "asideTable": [
+        { "label": "Contribution", "value": "USD 40,000 to approved film production" },
+        { "label": "Funds to demonstrate", "value": "USD 80,000 available (show-of-funds)" },
+        { "label": "Nature", "value": "Contribution — not a recoverable investment" },
+        { "label": "Framework", "value": "Separate INAP pathway (Ley N° 6106/2018)" },
+        { "label": "Main applicant", "value": "Direct permanent residency" },
+        { "label": "Dependents", "value": "2-year temporary residency, then conversion" }
+      ],
+      "asideNotice": { "title": "A separate pathway — verify the detail", "body": "This route sits alongside, not inside, Resolution 0283/2026. The precise regulation granting the immigration benefit is not publicly published; we confirm it with Paraguayan counsel before you commit." }, "asideNoticeFirst": false },
+    { "_template": "cardGrid", "band": "paper", "eyebrow": "Why this route", "heading": "Lowest cost. Same destination — with caveats.", "headingMax": "18ch",
+      "cards": [
+        { "num": "01", "title": "Lowest entry point", "text": "At USD 40,000 it is the most accessible threshold — the cheapest way to begin a Paraguayan residency file." },
+        { "num": "02", "title": "Capital-efficient", "text": "If your objective is the residency and the pathway to citizenship, this commits the least capital to get there." },
+        { "num": "03", "title": "Direct PR for the applicant", "text": "The main applicant receives direct permanent residency, bypassing the temporary stage." },
+        { "num": "04", "title": "Simple to structure", "text": "A contribution is administratively straightforward — no property to manage, no company to operate." },
+        { "num": "05", "title": "Supports local industry", "text": "Your contribution goes toward Paraguay's growing audiovisual sector rather than sitting idle." },
+        { "num": "06", "title": "Eyes open", "text": "Funds are not recoverable, dependents start on temporary residency, and ~8 days in-country are needed. We say so up front." }
+      ] },
+    { "_template": "steps", "band": "cream", "reverse": true, "eyebrow": "The process", "heading": "Contribute, qualify, reside.",
+      "paragraphs": [ { "text": "The film route is the most direct sequence in cost terms: make the qualifying contribution, assemble the file, spend the required days in-country, then receive residency — the same destination every route reaches." } ],
+      "notice": { "title": "Timelines are indicative", "body": "The ~60-day and ~8-business-day figures come from practitioners, not a published regulation. We confirm current requirements before you travel." },
+      "items": [
+        { "title": "Strategy &amp; fit", "text": "We confirm the film route is the right call — and are candid when an asset-backed route would serve you better." },
+        { "title": "Qualifying contribution", "text": "The USD 40,000 contribution to an approved production is arranged and documented; available funds are evidenced." },
+        { "title": "File assembly", "text": "We compile the complete application, including any Ministry of Foreign Affairs letter for visa-restricted nationalities." },
+        { "title": "Submission &amp; travel", "text": "The file is submitted; roughly eight business days in Asunción are typically required." },
+        { "title": "Permanent residency", "text": "The main applicant's permanent residency is progressed — generally around 60 days from contribution and submission." },
+        { "title": "Toward citizenship", "text": "You maintain residence, building toward naturalisation eligibility after three years." }
+      ] },
+    { "_template": "faq", "band": "cream", "wrapProse": true, "eyebrow": "Film & audiovisual route", "heading": "Frequently asked." },
+    { "_template": "ctaBand", "eyebrow": "Begin at the lowest threshold", "pull": "The smallest step. <span class=\"gold\">The same destination.</span>",
+      "ctas": [ { "label": "Start your film file", "href": "/contact/", "variant": "gold" }, { "label": "See other routes", "href": "/#routes", "variant": "ghost" } ] }
   ]
 }

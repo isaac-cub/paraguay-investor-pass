@@ -1,0 +1,277 @@
+---
+// Block renderer for the page builder. Each item in `blocks` carries a Tina
+// `_template` discriminator that selects the markup below. Markup mirrors the
+// original hand-built sections 1:1 so the design is unchanged.
+interface Props {
+  blocks?: any[];
+  faqs?: { question: string; answer: string }[];
+  formspreeId?: string;
+}
+const { blocks = [], faqs = [], formspreeId = 'YOUR_FORM_ID' } = Astro.props;
+
+const band = (b: any) => `band-${b.band || 'cream'}`;
+const maxStyle = (max?: string, center = false) =>
+  max ? `max-width:${max}${center ? ';margin-inline:auto' : ''}` : center ? 'margin-inline:auto' : undefined;
+---
+{blocks.map((b: any) => {
+  switch (b._template) {
+
+    case 'hero': return (
+      <section class="hero">
+        <div class="wrap">
+          {b.crumb && (
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span><Fragment set:html={b.crumb} /></nav>
+          )}
+          {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+          <h1 set:html={b.h1}></h1>
+          {b.lead && <p class="lead" set:html={b.lead}></p>}
+          {b.ctas?.length > 0 && (
+            <div class="hero-cta">
+              {b.ctas.map((c: any) => (
+                <a class={`btn btn--${c.variant || 'gold'}`} href={c.href}>{c.label}{(c.variant || 'gold') === 'gold' && <Fragment>{' '}<span class="arr">→</span></Fragment>}</a>
+              ))}
+            </div>
+          )}
+          {b.stats?.length > 0 && (
+            <div class="hero-meta">
+              {b.stats.map((s: any) => (
+                <div class="stat"><b>{s.value}</b><span set:html={s.label}></span></div>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    );
+
+    case 'split': {
+      const textCol = (
+        <div class="reveal">
+          {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+          {b.heading && <h2 style={maxStyle(b.headingMax)} set:html={b.heading}></h2>}
+          {(b.paragraphs || []).map((p: any) => <p set:html={p.text}></p>)}
+          {b.lawcite && (
+            <div class="lawcite" style="margin-top:1.6rem"><p class="law-k">{b.lawcite.label}</p><p set:html={b.lawcite.body}></p></div>
+          )}
+          {b.notice && <div class="notice"><b>{b.notice.title}</b><Fragment set:html={b.notice.body} /></div>}
+          {b.table && (
+            <table class="spec" style="margin-top:1.6rem">{b.table.map((r: any) => <tr><th>{r.label}</th><td set:html={r.value}></td></tr>)}</table>
+          )}
+        </div>
+      );
+      const asideCol = (
+        <div class="reveal">
+          {b.asideNoticeFirst && b.asideNotice && <div class="notice"><b>{b.asideNotice.title}</b><Fragment set:html={b.asideNotice.body} /></div>}
+          {b.asideTable && (
+            <table class="spec" style={b.asideNoticeFirst ? 'margin-top:1.5rem' : undefined}>{b.asideTable.map((r: any) => <tr><th>{r.label}</th><td set:html={r.value}></td></tr>)}</table>
+          )}
+          {!b.asideNoticeFirst && b.asideNotice && <div class="notice" style="margin-top:1.4rem"><b>{b.asideNotice.title}</b><Fragment set:html={b.asideNotice.body} /></div>}
+        </div>
+      );
+      return (
+        <section class={`section ${band(b)}`}>
+          <div class={`wrap ${b.reverse ? 'split--rev' : 'split'}`}>
+            {b.reverse ? <>{asideCol}{textCol}</> : <>{textCol}{asideCol}</>}
+          </div>
+        </section>
+      );
+    }
+
+    case 'factRow': return (
+      <section class={`section ${band(b)}`}>
+        <div class="wrap">
+          {b.eyebrow && <p class="eyebrow eyebrow--center center">{b.eyebrow}</p>}
+          {b.heading && <h2 class="center" style={maxStyle(b.headingMax, true)} set:html={b.heading}></h2>}
+          {b.lead && <p class="center lead" style={maxStyle(b.leadMax, true)} set:html={b.lead}></p>}
+          <div class="factrow">
+            {(b.facts || []).map((f: any) => <div class="fact reveal"><b>{f.value}</b><span set:html={f.label}></span></div>)}
+          </div>
+        </div>
+      </section>
+    );
+
+    case 'cardGrid': return (
+      <section class={`section ${band(b)}`}>
+        <div class={`wrap${b.center ? ' center' : ''}`}>
+          {b.eyebrow && <p class={`eyebrow${b.center ? ' eyebrow--center' : ''}`}>{b.eyebrow}</p>}
+          {b.heading && <h2 style={maxStyle(b.headingMax, b.center)} set:html={b.heading}></h2>}
+          {b.lead && <p class={`lead${b.center ? ' center' : ''}`} style={maxStyle(b.leadMax, b.center)} set:html={b.lead}></p>}
+          <div class="grid grid-3" style={`margin-top:2.5rem${b.center ? ';text-align:left' : ''}`}>
+            {(b.cards || []).map((c: any) => (
+              <div class="card reveal">{c.num && <span class="num">{c.num}</span>}<h3 set:html={c.title}></h3><p set:html={c.text}></p></div>
+            ))}
+          </div>
+          {b.pull && <p class="pull" style="margin:3rem auto 0" set:html={b.pull}></p>}
+        </div>
+      </section>
+    );
+
+    case 'ladder': return (
+      <section class={`section ${band(b)}`} id={b.id || undefined}>
+        <div class="wrap">
+          {b.eyebrow && <p class="eyebrow eyebrow--center center">{b.eyebrow}</p>}
+          {b.heading && <h2 class="center" style={maxStyle(b.headingMax, true)} set:html={b.heading}></h2>}
+          {b.lead && <p class="center lead" style={maxStyle(b.leadMax, true)} set:html={b.lead}></p>}
+          <nav class="ladder" aria-label="Investment routes by capital">
+            {(b.rungs || []).map((r: any) => (
+              <a href={r.href}><span class="rung-fig">{r.fig}</span><span class="rung-body"><b>{r.title}</b><span set:html={r.text}></span></span><span class="rung-go">Explore →</span></a>
+            ))}
+          </nav>
+          {b.note && <p class="form-note center" style="margin-top:1.4rem;max-width:60ch;margin-inline:auto" set:html={b.note}></p>}
+          {b.cta && <div class="center" style="margin-top:2.5rem"><a class="btn btn--gold" href={b.cta.href}>{b.cta.label}{' '}<span class="arr">→</span></a></div>}
+        </div>
+      </section>
+    );
+
+    case 'projects': return (
+      <section class={`section ${band(b)}`}>
+        <div class="wrap">
+          {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+          {b.heading && <h2 style={maxStyle(b.headingMax)} set:html={b.heading}></h2>}
+          {b.lead && <p class="lead" style={maxStyle(b.leadMax)} set:html={b.lead}></p>}
+          <div class="projects">
+            {(b.items || []).map((p: any) => (
+              <article class={`pcard reveal${p.variant === 'navy' ? ' pcard--navy' : ''}`}>
+                {p.image && <img class="pcard-img" src={p.image} alt={p.name} loading="lazy" />}
+                <div class="pcard-top"><span class="pcard-dev">{p.developer}</span><span class="pcard-tag">{p.location}</span></div>
+                <h3 set:html={p.name}></h3>
+                <p set:html={p.description}></p>
+                <div class="pcard-foot">
+                  {p.ctaLabel
+                    ? <a class="btn btn--gold" href={p.ctaHref || '/contact/'} style="padding:.55rem 1.1rem">{p.ctaLabel}{' '}<span class="arr">→</span></a>
+                    : <Fragment><b>{p.footMain}</b><span>{p.footSub}</span></Fragment>}
+                </div>
+              </article>
+            ))}
+          </div>
+          {b.disclaimer && <p class="form-note" style="margin-top:1.4rem" set:html={b.disclaimer}></p>}
+        </div>
+      </section>
+    );
+
+    case 'steps': {
+      const stepsCol = (
+        <div class="reveal">
+          <div class="steps">
+            {(b.items || []).map((s: any) => <div class="step"><div><h4 set:html={s.title}></h4><p set:html={s.text}></p></div></div>)}
+          </div>
+        </div>
+      );
+      const textCol = (
+        <div class="reveal">
+          {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+          {b.heading && <h2 style={maxStyle(b.headingMax)} set:html={b.heading}></h2>}
+          {(b.paragraphs || []).map((p: any) => <p set:html={p.text}></p>)}
+          {b.notice && <div class="notice"><b>{b.notice.title}</b><Fragment set:html={b.notice.body} /></div>}
+        </div>
+      );
+      const reverse = b.reverse ?? true;
+      return (
+        <section class={`section ${band(b)}`}>
+          <div class={`wrap ${reverse ? 'split--rev' : 'split'}`}>
+            {reverse ? <>{stepsCol}{textCol}</> : <>{textCol}{stepsCol}</>}
+          </div>
+        </section>
+      );
+    }
+
+    case 'faq': {
+      const items = faqs.map((f, i) => (
+        <details open={i === 0}>
+          <summary>{f.question}{' '}<span class="ic">+</span></summary>
+          <div class="faq-body"><p>{f.answer}</p></div>
+        </details>
+      ));
+      return (
+        <section class={`section ${band(b)}`} id={b.id || undefined}>
+          {b.wrapProse ? (
+            <div class="wrap prose">
+              {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+              {b.heading && <h2 set:html={b.heading}></h2>}
+              <div class="faq">{items}</div>
+            </div>
+          ) : (
+            <div class="wrap">
+              <div class="prose">
+                {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+                {b.heading && <h2 set:html={b.heading}></h2>}
+              </div>
+              <div class="faq prose">{items}</div>
+            </div>
+          )}
+        </section>
+      );
+    }
+
+    case 'ctaBand': return (
+      <section class="section band-navy cta-band">
+        <div class="wrap">
+          {b.eyebrow && <p class="eyebrow eyebrow--center">{b.eyebrow}</p>}
+          {b.pull && <p class="pull" set:html={b.pull}></p>}
+          {b.lead && <p class="lead" style="max-width:48ch;margin:1.2rem auto 0" set:html={b.lead}></p>}
+          {b.ctas?.length > 0 && (
+            <div class="hero-cta">
+              {b.ctas.map((c: any) => (
+                <a class={`btn btn--${c.variant || 'gold'}`} href={c.href}>{c.label}{(c.variant || 'gold') === 'gold' && <Fragment>{' '}<span class="arr">→</span></Fragment>}</a>
+              ))}
+            </div>
+          )}
+        </div>
+      </section>
+    );
+
+    case 'form': return (
+      <section class={`section ${band(b)}`}>
+        <div class="wrap split">
+          <div class="reveal">
+            {b.eyebrow && <p class="eyebrow">{b.eyebrow}</p>}
+            {b.heading && <h2 set:html={b.heading}></h2>}
+            {(b.paragraphs || []).map((p: any) => <p set:html={p.text}></p>)}
+            {b.notice && <div class="notice" style="margin-top:1.4rem"><b>{b.notice.title}</b><Fragment set:html={b.notice.body} /></div>}
+            {b.table && (
+              <table class="spec" style="margin-top:1.6rem">{b.table.map((r: any) => <tr><th>{r.label}</th><td set:html={r.value}></td></tr>)}</table>
+            )}
+          </div>
+          <div class="reveal">
+            <form class="form-card" action={`https://formspree.io/f/${formspreeId}`} method="POST">
+              <div class="form-grid">
+                <div class="field"><label for="name">Full name</label><input type="text" id="name" name="name" autocomplete="name" required /></div>
+                <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" required /></div>
+                <div class="field"><label for="nationality">Nationality / citizenship</label><input type="text" id="nationality" name="nationality" autocomplete="country-name" /></div>
+                <div class="field">
+                  <label for="route">Route of interest</label>
+                  <select id="route" name="route">
+                    <option value="Undecided">Undecided — advise me</option>
+                    <option value="Real Estate (USD 200K)">Real Estate · USD 200K</option>
+                    <option value="Financial Instruments (USD 200K)">Financial Instruments · USD 200K</option>
+                    <option value="Tourism Projects (USD 150K)">Tourism Projects · USD 150K</option>
+                    <option value="SUACE Company (USD 70K)">SUACE Company · USD 70K</option>
+                    <option value="Film Production (USD 40K)">Film Production · USD 40K</option>
+                  </select>
+                </div>
+                <div class="field row2">
+                  <label for="networth">Approximate net worth band (optional, confidential)</label>
+                  <select id="networth" name="net_worth_band">
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Under USD 500K">Under USD 500K</option>
+                    <option value="USD 500K – 1M">USD 500K – 1M</option>
+                    <option value="USD 1M – 5M">USD 1M – 5M</option>
+                    <option value="USD 5M+">USD 5M+</option>
+                  </select>
+                </div>
+                <div class="field row2">
+                  <label for="message">Tell us about your situation</label>
+                  <textarea id="message" name="message" placeholder="Where are you based, what are you trying to solve, and what is your timeline?"></textarea>
+                </div>
+              </div>
+              <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+              <div class="hero-cta" style="margin-top:1.6rem"><button type="submit" class="btn btn--gold">Send enquiry <span class="arr">→</span></button></div>
+              <p class="form-note">By sending this enquiry you agree to be contacted about your request. Your information is kept confidential and is never sold or shared. This form does not create a client or advisory relationship.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    );
+
+    default: return null;
+  }
+})}
