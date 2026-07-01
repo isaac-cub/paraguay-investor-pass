@@ -1,6 +1,9 @@
 ---
 import Base from '../layouts/Base.astro';
-import Blocks from '../components/Blocks.astro';
+import TinaIsland from '@tinacms/astro/TinaIsland.astro';
+import PageBody from '../components/islands/PageBody.astro';
+import { islands } from '../lib/islands';
+import { getPageData } from '../lib/data';
 import { faqPage } from '../lib/schema';
 import { getPage, pick } from '../lib/content';
 
@@ -10,7 +13,10 @@ const description = pick(page?.seoDescription, 'Get permanent residency in Parag
 const ogImage = page?.ogImage ?? undefined;
 const faqs = ((page?.faqs as any[] | undefined) ?? []).map((f: any) => ({ question: f.question, answer: f.answer }));
 const blocks = (page?.blocks as any[] | undefined) ?? [];
+const pageData = await getPageData('home');
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={faqPage(faqs)}>
-  <Blocks blocks={blocks} faqs={faqs} />
+  <TinaIsland name="page" wrapper={islands.page.wrapper} params={{ slug: 'home' }} primary>
+    <PageBody page={pageData.data.pages} />
+  </TinaIsland>
 </Base>
