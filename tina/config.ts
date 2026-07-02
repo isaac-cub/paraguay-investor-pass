@@ -214,7 +214,13 @@ export default defineConfig({
         label: 'Pages',
         path: 'src/content/pages',
         format: 'json',
-        ui: { allowedActions: { create: false, delete: false } },
+        ui: {
+          allowedActions: { create: false, delete: false },
+          router: ({ document }: any) => {
+            const slug = document._sys.filename;
+            return slug === 'home' ? '/' : `/${slug}/`;
+          },
+        },
         fields: [
           { type: 'string', name: 'seoTitle', label: 'SEO title', isTitle: true, required: true },
           { type: 'string', name: 'slug', label: 'Slug (page id)' },
