@@ -3,82 +3,332 @@
   "seoDescription": "Get permanent residency in Paraguay through investment from USD 70,000. Routes to residency and a path to citizenship by naturalisation. Guidance from Lincoln.",
   "ogImage": null,
   "faqs": [
-    { "question": "What is the Paraguay Investor Pass?", "answer": "It is Paraguay's investment-linked residency framework, established by Resolution N° 0283/2026. A qualifying investment through an approved route gives you access to the Foreign Investor Certificate (CIE) and the permanent residency process — and, after the constitutional residence period, the right to apply for citizenship by naturalisation." },
-    { "question": "How much do I need to invest?", "answer": "Resolution 0283/2026 sets four routes: a company capitalised through SUACE from USD 70,000, approved tourism projects from USD 150,000, real estate from USD 200,000, and financial instruments from USD 200,000. A separate, pre-existing pathway via Paraguay's audiovisual institute allows residency through a film-production contribution from approximately USD 40,000. We help you choose the route that matches your strategy, not just your budget." },
-    { "question": "Is the Foreign Investor Certificate the same as residency?", "answer": "No. The MIC must issue the Foreign Investor Certificate (CIE) within five business days of a complete application, but it is a distinct investor credential. Permanent residency is a separate status granted by the migration authority, with its own process and timeline. We keep the two clearly apart — and so does the law." },
-    { "question": "When can I apply for Paraguayan citizenship?", "answer": "Paraguay's Constitution (Art. 148) permits an application for naturalisation after three years of permanent residence, subject to language, civics, and physical-presence requirements, with further administrative processing time. Citizenship is granted through naturalisation — it is not conferred by the investment itself." },
-    { "question": "Will Paraguay tax my worldwide income?", "answer": "Paraguay applies a territorial tax system, so income arising outside Paraguay is generally outside the scope of Paraguayan income tax. Legal residency and tax residency are separate concepts: holding an Investor Pass does not by itself determine where you are tax resident. We assess that individually, within your wider structure." },
-    { "question": "Can I include my family?", "answer": "Family members can generally be included in an Investor Pass application. The specifics depend on your circumstances and the route chosen, and are confirmed before anything is committed." }
+    {
+      "question": "What is the Paraguay Investor Pass?",
+      "answer": "It is Paraguay's investment-linked residency framework, established by Resolution N° 0283/2026. A qualifying investment through an approved route gives you access to the Foreign Investor Certificate (CIE) and the permanent residency process — and, after the constitutional residence period, the right to apply for citizenship by naturalisation."
+    },
+    {
+      "question": "How much do I need to invest?",
+      "answer": "Resolution 0283/2026 sets four routes: a company capitalised through SUACE from USD 70,000, approved tourism projects from USD 150,000, real estate from USD 200,000, and financial instruments from USD 200,000. A separate, pre-existing pathway via Paraguay's audiovisual institute allows residency through a film-production contribution from approximately USD 40,000. We help you choose the route that matches your strategy, not just your budget."
+    },
+    {
+      "question": "Is the Foreign Investor Certificate the same as residency?",
+      "answer": "No. The MIC must issue the Foreign Investor Certificate (CIE) within five business days of a complete application, but it is a distinct investor credential. Permanent residency is a separate status granted by the migration authority, with its own process and timeline. We keep the two clearly apart — and so does the law."
+    },
+    {
+      "question": "When can I apply for Paraguayan citizenship?",
+      "answer": "Paraguay's Constitution (Art. 148) permits an application for naturalisation after three years of permanent residence, subject to language, civics, and physical-presence requirements, with further administrative processing time. Citizenship is granted through naturalisation — it is not conferred by the investment itself."
+    },
+    {
+      "question": "Will Paraguay tax my worldwide income?",
+      "answer": "Paraguay applies a territorial tax system, so income arising outside Paraguay is generally outside the scope of Paraguayan income tax. Legal residency and tax residency are separate concepts: holding an Investor Pass does not by itself determine where you are tax resident. We assess that individually, within your wider structure."
+    },
+    {
+      "question": "Can I include my family?",
+      "answer": "Family members can generally be included in an Investor Pass application. The specifics depend on your circumstances and the route chosen, and are confirmed before anything is committed."
+    }
   ],
   "blocks": [
-    { "_template": "hero", "eyebrow": "República del Paraguay · Residency by Investment", "h1": "Paraguay residency by investment.", "lead": "A single qualifying investment grants <strong>direct permanent residency</strong> in one of South America's fastest-growing economies. Established under <strong>Resolution N° 0283/2026</strong>, the Investor Pass bypasses the temporary-residency stage entirely — with a clear pathway, in time, to citizenship by naturalisation.",
-      "ctas": [ { "label": "Explore the options", "href": "#routes", "variant": "gold" }, { "label": "Request information", "href": "/contact/", "variant": "ghost" } ],
-      "stats": [ { "value": "Direct", "label": "Permanent residency" }, { "value": "5 days", "label": "Investor certificate (CIE)" }, { "value": "Territorial", "label": "Tax system" }, { "value": "Inv. grade", "label": "Moody's &amp; S&amp;P rated" } ] },
-    { "_template": "split", "band": "cream", "reverse": false, "eyebrow": "What it is", "heading": "Direct permanent residency, by investment.",
-      "paragraphs": [
-        { "text": "The Investor Pass is Paraguay's investment-linked route to <strong>direct permanent residency</strong>. A qualifying investment is certified by the <strong>Foreign Investor Certificate</strong> — the <em>Constancia de Inversionista Extranjero</em> (CIE) — after which the permanent residency application proceeds with the national migration authority, <strong>without the usual two-year temporary stage</strong>." },
-        { "text": "Citizenship is a separate, later step: after the constitutional period of residence, a permanent resident may apply for <strong>citizenship by naturalisation</strong>. It is part of the journey — but residency is the destination most investors are buying." }
+    {
+      "_template": "hero",
+      "eyebrow": "República del Paraguay · Residency by Investment",
+      "h1": "Paraguay residency by investment.",
+      "lead": "A single qualifying investment grants <strong>direct permanent residency</strong> in one of South America's fastest-growing economies. Established under <strong>Resolution N° 0283/2026</strong>, the Investor Pass bypasses the temporary-residency stage entirely — with a clear pathway, in time, to citizenship by naturalisation.",
+      "ctas": [
+        {
+          "label": "Explore the options",
+          "href": "#routes",
+          "variant": "gold"
+        },
+        {
+          "label": "Request information",
+          "href": "/contact/",
+          "variant": "ghost"
+        }
       ],
-      "lawcite": { "label": "The law · quoted", "body": "The Investor Pass is established by <strong>Resolution N° 0283/2026</strong> of Paraguay's Ministry of Industry and Commerce (MIC), signed on <strong>21 April 2026</strong> in coordination with the Dirección Nacional de Migraciones. It rebuilds the framework for the <em>Constancia de Inversionista Extranjero</em> (CIE), abrogating the earlier Resolution N° 1052/2025, and grants foreign investors direct access to permanent residency." },
-      "asideNotice": { "title": "Read this first", "body": "Three credentials are often confused. The <strong>Foreign Investor Certificate (CIE)</strong> is a fast investor credential, issued by the MIC within five business days of a complete application. <strong>Permanent residency</strong> is a separate status granted by the migration authority, typically over several months. <strong>Citizenship</strong> comes later still, by naturalisation. They are not the same thing." },
+      "stats": [
+        {
+          "value": "Direct",
+          "label": "Permanent residency"
+        },
+        {
+          "value": "5 days",
+          "label": "Investor certificate (CIE)"
+        },
+        {
+          "value": "Territorial",
+          "label": "Tax system"
+        },
+        {
+          "value": "Inv. grade",
+          "label": "Moody's &amp; S&amp;P rated"
+        }
+      ],
+      "bgImage": "/uploads/home-hero.webp",
+      "bgAlt": "Asunción skyline at dusk — Paraguay residency by investment"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "What it is",
+      "heading": "Direct permanent residency, by investment.",
+      "paragraphs": [
+        {
+          "text": "The Investor Pass is Paraguay's investment-linked route to <strong>direct permanent residency</strong>. A qualifying investment is certified by the <strong>Foreign Investor Certificate</strong> — the <em>Constancia de Inversionista Extranjero</em> (CIE) — after which the permanent residency application proceeds with the national migration authority, <strong>without the usual two-year temporary stage</strong>."
+        },
+        {
+          "text": "Citizenship is a separate, later step: after the constitutional period of residence, a permanent resident may apply for <strong>citizenship by naturalisation</strong>. It is part of the journey — but residency is the destination most investors are buying."
+        }
+      ],
+      "lawcite": {
+        "label": "The law · quoted",
+        "body": "The Investor Pass is established by <strong>Resolution N° 0283/2026</strong> of Paraguay's Ministry of Industry and Commerce (MIC), signed on <strong>21 April 2026</strong> in coordination with the Dirección Nacional de Migraciones. It rebuilds the framework for the <em>Constancia de Inversionista Extranjero</em> (CIE), abrogating the earlier Resolution N° 1052/2025, and grants foreign investors direct access to permanent residency."
+      },
+      "asideNotice": {
+        "title": "Read this first",
+        "body": "Three credentials are often confused. The <strong>Foreign Investor Certificate (CIE)</strong> is a fast investor credential, issued by the MIC within five business days of a complete application. <strong>Permanent residency</strong> is a separate status granted by the migration authority, typically over several months. <strong>Citizenship</strong> comes later still, by naturalisation. They are not the same thing."
+      },
       "asideNoticeFirst": true,
       "asideTable": [
-        { "label": "Programme", "value": "Investor Pass — direct permanent residency" },
-        { "label": "Legal basis", "value": "Resolution N° 0283/2026 (MIC)" },
-        { "label": "Investor certificate", "value": "CIE — issued by the MIC within ~5 business days" },
-        { "label": "Residency", "value": "Permanent, granted by Migraciones (several months)" },
-        { "label": "Maintenance", "value": "At least one visit every three years" },
-        { "label": "Tax model", "value": "Territorial — foreign-source income generally untaxed" }
-      ] },
-    { "_template": "factRow", "band": "navy", "eyebrow": "Why Paraguay", "heading": "Among the fastest-growing economies in South America.", "headingMax": "20ch", "lead": "This is not a frontier bet. Paraguay reached <strong>investment grade</strong> with Moody's in 2024 (Baa3) and S&amp;P in 2025 (BBB-) — and every comparable market that crossed that line saw a decade of sustained property appreciation. The Investor Pass is simply the door in.", "leadMax": "58ch",
+        {
+          "label": "Programme",
+          "value": "Investor Pass — direct permanent residency"
+        },
+        {
+          "label": "Legal basis",
+          "value": "Resolution N° 0283/2026 (MIC)"
+        },
+        {
+          "label": "Investor certificate",
+          "value": "CIE — issued by the MIC within ~5 business days"
+        },
+        {
+          "label": "Residency",
+          "value": "Permanent, granted by Migraciones (several months)"
+        },
+        {
+          "label": "Maintenance",
+          "value": "At least one visit every three years"
+        },
+        {
+          "label": "Tax model",
+          "value": "Territorial — foreign-source income generally untaxed"
+        }
+      ],
+      "image": "/uploads/home-residency.webp",
+      "imageAlt": "Neoclassical government building in Asunción, Paraguay"
+    },
+    {
+      "_template": "factRow",
+      "band": "navy",
+      "eyebrow": "Why Paraguay",
+      "heading": "Among the fastest-growing economies in South America.",
+      "headingMax": "20ch",
+      "lead": "This is not a frontier bet. Paraguay reached <strong>investment grade</strong> with Moody's in 2024 (Baa3) and S&amp;P in 2025 (BBB-) — and every comparable market that crossed that line saw a decade of sustained property appreciation. The Investor Pass is simply the door in.",
+      "leadMax": "58ch",
       "facts": [
-        { "value": "4–5%", "label": "Average real GDP growth over the past decade — 2025 exceeded 6%" },
-        { "value": "Inv. grade", "label": "Upgraded by Moody's (Baa3, 2024) and S&amp;P (BBB-, 2025)" },
-        { "value": "10-10-10", "label": "Flat 10% corporate, personal and VAT rates" },
-        { "value": "Territorial", "label": "Foreign-source income generally untaxed locally" }
-      ] },
-    { "_template": "split", "band": "cream", "reverse": false, "eyebrow": "The market", "heading": "A property market in a once-in-a-generation phase.",
+        {
+          "value": "4–5%",
+          "label": "Average real GDP growth over the past decade — 2025 exceeded 6%"
+        },
+        {
+          "value": "Inv. grade",
+          "label": "Upgraded by Moody's (Baa3, 2024) and S&amp;P (BBB-, 2025)"
+        },
+        {
+          "value": "10-10-10",
+          "label": "Flat 10% corporate, personal and VAT rates"
+        },
+        {
+          "value": "Territorial",
+          "label": "Foreign-source income generally untaxed locally"
+        }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The market",
+      "heading": "A property market in a once-in-a-generation phase.",
       "paragraphs": [
-        { "text": "Asunción's skyline is being rewritten. Paraguay's tallest building, <strong>Petra Tower</strong> (172m), topped out in 2025; <strong>Petra Imperiale</strong> is planned to reach 250m; and developers like <strong>CIVIS</strong> are delivering 50-storey towers in Las Lomas. Behind the towers is real demand in a fast-urbanising capital." },
-        { "text": "For investors, the appeal is clean. Gross rental yields in Asunción typically run <strong>6–8% for residential</strong> and up to around <strong>12% for commercial or mixed-use</strong>, in USD — in a territorial, dollar-friendly system where foreigners buy freely, on a passport alone." }
+        {
+          "text": "Asunción's skyline is being rewritten. Paraguay's tallest building, <strong>Petra Tower</strong> (172m), topped out in 2025; <strong>Petra Imperiale</strong> is planned to reach 250m; and developers like <strong>CIVIS</strong> are delivering 50-storey towers in Las Lomas. Behind the towers is real demand in a fast-urbanising capital."
+        },
+        {
+          "text": "For investors, the appeal is clean. Gross rental yields in Asunción typically run <strong>6–8% for residential</strong> and up to around <strong>12% for commercial or mixed-use</strong>, in USD — in a territorial, dollar-friendly system where foreigners buy freely, on a passport alone."
+        }
       ],
       "asideTable": [
-        { "label": "Residential yields", "value": "~6–8% gross per year, in USD" },
-        { "label": "Commercial / mixed-use", "value": "Up to ~12% gross, in USD" },
-        { "label": "Income tax", "value": "10% flat — among the lowest in the region" },
-        { "label": "Worldwide income", "value": "Not taxed (territorial system)" },
-        { "label": "Foreign ownership", "value": "Unrestricted — passport sufficient" },
-        { "label": "Currency", "value": "Stable guaraní; dollar-denominated deals common" }
+        {
+          "label": "Residential yields",
+          "value": "~6–8% gross per year, in USD"
+        },
+        {
+          "label": "Commercial / mixed-use",
+          "value": "Up to ~12% gross, in USD"
+        },
+        {
+          "label": "Income tax",
+          "value": "10% flat — among the lowest in the region"
+        },
+        {
+          "label": "Worldwide income",
+          "value": "Not taxed (territorial system)"
+        },
+        {
+          "label": "Foreign ownership",
+          "value": "Unrestricted — passport sufficient"
+        },
+        {
+          "label": "Currency",
+          "value": "Stable guaraní; dollar-denominated deals common"
+        }
       ],
-      "asideNotice": { "title": "The real estate route", "body": "Acquiring qualifying income-generating property from USD 200,000 satisfies the Investor Pass real estate track — see the developers and projects on the Real Estate page." }, "asideNoticeFirst": false },
-    { "_template": "ladder", "band": "navy", "id": "routes", "eyebrow": "The investment options", "heading": "Choose the route that fits your strategy — not just your budget.", "headingMax": "18ch", "lead": "Each route leads into the same residency framework. They differ in capital, control, and what you actually own at the end.", "leadMax": "52ch",
+      "asideNotice": {
+        "title": "The real estate route",
+        "body": "Acquiring qualifying income-generating property from USD 200,000 satisfies the Investor Pass real estate track — see the developers and projects on the Real Estate page."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/home-realestate.webp",
+      "imageAlt": "Modern residential apartment tower in Asunción, Paraguay"
+    },
+    {
+      "_template": "ladder",
+      "band": "navy",
+      "id": "routes",
+      "eyebrow": "The investment options",
+      "heading": "Choose the route that fits your strategy — not just your budget.",
+      "headingMax": "18ch",
+      "lead": "Each route leads into the same residency framework. They differ in capital, control, and what you actually own at the end.",
+      "leadMax": "52ch",
       "rungs": [
-        { "fig": "$200K", "title": "Eligible Real Estate", "text": "Qualifying income-generating property — a tangible, appreciating asset you hold and control.", "href": "/real-estate/" },
-        { "fig": "$200K", "title": "Financial Instruments", "text": "A qualifying financial investment held for the required period — the passive, hands-off route.", "href": "/financial-instruments/" },
-        { "fig": "$150K", "title": "Approved Touristic Projects", "text": "Investment into approved tourism developments — yield potential plus residency.", "href": "/tourism/" },
-        { "fig": "$70K", "title": "SUACE Business Investment", "text": "Establish and capitalise a Paraguayan company through the unified business system.", "href": "/suace/" },
-        { "fig": "$40K", "title": "Film Cultural Investment", "text": "A qualifying contribution to Paraguayan audiovisual production — a separate, lower-cost pathway.", "href": "/film/" }
+        {
+          "fig": "$200K",
+          "title": "Eligible Real Estate",
+          "text": "Qualifying income-generating property — a tangible, appreciating asset you hold and control.",
+          "href": "/real-estate/"
+        },
+        {
+          "fig": "$200K",
+          "title": "Financial Instruments",
+          "text": "A qualifying financial investment held for the required period — the passive, hands-off route.",
+          "href": "/financial-instruments/"
+        },
+        {
+          "fig": "$150K",
+          "title": "Approved Touristic Projects",
+          "text": "Investment into approved tourism developments — yield potential plus residency.",
+          "href": "/tourism/"
+        },
+        {
+          "fig": "$70K",
+          "title": "SUACE Business Investment",
+          "text": "Establish and capitalise a Paraguayan company through the unified business system.",
+          "href": "/suace/"
+        },
+        {
+          "fig": "$40K",
+          "title": "Film Cultural Investment",
+          "text": "A qualifying contribution to Paraguayan audiovisual production — a separate, lower-cost pathway.",
+          "href": "/film/"
+        }
       ],
       "note": "The first four routes are the qualifying options under Resolution 0283/2026. The film contribution is a separate, pre-existing pathway via Paraguay's audiovisual institute (INAP), included here for completeness.",
-      "cta": { "label": "Request the full portfolio", "href": "/contact/" } },
-    { "_template": "cardGrid", "band": "paper", "eyebrow": "The fundamentals", "heading": "What makes the residency genuinely worth holding.", "headingMax": "20ch",
+      "cta": {
+        "label": "Request the full portfolio",
+        "href": "/contact/"
+      }
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "The fundamentals",
+      "heading": "What makes the residency genuinely worth holding.",
+      "headingMax": "20ch",
       "cards": [
-        { "num": "01", "title": "Territorial taxation", "text": "Income generated outside Paraguay is generally outside the scope of local income tax, and the headline rate is a flat 10%. Legal residency and tax residency remain separate questions — but the underlying model is among the most rational in the region." },
-        { "num": "02", "title": "Low cost of establishment", "text": "The cost of living and doing business is a fraction of comparable jurisdictions, and qualifying property can be filed once at least 30% of the declared value is paid. Capital goes further here than almost anywhere in the Americas." },
-        { "num": "03", "title": "Direct, durable residency", "text": "The Investor Pass grants permanent residency directly — no two-year temporary stage — and it is maintained with at least one visit every three years. Residency you hold, not residency you rent." },
-        { "num": "04", "title": "Southern Cone position", "text": "Paraguay sits at the centre of Mercosur, bordered by Brazil and Argentina. It is the strategic anchor of a wider regional footprint — your foothold in a continent of options." },
-        { "num": "05", "title": "Stable and open", "text": "A stable currency, investment-grade ratings, an open posture toward foreign investment, and recognition of dual citizenship in defined circumstances. Paraguay does not punish you for being international." },
-        { "num": "06", "title": "A citizenship pathway", "text": "And, in time, optionality: after the qualifying period of permanent residence, eligibility to apply for citizenship by naturalisation. A later step — but a real one." }
-      ] },
-    { "_template": "cardGrid", "band": "paper", "center": true, "eyebrow": "Who the programme is for", "heading": "For those who want optionality before they need it.", "headingMax": "22ch",
+        {
+          "num": "01",
+          "title": "Territorial taxation",
+          "text": "Income generated outside Paraguay is generally outside the scope of local income tax, and the headline rate is a flat 10%. Legal residency and tax residency remain separate questions — but the underlying model is among the most rational in the region."
+        },
+        {
+          "num": "02",
+          "title": "Low cost of establishment",
+          "text": "The cost of living and doing business is a fraction of comparable jurisdictions, and qualifying property can be filed once at least 30% of the declared value is paid. Capital goes further here than almost anywhere in the Americas."
+        },
+        {
+          "num": "03",
+          "title": "Direct, durable residency",
+          "text": "The Investor Pass grants permanent residency directly — no two-year temporary stage — and it is maintained with at least one visit every three years. Residency you hold, not residency you rent."
+        },
+        {
+          "num": "04",
+          "title": "Southern Cone position",
+          "text": "Paraguay sits at the centre of Mercosur, bordered by Brazil and Argentina. It is the strategic anchor of a wider regional footprint — your foothold in a continent of options."
+        },
+        {
+          "num": "05",
+          "title": "Stable and open",
+          "text": "A stable currency, investment-grade ratings, an open posture toward foreign investment, and recognition of dual citizenship in defined circumstances. Paraguay does not punish you for being international."
+        },
+        {
+          "num": "06",
+          "title": "A citizenship pathway",
+          "text": "And, in time, optionality: after the qualifying period of permanent residence, eligibility to apply for citizenship by naturalisation. A later step — but a real one."
+        }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "center": true,
+      "eyebrow": "Who the programme is for",
+      "heading": "For those who want optionality before they need it.",
+      "headingMax": "22ch",
       "cards": [
-        { "title": "The diversifier", "text": "Americans, Europeans, and Australians who want a credible second base outside their home jurisdiction — before circumstances force the question." },
-        { "title": "The entrepreneur", "text": "Founders and operators who want a low-friction company, a territorial tax footing, and a foothold in Mercosur to build from." },
-        { "title": "The citizenship-minded", "text": "Families building deliberately toward a second passport, who understand that the strongest position is the one secured early." }
+        {
+          "title": "The diversifier",
+          "text": "Americans, Europeans, and Australians who want a credible second base outside their home jurisdiction — before circumstances force the question."
+        },
+        {
+          "title": "The entrepreneur",
+          "text": "Founders and operators who want a low-friction company, a territorial tax footing, and a foothold in Mercosur to build from."
+        },
+        {
+          "title": "The citizenship-minded",
+          "text": "Families building deliberately toward a second passport, who understand that the strongest position is the one secured early."
+        }
       ],
-      "pull": "Optionality, <span class=\"gold\">secured deliberately.</span>" },
-    { "_template": "faq", "band": "cream", "id": "faq", "eyebrow": "Frequently asked", "heading": "Common questions, answered." },
-    { "_template": "ctaBand", "eyebrow": "Begin your application", "pull": "Residency by investment <span class=\"gold\">in the Republic of Paraguay.</span>", "lead": "Request guidance on the Investor Pass and the route best suited to your circumstances.",
-      "ctas": [ { "label": "Book a consultation", "href": "/contact/", "variant": "gold" }, { "label": "Review the routes first", "href": "#routes", "variant": "ghost" } ] }
+      "pull": "Optionality, <span class=\"gold\">secured deliberately.</span>"
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "id": "faq",
+      "eyebrow": "Frequently asked",
+      "heading": "Common questions, answered."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Begin your application",
+      "pull": "Residency by investment <span class=\"gold\">in the Republic of Paraguay.</span>",
+      "lead": "Request guidance on the Investor Pass and the route best suited to your circumstances.",
+      "ctas": [
+        {
+          "label": "Book a consultation",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Review the routes first",
+          "href": "#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
   ]
 }

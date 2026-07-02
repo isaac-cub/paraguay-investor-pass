@@ -36,6 +36,8 @@ const blockTemplates = [
     name: 'hero', label: 'Hero',
     fields: [
       { type: 'string', name: 'crumb', label: 'Breadcrumb label (optional)' },
+      { type: 'image', name: 'bgImage', label: 'Background image (optional)' },
+      { type: 'string', name: 'bgAlt', label: 'Background image alt text (SEO)' },
       { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
       { type: 'string', name: 'h1', label: 'H1 heading', required: true },
       { type: 'string', name: 'lead', label: 'Lead paragraph', ui: ta },
@@ -51,6 +53,8 @@ const blockTemplates = [
     fields: [
       bandField(),
       { type: 'boolean', name: 'reverse', label: 'Reverse (aside on left)' },
+      { type: 'image', name: 'image', label: 'Aside image (optional, shows above the table)' },
+      { type: 'string', name: 'imageAlt', label: 'Aside image alt text (SEO)' },
       { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
       { type: 'string', name: 'heading', label: 'Heading' },
       { type: 'string', name: 'headingMax', label: 'Heading max-width (e.g. 18ch)' },
@@ -176,6 +180,8 @@ const blockTemplates = [
     fields: [
       { type: 'string', name: 'eyebrow', label: 'Eyebrow' },
       { type: 'string', name: 'pull', label: 'Pull quote (HTML, use <span class="gold">…</span>)' },
+      { type: 'image', name: 'bgImage', label: 'Background image (optional)' },
+      { type: 'string', name: 'bgAlt', label: 'Background image alt text (SEO)' },
       { type: 'string', name: 'lead', label: 'Lead (optional)', ui: ta },
       { type: 'object', name: 'ctas', label: 'Buttons', list: true, ui: { itemProps: (i: any) => ({ label: i?.label }) }, fields: ctaFields() },
     ],
@@ -259,6 +265,37 @@ export default defineConfig({
         fields: [
           { type: 'string', name: 'brandName', label: 'Brand name', isTitle: true, required: true },
           { type: 'string', name: 'brandSmall', label: 'Brand sub-label' },
+          {
+            type: 'object', name: 'nav', label: 'Header navigation', list: true,
+            ui: { itemProps: (i: any) => ({ label: i?.label }) },
+            fields: [
+              { type: 'string', name: 'label', label: 'Label' },
+              { type: 'string', name: 'href', label: 'Link' },
+            ],
+          },
+          {
+            type: 'object', name: 'navCta', label: 'Header button',
+            fields: [
+              { type: 'string', name: 'label', label: 'Label' },
+              { type: 'string', name: 'href', label: 'Link' },
+            ],
+          },
+          {
+            type: 'object', name: 'footerColumns', label: 'Footer link columns', list: true,
+            ui: { itemProps: (i: any) => ({ label: i?.title }) },
+            fields: [
+              { type: 'string', name: 'title', label: 'Column title' },
+              {
+                type: 'object', name: 'links', label: 'Links', list: true,
+                ui: { itemProps: (i: any) => ({ label: i?.label }) },
+                fields: [
+                  { type: 'string', name: 'label', label: 'Label' },
+                  { type: 'string', name: 'href', label: 'Link' },
+                ],
+              },
+            ],
+          },
+          { type: 'string', name: 'footerBadge', label: 'Footer badge line' },
           { type: 'string', name: 'tagline', label: 'Tagline (footer)', ui: ta },
           { type: 'string', name: 'formspreeId', label: 'Formspree form id' },
           { type: 'string', name: 'footerDisclaimer', label: 'Footer disclaimer', ui: ta },

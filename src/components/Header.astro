@@ -1,9 +1,11 @@
 ---
+import { getSettings, pick } from '../lib/content';
+const s = await getSettings();
 const path = Astro.url.pathname;
 const isCurrent = (href: string) =>
   href === '/' ? path === '/' : path.startsWith(href);
 
-const nav = [
+const nav = pick(s?.nav, [
   { href: '/', label: 'Guide' },
   { href: '/real-estate/', label: 'Real Estate' },
   { href: '/financial-instruments/', label: 'Financial' },
@@ -11,7 +13,8 @@ const nav = [
   { href: '/suace/', label: 'SUACE' },
   { href: '/film/', label: 'Film' },
   { href: '/about/', label: 'About' },
-];
+]);
+const navCta = pick(s?.navCta, { href: '/contact/', label: 'Begin' });
 ---
 <header class="site-header">
   <div class="wrap">
@@ -20,7 +23,7 @@ const nav = [
       {nav.map((item) => (
         <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>
       ))}
-      <a class="btn btn--gold" href="/contact/">Begin <span class="arr">→</span></a>
+      <a class="btn btn--gold" href={navCta.href}>{navCta.label} <span class="arr">→</span></a>
     </nav>
     <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>

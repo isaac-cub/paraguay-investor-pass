@@ -41,7 +41,8 @@ const kindOf = (b: any) => b._template || KIND[b.__typename];
   switch (kindOf(b)) {
 
     case 'hero': return (
-      <section class="hero">
+      <section class={`hero${b.bgImage ? ' hero--photo' : ''}`}>
+        {b.bgImage && <img class="hero-bg" src={b.bgImage} alt={b.bgAlt || ''} data-tina-field={tinaField(b, 'bgImage')} />}
         <div class="wrap">
           {b.crumb && (
             <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span><span data-tina-field={tinaField(b, 'crumb')} set:html={b.crumb}></span></nav>
@@ -84,7 +85,8 @@ const kindOf = (b: any) => b._template || KIND[b.__typename];
       );
       const asideCol = (
         <div class="reveal">
-          {b.asideNoticeFirst && b.asideNotice && <div class="notice" data-tina-field={tinaField(b.asideNotice, 'body')}><b data-tina-field={tinaField(b.asideNotice, 'title')}>{b.asideNotice.title}</b><Fragment set:html={b.asideNotice.body} /></div>}
+          {b.image && <img class="aside-img" src={b.image} alt={b.imageAlt || ''} loading="lazy" data-tina-field={tinaField(b, 'image')} />}
+          {b.asideNoticeFirst && b.asideNotice &&<div class="notice" data-tina-field={tinaField(b.asideNotice, 'body')}><b data-tina-field={tinaField(b.asideNotice, 'title')}>{b.asideNotice.title}</b><Fragment set:html={b.asideNotice.body} /></div>}
           {b.asideTable && (
             <table class="spec" style={b.asideNoticeFirst ? 'margin-top:1.5rem' : undefined}>{b.asideTable.map((r: any) => <tr><th data-tina-field={tinaField(r, 'label')}>{r.label}</th><td set:html={r.value} data-tina-field={tinaField(r, 'value')}></td></tr>)}</table>
           )}
@@ -227,7 +229,8 @@ const kindOf = (b: any) => b._template || KIND[b.__typename];
     }
 
     case 'ctaBand': return (
-      <section class="section band-navy cta-band">
+      <section class={`section band-navy cta-band${b.bgImage ? ' cta-band--photo' : ''}`}>
+        {b.bgImage && <img class="cta-bg" src={b.bgImage} alt={b.bgAlt || ''} loading="lazy" data-tina-field={tinaField(b, 'bgImage')} />}
         <div class="wrap">
           {b.eyebrow && <p class="eyebrow eyebrow--center" data-tina-field={tinaField(b, 'eyebrow')}>{b.eyebrow}</p>}
           {b.pull && <p class="pull" set:html={b.pull} data-tina-field={tinaField(b, 'pull')}></p>}

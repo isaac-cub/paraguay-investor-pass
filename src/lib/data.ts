@@ -10,6 +10,12 @@ import { getPage as fsGetPage, getSettings as fsGetSettings } from './content';
 
 export async function getPageData(slug: string) {
   const relativePath = `${slug}.json`;
+  // Local preview: force the repo JSON (bypass stale Tina Cloud). Production
+  // deploys reindex Cloud from the repo, so this equals the post-deploy render.
+  if (process.env.TINA_LOCAL_FS === '1') {
+    const json = await fsGetPage(slug);
+    return { data: { pages: json }, query: '', variables: { relativePath }, id: '' };
+  }
   try {
     const res = await requestWithMetadata(
       client.queries.pages({ relativePath }),

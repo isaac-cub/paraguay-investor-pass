@@ -199,6 +199,30 @@ strong{ color:var(--navy); font-weight:600; }
 .hero-meta .stat b{ font-family:var(--display); font-size:2.2rem; color:var(--gold); display:block; line-height:1; }
 .hero-meta .stat span{ font-family:var(--mono); font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--on-navy-dim); }
 
+/* ---------- Editable section photography ---------- */
+.hero-bg,.cta-bg{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.hero::before,.hero::after{ z-index:1; }
+/* Default hero gradient is opaque navy; for photo heroes make it a translucent
+   navy scrim so the image reads through while text stays legible + on-brand. */
+.hero--photo::before{
+  background:
+    radial-gradient(120% 100% at 85% -10%, rgba(192,57,43,.30), transparent 55%),
+    linear-gradient(155deg, rgba(9,21,48,.90) 0%, rgba(8,21,48,.72) 50%, rgba(6,16,38,.93) 100%);
+}
+.cta-band{ position:relative; overflow:hidden; }
+.cta-band .wrap{ position:relative; z-index:2; }
+.cta-band--photo::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(160deg, rgba(9,21,48,.87) 0%, rgba(8,21,48,.82) 100%);
+}
+.aside-img{
+  width:100%; display:block; border-radius:14px;
+  aspect-ratio:4/3; object-fit:cover;
+  border:1px solid var(--line);
+  box-shadow:0 18px 44px -18px rgba(12,30,69,.5);
+  margin-bottom:1.5rem;
+}
+
 /* ---------- Capital ladder (signature) ---------- */
 .ladder{ border-top:1px solid var(--line); margin-top:2.5rem; }
 .ladder a{

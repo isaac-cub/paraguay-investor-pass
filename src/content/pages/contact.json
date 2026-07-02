@@ -5,19 +5,65 @@
   "ogImage": null,
   "faqs": [],
   "blocks": [
-    { "_template": "hero", "crumb": "Contact", "eyebrow": "Request information", "h1": "Enquire about your Paraguay residency.", "lead": "Tell us about your circumstances and what you are trying to achieve. Every enquiry is read by a person, not a queue. You will receive guidance on the route best suited to you — and a plain answer if Paraguay is not the right fit." },
-    { "_template": "form", "band": "cream", "eyebrow": "What to expect", "heading": "Clear, confidential, no obligation.",
+    {
+      "_template": "hero",
+      "crumb": "Contact",
+      "eyebrow": "Request information",
+      "h1": "Enquire about your Paraguay residency.",
+      "lead": "Tell us about your circumstances and what you are trying to achieve. Every enquiry is read by a person, not a queue. You will receive guidance on the route best suited to you — and a plain answer if Paraguay is not the right fit.",
+      "bgImage": "/uploads/home-hero.webp",
+      "bgAlt": "Asunción, Paraguay skyline — enquire about residency"
+    },
+    {
+      "_template": "form",
+      "band": "cream",
+      "eyebrow": "What to expect",
+      "heading": "Clear, confidential, no obligation.",
       "paragraphs": [
-        { "text": "Sharing a little about your situation lets the first reply be genuinely useful — with a view on which route, and which structure, actually fits your circumstances." },
-        { "text": "Everything you send is treated in strict confidence. The fields are a starting point, not a test; share as much or as little as you are comfortable with." }
+        {
+          "text": "Sharing a little about your situation lets the first reply be genuinely useful — with a view on which route, and which structure, actually fits your circumstances."
+        },
+        {
+          "text": "Everything you send is treated in strict confidence. The fields are a starting point, not a test; share as much or as little as you are comfortable with."
+        }
       ],
-      "notice": { "title": "One republic, several routes", "body": "The first step is establishing whether Paraguay — and which route — is genuinely right for you. There is no charge and no obligation for an initial enquiry." },
+      "notice": {
+        "title": "One republic, several routes",
+        "body": "The first step is establishing whether Paraguay — and which route — is genuinely right for you. There is no charge and no obligation for an initial enquiry."
+      },
       "table": [
-        { "label": "Focus", "value": "Paraguay residency &amp; citizenship" },
-        { "label": "Routes", "value": "Real Estate · Financial · Tourism · SUACE · Film" },
-        { "label": "Intake", "value": "By enquiry &amp; referral" }
-      ] },
-    { "_template": "ctaBand", "eyebrow": "Not ready to enquire?", "pull": "Read the guide first. <span class=\"gold\">Then decide.</span>",
-      "ctas": [ { "label": "The Investor Pass guide", "href": "/", "variant": "gold" }, { "label": "Compare the routes", "href": "/#routes", "variant": "ghost" } ] }
+        {
+          "label": "Focus",
+          "value": "Paraguay residency &amp; citizenship"
+        },
+        {
+          "label": "Routes",
+          "value": "Real Estate · Financial · Tourism · SUACE · Film"
+        },
+        {
+          "label": "Intake",
+          "value": "By enquiry &amp; referral"
+        }
+      ]
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Not ready to enquire?",
+      "pull": "Read the guide first. <span class=\"gold\">Then decide.</span>",
+      "ctas": [
+        {
+          "label": "The Investor Pass guide",
+          "href": "/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare the routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
   ]
 }

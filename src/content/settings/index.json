@@ -1,6 +1,45 @@
 {
   "brandName": "Paraguay Investor Pass",
   "brandSmall": "Investor Pass",
+  "nav": [
+    { "href": "/", "label": "Guide" },
+    { "href": "/real-estate/", "label": "Real Estate" },
+    { "href": "/financial-instruments/", "label": "Financial" },
+    { "href": "/tourism/", "label": "Tourism" },
+    { "href": "/suace/", "label": "SUACE" },
+    { "href": "/film/", "label": "Film" },
+    { "href": "/about/", "label": "About" }
+  ],
+  "navCta": { "href": "/contact/", "label": "Begin" },
+  "footerColumns": [
+    {
+      "title": "The Programme",
+      "links": [
+        { "href": "/", "label": "Investor Pass Guide" },
+        { "href": "/about/", "label": "Why Paraguay" },
+        { "href": "/#faq", "label": "FAQ" }
+      ]
+    },
+    {
+      "title": "Investment Routes",
+      "links": [
+        { "href": "/real-estate/", "label": "Real Estate · $200K" },
+        { "href": "/financial-instruments/", "label": "Financial Instruments · $200K" },
+        { "href": "/tourism/", "label": "Tourism · $150K" },
+        { "href": "/suace/", "label": "SUACE · $70K" },
+        { "href": "/film/", "label": "Film Production · $40K" }
+      ]
+    },
+    {
+      "title": "Get Started",
+      "links": [
+        { "href": "/about/", "label": "About the Programme" },
+        { "href": "/contact/", "label": "Contact" },
+        { "href": "/contact/", "label": "Book a consultation" }
+      ]
+    }
+  ],
+  "footerBadge": "República del Paraguay · Residency by Investment",
   "tagline": "One qualifying investment opens the door to permanent residency in the heart of the Southern Cone — and, in time, to a second citizenship by naturalisation. The complete, accurate guide to the programme.",
   "formspreeId": "xojowyje",
   "footerDisclaimer": "This guide is provided for general information only and is not legal, tax, or investment advice. Investment thresholds, processing times, and eligibility criteria are determined by, and subject to the discretion of, the competent Paraguayan authorities and may change. The Foreign Investor Certificate (CIE) and permanent residency are distinct credentials with separate processes and timelines. Citizenship is obtained through naturalisation after the qualifying period of residence and is not granted by investment alone. Tax outcomes depend on individual circumstances; legal residency and tax residency are separate matters. Verify all details with qualified Paraguayan legal counsel before acting.",

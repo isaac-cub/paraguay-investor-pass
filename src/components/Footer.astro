@@ -10,35 +10,42 @@ const disclaimer = pick(
   s?.footerDisclaimer,
   'This guide is provided for general information only and is not legal, tax, or investment advice. Investment thresholds, processing times, and eligibility criteria are determined by, and subject to the discretion of, the competent Paraguayan authorities and may change. The Foreign Investor Certificate (CIE) and permanent residency are distinct credentials with separate processes and timelines. Citizenship is obtained through naturalisation after the qualifying period of residence and is not granted by investment alone. Tax outcomes depend on individual circumstances; legal residency and tax residency are separate matters. Verify all details with qualified Paraguayan legal counsel before acting.'
 );
+const brandName = pick(s?.brandName, 'Paraguay Investor Pass');
+const footerBadge = pick(s?.footerBadge, 'República del Paraguay · Residency by Investment');
+const footerColumns = pick(s?.footerColumns, [
+  { title: 'The Programme', links: [
+    { href: '/', label: 'Investor Pass Guide' },
+    { href: '/about/', label: 'Why Paraguay' },
+    { href: '/#faq', label: 'FAQ' },
+  ] },
+  { title: 'Investment Routes', links: [
+    { href: '/real-estate/', label: 'Real Estate · $200K' },
+    { href: '/financial-instruments/', label: 'Financial Instruments · $200K' },
+    { href: '/tourism/', label: 'Tourism · $150K' },
+    { href: '/suace/', label: 'SUACE · $70K' },
+    { href: '/film/', label: 'Film Production · $40K' },
+  ] },
+  { title: 'Get Started', links: [
+    { href: '/about/', label: 'About the Programme' },
+    { href: '/contact/', label: 'Contact' },
+    { href: '/contact/', label: 'Book a consultation' },
+  ] },
+]);
 ---
 <footer class="site-footer">
   <div class="wrap">
     <div class="foot-grid">
       <div class="foot-brand">
-        <b>PARAGUAY INVESTOR PASS</b>
+        <b>{brandName.toUpperCase()}</b>
         <p>{tagline}</p>
-        <p style="font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-top:1rem">República del Paraguay · Residency by Investment</p>
+        <p style="font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-top:1rem">{footerBadge}</p>
       </div>
-      <div class="foot-col">
-        <h5>The Programme</h5>
-        <a href="/">Investor Pass Guide</a>
-        <a href="/about/">Why Paraguay</a>
-        <a href="/#faq">FAQ</a>
-      </div>
-      <div class="foot-col">
-        <h5>Investment Routes</h5>
-        <a href="/real-estate/">Real Estate · $200K</a>
-        <a href="/financial-instruments/">Financial Instruments · $200K</a>
-        <a href="/tourism/">Tourism · $150K</a>
-        <a href="/suace/">SUACE · $70K</a>
-        <a href="/film/">Film Production · $40K</a>
-      </div>
-      <div class="foot-col">
-        <h5>Get Started</h5>
-        <a href="/about/">About the Programme</a>
-        <a href="/contact/">Contact</a>
-        <a href="/contact/">Book a consultation</a>
-      </div>
+      {footerColumns.map((col: any) => (
+        <div class="foot-col">
+          <h5>{col.title}</h5>
+          {(col.links || []).map((l: any) => <a href={l.href}>{l.label}</a>)}
+        </div>
+      ))}
     </div>
     <p class="foot-disclaimer">{disclaimer}</p>
     <div class="foot-bottom">

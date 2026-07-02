@@ -4,47 +4,204 @@
   "seoDescription": "Earn Paraguay residency by investing from USD 150,000 in approved tourism projects. Eligibility, projects and the application path. Talk to Lincoln.",
   "ogImage": null,
   "faqs": [
-    { "question": "How much do I need to invest?", "answer": "The tourism route requires an investment of at least USD 150,000 into an approved tourism project." },
-    { "question": "Can it generate a return?", "answer": "It can. The route is built around developments that carry the potential for a project-linked return, so your qualifying capital can work while it supports your residency. Returns depend on the specific project and are never guaranteed." },
-    { "question": "What counts as an approved tourism project?", "answer": "Approved tourism developments are projects recognised within Paraguay's tourism framework. We curate and diligence eligible projects so your investment both qualifies for residency and stands on its own merits." },
-    { "question": "Do I have to manage the project?", "answer": "No. The tourism route is designed for passive participation — you invest as a stakeholder rather than operating the development yourself." },
-    { "question": "Does it lead to the same citizenship pathway?", "answer": "Yes. The tourism route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period." }
+    {
+      "question": "How much do I need to invest?",
+      "answer": "The tourism route requires an investment of at least USD 150,000 into an approved tourism project."
+    },
+    {
+      "question": "Can it generate a return?",
+      "answer": "It can. The route is built around developments that carry the potential for a project-linked return, so your qualifying capital can work while it supports your residency. Returns depend on the specific project and are never guaranteed."
+    },
+    {
+      "question": "What counts as an approved tourism project?",
+      "answer": "Approved tourism developments are projects recognised within Paraguay's tourism framework. We curate and diligence eligible projects so your investment both qualifies for residency and stands on its own merits."
+    },
+    {
+      "question": "Do I have to manage the project?",
+      "answer": "No. The tourism route is designed for passive participation — you invest as a stakeholder rather than operating the development yourself."
+    },
+    {
+      "question": "Does it lead to the same citizenship pathway?",
+      "answer": "Yes. The tourism route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period."
+    }
   ],
   "blocks": [
-    { "_template": "hero", "crumb": "Touristic Projects", "eyebrow": "Approved touristic projects · from USD 150,000", "h1": "Paraguay residency via approved tourism projects.", "lead": "Invest into an approved Paraguayan tourism project and earn your residency through capital that has the potential to return — not capital that simply sits.",
-      "ctas": [ { "label": "Start your file", "href": "/contact/", "variant": "gold" }, { "label": "Compare routes", "href": "/#routes", "variant": "ghost" } ],
-      "stats": [ { "value": "$150K", "label": "Minimum investment" }, { "value": "Yield", "label": "Project-linked potential" }, { "value": "Curated", "label": "Diligenced projects only" } ] },
-    { "_template": "split", "band": "cream", "reverse": false, "eyebrow": "The route", "heading": "Capital that works while it qualifies.",
+    {
+      "_template": "hero",
+      "crumb": "Touristic Projects",
+      "eyebrow": "Approved touristic projects · from USD 150,000",
+      "h1": "Paraguay residency via approved tourism projects.",
+      "lead": "Invest into an approved Paraguayan tourism project and earn your residency through capital that has the potential to return — not capital that simply sits.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "stats": [
+        {
+          "value": "$150K",
+          "label": "Minimum investment"
+        },
+        {
+          "value": "Yield",
+          "label": "Project-linked potential"
+        },
+        {
+          "value": "Curated",
+          "label": "Diligenced projects only"
+        }
+      ],
+      "bgImage": "/uploads/tour-hero.webp",
+      "bgAlt": "Paraguay river landscape — approved tourism projects"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The route",
+      "heading": "Capital that works while it qualifies.",
       "paragraphs": [
-        { "text": "The tourism route lets you satisfy the Investor Pass with an investment of <strong>USD 150,000</strong> into an approved tourism development. Paraguay's tourism track exists precisely to channel foreign capital into the sector — which means your qualifying investment can carry the potential for a <strong>project-linked return</strong> rather than functioning as a sunk cost." },
-        { "text": "It sits between the owned-asset certainty of real estate and the lower entry points below it: a route for investors who want their residency capital deployed into something productive, without taking on the operational weight of running a company themselves." }
+        {
+          "text": "The tourism route lets you satisfy the Investor Pass with an investment of <strong>USD 150,000</strong> into an approved tourism development. Paraguay's tourism track exists precisely to channel foreign capital into the sector — which means your qualifying investment can carry the potential for a <strong>project-linked return</strong> rather than functioning as a sunk cost."
+        },
+        {
+          "text": "It sits between the owned-asset certainty of real estate and the lower entry points below it: a route for investors who want their residency capital deployed into something productive, without taking on the operational weight of running a company themselves."
+        }
       ],
       "asideTable": [
-        { "label": "Minimum investment", "value": "USD 150,000 into an approved project" },
-        { "label": "You hold", "value": "A stake in the development" },
-        { "label": "Return", "value": "Project-linked yield potential (not guaranteed)" },
-        { "label": "Residency framework", "value": "Investor Pass → permanent residency" },
-        { "label": "Citizenship", "value": "Naturalisation after the residence period" },
-        { "label": "Best suited to", "value": "Yield-seekers and passive investors" }
+        {
+          "label": "Minimum investment",
+          "value": "USD 150,000 into an approved project"
+        },
+        {
+          "label": "You hold",
+          "value": "A stake in the development"
+        },
+        {
+          "label": "Return",
+          "value": "Project-linked yield potential (not guaranteed)"
+        },
+        {
+          "label": "Residency framework",
+          "value": "Investor Pass → permanent residency"
+        },
+        {
+          "label": "Citizenship",
+          "value": "Naturalisation after the residence period"
+        },
+        {
+          "label": "Best suited to",
+          "value": "Yield-seekers and passive investors"
+        }
       ],
-      "asideNotice": { "title": "Returns are never guaranteed", "body": "Every project carries risk. We curate and diligence each opportunity so it stands on its own commercial merits — not only as a residency vehicle." }, "asideNoticeFirst": false },
-    { "_template": "cardGrid", "band": "paper", "eyebrow": "Why this route", "heading": "The middle ground, by design.", "headingMax": "20ch",
+      "asideNotice": {
+        "title": "Returns are never guaranteed",
+        "body": "Every project carries risk. We curate and diligence each opportunity so it stands on its own commercial merits — not only as a residency vehicle."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/tour-split.webp",
+      "imageAlt": "Riverside resort development in Paraguay"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Why this route",
+      "heading": "The middle ground, by design.",
+      "headingMax": "20ch",
       "cards": [
-        { "num": "01", "title": "Productive capital", "text": "Your qualifying investment is deployed into a real development with the potential to generate a return." },
-        { "num": "02", "title": "Lower than real estate", "text": "At USD 150,000, the tourism route sits below the property threshold while keeping your capital invested." },
-        { "num": "03", "title": "Passive by nature", "text": "You participate as an investor, not an operator — no company to run, no day-to-day to manage." },
-        { "num": "04", "title": "Curated access", "text": "We surface diligenced tourism projects rather than leaving you to find — and vet — them alone." },
-        { "num": "05", "title": "Sector tailwind", "text": "Paraguay's tourism sector is early and under-built — exactly where considered capital tends to be rewarded." },
-        { "num": "06", "title": "Same destination", "text": "The tourism route leads to the identical residency and citizenship pathway as every other route." }
-      ] },
-    { "_template": "projects", "band": "cream", "eyebrow": "Approved projects", "heading": "Tourism developments that qualify.", "headingMax": "24ch", "lead": "The tourism route deploys from <strong>USD 150,000</strong> into approved tourism developments, with a business plan and periodic progress reporting. We maintain a current portfolio of diligenced, eligible projects.", "leadMax": "60ch",
+        {
+          "num": "01",
+          "title": "Productive capital",
+          "text": "Your qualifying investment is deployed into a real development with the potential to generate a return."
+        },
+        {
+          "num": "02",
+          "title": "Lower than real estate",
+          "text": "At USD 150,000, the tourism route sits below the property threshold while keeping your capital invested."
+        },
+        {
+          "num": "03",
+          "title": "Passive by nature",
+          "text": "You participate as an investor, not an operator — no company to run, no day-to-day to manage."
+        },
+        {
+          "num": "04",
+          "title": "Curated access",
+          "text": "We surface diligenced tourism projects rather than leaving you to find — and vet — them alone."
+        },
+        {
+          "num": "05",
+          "title": "Sector tailwind",
+          "text": "Paraguay's tourism sector is early and under-built — exactly where considered capital tends to be rewarded."
+        },
+        {
+          "num": "06",
+          "title": "Same destination",
+          "text": "The tourism route leads to the identical residency and citizenship pathway as every other route."
+        }
+      ]
+    },
+    {
+      "_template": "projects",
+      "band": "cream",
+      "eyebrow": "Approved projects",
+      "heading": "Tourism developments that qualify.",
+      "headingMax": "24ch",
+      "lead": "The tourism route deploys from <strong>USD 150,000</strong> into approved tourism developments, with a business plan and periodic progress reporting. We maintain a current portfolio of diligenced, eligible projects.",
+      "leadMax": "60ch",
       "items": [
-        { "developer": "The portfolio", "location": "Updated regularly", "name": "Selected MIC-approved tourism projects", "description": "We curate and diligence a rotating shortlist of approved tourism developments — from boutique hospitality to wellness and eco-tourism. Request the current portfolio for live availability, ticket sizes, and projected returns.", "ctaLabel": "Request the list", "ctaHref": "/contact/", "variant": "navy" },
-        { "developer": "How we select", "location": "Diligence first", "name": "Commercial merit, then eligibility", "description": "Each project is screened on its own commercial standing before it is considered as a residency vehicle — approval status, developer track record, business plan, and reporting all checked.", "footMain": "From $150K", "footSub": "Approved tourism track" }
+        {
+          "developer": "The portfolio",
+          "location": "Updated regularly",
+          "name": "Selected MIC-approved tourism projects",
+          "description": "We curate and diligence a rotating shortlist of approved tourism developments — from boutique hospitality to wellness and eco-tourism. Request the current portfolio for live availability, ticket sizes, and projected returns.",
+          "ctaLabel": "Request the list",
+          "ctaHref": "/contact/",
+          "variant": "navy"
+        },
+        {
+          "developer": "How we select",
+          "location": "Diligence first",
+          "name": "Commercial merit, then eligibility",
+          "description": "Each project is screened on its own commercial standing before it is considered as a residency vehicle — approval status, developer track record, business plan, and reporting all checked.",
+          "footMain": "From $150K",
+          "footSub": "Approved tourism track"
+        }
       ],
-      "disclaimer": "Specific projects are shared on enquiry and are independent third-party developments. Inclusion is not an endorsement, and qualification depends on the project's approval and on meeting the tourism-track criteria. Returns are projections, not guarantees." },
-    { "_template": "faq", "band": "cream", "wrapProse": true, "eyebrow": "Tourism route", "heading": "Frequently asked." },
-    { "_template": "ctaBand", "eyebrow": "Put your capital to work", "pull": "Residency, with a <span class=\"gold\">return on the side.</span>",
-      "ctas": [ { "label": "Start your tourism file", "href": "/contact/", "variant": "gold" }, { "label": "See other routes", "href": "/#routes", "variant": "ghost" } ] }
+      "disclaimer": "Specific projects are shared on enquiry and are independent third-party developments. Inclusion is not an endorsement, and qualification depends on the project's approval and on meeting the tourism-track criteria. Returns are projections, not guarantees."
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Tourism route",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Put your capital to work",
+      "pull": "Residency, with a <span class=\"gold\">return on the side.</span>",
+      "ctas": [
+        {
+          "label": "Start your tourism file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "See other routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
   ]
 }

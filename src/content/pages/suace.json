@@ -4,52 +4,217 @@
   "seoDescription": "Gain Paraguay residency by forming a company via SUACE from USD 70,000. How the business route works, steps and requirements. Speak to Lincoln.",
   "ogImage": null,
   "faqs": [
-    { "question": "What is SUACE?", "answer": "SUACE is Paraguay's Unified System for Opening and Closing Companies (Sistema Unificado de Apertura y Cierre de Empresas) — a one-stop process that streamlines company formation. The route involves establishing and capitalising a Paraguayan company through this system." },
-    { "question": "How much do I need?", "answer": "The SUACE company route requires establishing and capitalising a company with at least USD 70,000." },
-    { "question": "Do I have to actively run the company?", "answer": "The route is built for operators who want a genuine, active business with real economic substance. The company should reflect real activity rather than exist only on paper — which is exactly how we structure it." },
-    { "question": "What can the company do?", "answer": "That depends on your plans. We design the company around legitimate activity that fits both your commercial objectives and the substance the route calls for." },
-    { "question": "Does it lead to the same citizenship pathway?", "answer": "Yes. The SUACE route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period." }
+    {
+      "question": "What is SUACE?",
+      "answer": "SUACE is Paraguay's Unified System for Opening and Closing Companies (Sistema Unificado de Apertura y Cierre de Empresas) — a one-stop process that streamlines company formation. The route involves establishing and capitalising a Paraguayan company through this system."
+    },
+    {
+      "question": "How much do I need?",
+      "answer": "The SUACE company route requires establishing and capitalising a company with at least USD 70,000."
+    },
+    {
+      "question": "Do I have to actively run the company?",
+      "answer": "The route is built for operators who want a genuine, active business with real economic substance. The company should reflect real activity rather than exist only on paper — which is exactly how we structure it."
+    },
+    {
+      "question": "What can the company do?",
+      "answer": "That depends on your plans. We design the company around legitimate activity that fits both your commercial objectives and the substance the route calls for."
+    },
+    {
+      "question": "Does it lead to the same citizenship pathway?",
+      "answer": "Yes. The SUACE route feeds into the same Investor Pass framework — Foreign Investor Certificate, permanent residency, and eligibility to naturalise after the constitutional residence period."
+    }
   ],
   "blocks": [
-    { "_template": "hero", "crumb": "SUACE", "eyebrow": "SUACE business investment · from USD 70,000", "h1": "Paraguay residency through SUACE company formation.", "lead": "Establish and capitalise a Paraguayan company through SUACE — the unified one-stop system — and earn your residency by building a real business in the Southern Cone.",
-      "ctas": [ { "label": "Start your file", "href": "/contact/", "variant": "gold" }, { "label": "Compare routes", "href": "/#routes", "variant": "ghost" } ],
-      "stats": [ { "value": "$70K", "label": "Minimum capital" }, { "value": "Active", "label": "A real, operating company" }, { "value": "Substance", "label": "Local economic presence" } ] },
-    { "_template": "split", "band": "cream", "reverse": false, "eyebrow": "The route", "heading": "For people who build, not just hold.",
+    {
+      "_template": "hero",
+      "crumb": "SUACE",
+      "eyebrow": "SUACE business investment · from USD 70,000",
+      "h1": "Paraguay residency through SUACE company formation.",
+      "lead": "Establish and capitalise a Paraguayan company through SUACE — the unified one-stop system — and earn your residency by building a real business in the Southern Cone.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "stats": [
+        {
+          "value": "$70K",
+          "label": "Minimum capital"
+        },
+        {
+          "value": "Active",
+          "label": "A real, operating company"
+        },
+        {
+          "value": "Substance",
+          "label": "Local economic presence"
+        }
+      ],
+      "bgImage": "/uploads/suace-hero.webp",
+      "bgAlt": "Modern business district — SUACE company formation in Paraguay"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The route",
+      "heading": "For people who build, not just hold.",
       "paragraphs": [
-        { "text": "<strong>SUACE</strong> — the <em>Sistema Unificado de Apertura y Cierre de Empresas</em>, Paraguay's Unified System for Opening and Closing Companies — is the one-stop process that makes incorporating in Paraguay genuinely fast. The SUACE route qualifies you for the Investor Pass by establishing and capitalising a Paraguayan company with at least <strong>USD 70,000</strong>." },
-        { "text": "This is the operator's route. You end up with an active business, real economic substance on the ground, and a <strong>territorial tax footing</strong> to build from — the cleanest foundation for anyone who wants to actually do something in the region, not just qualify for a certificate." }
+        {
+          "text": "<strong>SUACE</strong> — the <em>Sistema Unificado de Apertura y Cierre de Empresas</em>, Paraguay's Unified System for Opening and Closing Companies — is the one-stop process that makes incorporating in Paraguay genuinely fast. The SUACE route qualifies you for the Investor Pass by establishing and capitalising a Paraguayan company with at least <strong>USD 70,000</strong>."
+        },
+        {
+          "text": "This is the operator's route. You end up with an active business, real economic substance on the ground, and a <strong>territorial tax footing</strong> to build from — the cleanest foundation for anyone who wants to actually do something in the region, not just qualify for a certificate."
+        }
       ],
       "asideTable": [
-        { "label": "Minimum capital", "value": "USD 70,000 into a Paraguayan company" },
-        { "label": "Vehicle", "value": "Company formed via SUACE" },
-        { "label": "You hold", "value": "An active, capitalised business" },
-        { "label": "Residency framework", "value": "Investor Pass → permanent residency" },
-        { "label": "Citizenship", "value": "Naturalisation after the residence period" },
-        { "label": "Best suited to", "value": "Founders, operators, entrepreneurs" }
+        {
+          "label": "Minimum capital",
+          "value": "USD 70,000 into a Paraguayan company"
+        },
+        {
+          "label": "Vehicle",
+          "value": "Company formed via SUACE"
+        },
+        {
+          "label": "You hold",
+          "value": "An active, capitalised business"
+        },
+        {
+          "label": "Residency framework",
+          "value": "Investor Pass → permanent residency"
+        },
+        {
+          "label": "Citizenship",
+          "value": "Naturalisation after the residence period"
+        },
+        {
+          "label": "Best suited to",
+          "value": "Founders, operators, entrepreneurs"
+        }
       ],
-      "asideNotice": { "title": "Substance matters", "body": "The company should reflect genuine activity, not exist only on paper. We structure it to stand up — commercially and to the authorities." }, "asideNoticeFirst": false },
-    { "_template": "cardGrid", "band": "paper", "eyebrow": "Why this route", "heading": "A business and a base, in one move.", "headingMax": "18ch",
+      "asideNotice": {
+        "title": "Substance matters",
+        "body": "The company should reflect genuine activity, not exist only on paper. We structure it to stand up — commercially and to the authorities."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/suace-split.webp",
+      "imageAlt": "Entrepreneurs in a modern Paraguay office"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Why this route",
+      "heading": "A business and a base, in one move.",
+      "headingMax": "18ch",
       "cards": [
-        { "num": "01", "title": "Lowest active route", "text": "At USD 70,000 it is the most capital-efficient way to qualify while ending up with something you control." },
-        { "num": "02", "title": "Real substance", "text": "An operating company is the strongest form of economic presence — useful far beyond the residency itself." },
-        { "num": "03", "title": "Territorial footing", "text": "A Paraguayan company sits inside a territorial system — efficient when structured correctly within your wider plan." },
-        { "num": "04", "title": "Fast formation", "text": "SUACE is purpose-built to streamline incorporation, consolidating the steps into a single coordinated process." },
-        { "num": "05", "title": "Mercosur access", "text": "A company anchored in Paraguay sits at the centre of the Mercosur bloc — a launchpad, not a cul-de-sac." },
-        { "num": "06", "title": "Same destination", "text": "The SUACE route leads to the identical residency and citizenship pathway as every other route." }
-      ] },
-    { "_template": "steps", "band": "cream", "reverse": true, "eyebrow": "The process", "heading": "Incorporate, capitalise, reside.",
-      "paragraphs": [ { "text": "The SUACE route turns company formation into your residency engine: build the business properly, capitalise it to threshold, then move through the certificate, residency, and, in time, naturalisation." } ],
-      "notice": { "title": "One honest caveat", "body": "The five-business-day figure applies only to the Foreign Investor Certificate. Permanent residency is a separate process with its own timeline." },
+        {
+          "num": "01",
+          "title": "Lowest active route",
+          "text": "At USD 70,000 it is the most capital-efficient way to qualify while ending up with something you control."
+        },
+        {
+          "num": "02",
+          "title": "Real substance",
+          "text": "An operating company is the strongest form of economic presence — useful far beyond the residency itself."
+        },
+        {
+          "num": "03",
+          "title": "Territorial footing",
+          "text": "A Paraguayan company sits inside a territorial system — efficient when structured correctly within your wider plan."
+        },
+        {
+          "num": "04",
+          "title": "Fast formation",
+          "text": "SUACE is purpose-built to streamline incorporation, consolidating the steps into a single coordinated process."
+        },
+        {
+          "num": "05",
+          "title": "Mercosur access",
+          "text": "A company anchored in Paraguay sits at the centre of the Mercosur bloc — a launchpad, not a cul-de-sac."
+        },
+        {
+          "num": "06",
+          "title": "Same destination",
+          "text": "The SUACE route leads to the identical residency and citizenship pathway as every other route."
+        }
+      ]
+    },
+    {
+      "_template": "steps",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "The process",
+      "heading": "Incorporate, capitalise, reside.",
+      "paragraphs": [
+        {
+          "text": "The SUACE route turns company formation into your residency engine: build the business properly, capitalise it to threshold, then move through the certificate, residency, and, in time, naturalisation."
+        }
+      ],
+      "notice": {
+        "title": "One honest caveat",
+        "body": "The five-business-day figure applies only to the Foreign Investor Certificate. Permanent residency is a separate process with its own timeline."
+      },
       "items": [
-        { "title": "Strategy &amp; structuring", "text": "We confirm the SUACE route fits and design the company so it carries real substance." },
-        { "title": "Formation via SUACE", "text": "The Paraguayan company is incorporated through the unified one-stop system." },
-        { "title": "Capitalisation", "text": "The company is capitalised to meet the USD 70,000 qualifying threshold and documented." },
-        { "title": "Foreign Investor Certificate", "text": "With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days." },
-        { "title": "Permanent residency", "text": "We progress the permanent residency process and your Paraguayan cédula." },
-        { "title": "Toward citizenship", "text": "You maintain residence and your company, building toward naturalisation eligibility after three years." }
-      ] },
-    { "_template": "faq", "band": "cream", "wrapProse": true, "eyebrow": "SUACE route", "heading": "Frequently asked." },
-    { "_template": "ctaBand", "eyebrow": "Build your base", "pull": "A company. A footing. <span class=\"gold\">A residency you operate.</span>",
-      "ctas": [ { "label": "Start your SUACE file", "href": "/contact/", "variant": "gold" }, { "label": "See other routes", "href": "/#routes", "variant": "ghost" } ] }
+        {
+          "title": "Strategy &amp; structuring",
+          "text": "We confirm the SUACE route fits and design the company so it carries real substance."
+        },
+        {
+          "title": "Formation via SUACE",
+          "text": "The Paraguayan company is incorporated through the unified one-stop system."
+        },
+        {
+          "title": "Capitalisation",
+          "text": "The company is capitalised to meet the USD 70,000 qualifying threshold and documented."
+        },
+        {
+          "title": "Foreign Investor Certificate",
+          "text": "With the file complete, the MIC issues the Foreign Investor Certificate (CIE) within five business days."
+        },
+        {
+          "title": "Permanent residency",
+          "text": "We progress the permanent residency process and your Paraguayan cédula."
+        },
+        {
+          "title": "Toward citizenship",
+          "text": "You maintain residence and your company, building toward naturalisation eligibility after three years."
+        }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "SUACE route",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Build your base",
+      "pull": "A company. A footing. <span class=\"gold\">A residency you operate.</span>",
+      "ctas": [
+        {
+          "label": "Start your SUACE file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "See other routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
   ]
 }
