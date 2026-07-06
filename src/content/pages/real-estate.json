@@ -1,6 +1,6 @@
 {
-  "slug": "real-estate",
   "seoTitle": "Paraguay Real Estate Residency Route | from $200K",
+  "slug": "real-estate",
   "seoDescription": "Qualify for Paraguay residency with a real estate investment from USD 200,000. How the property route works, requirements and timelines. Speak to Lincoln.",
   "ogImage": null,
   "faqs": [
@@ -27,8 +27,9 @@
   ],
   "blocks": [
     {
-      "_template": "hero",
       "crumb": "Real Estate",
+      "bgImage": "/uploads/re-hero.webp",
+      "bgAlt": "Aerial view of residential real estate in Paraguay.",
       "eyebrow": "Eligible real estate · from USD 200,000",
       "h1": "Paraguay residency through real&nbsp;estate.",
       "lead": "Convert capital into a tangible, appreciating Paraguayan asset — and into permanent residency, with a pathway to citizenship. The route for those who would rather own than contribute.",
@@ -58,13 +59,13 @@
           "label": "Rental &amp; appreciation"
         }
       ],
-      "bgImage": "/uploads/re-hero.webp",
-      "bgAlt": "Aerial view of residential real estate in Paraguay"
+      "_template": "hero"
     },
     {
-      "_template": "split",
       "band": "cream",
       "reverse": false,
+      "image": "/uploads/re-split.webp",
+      "imageAlt": "Modern residential property in Paraguay",
       "eyebrow": "The route",
       "heading": "A residency you can stand on — literally.",
       "paragraphs": [
@@ -106,11 +107,9 @@
         "body": "Foreign buyers can own Paraguayan property on a passport alone, but title diligence, the economic-use requirement, and vehicle choice matter. Every purchase is screened before a guaraní is committed."
       },
       "asideNoticeFirst": false,
-      "image": "/uploads/re-split.webp",
-      "imageAlt": "Modern residential property in Paraguay"
+      "_template": "split"
     },
     {
-      "_template": "cardGrid",
       "band": "paper",
       "eyebrow": "Why this route",
       "heading": "Capital that keeps its shape.",
@@ -146,10 +145,10 @@
           "title": "Same destination",
           "text": "The real estate route leads to the identical residency and citizenship pathway as every other route."
         }
-      ]
+      ],
+      "_template": "cardGrid"
     },
     {
-      "_template": "projects",
       "band": "cream",
       "eyebrow": "Featured developments",
       "heading": "Where the qualifying capital can go.",
@@ -162,42 +161,42 @@
           "location": "Las Lomas, Asunción",
           "name": "Aether",
           "description": "A 50-storey mixed-use landmark and one of the tallest towers under development in Paraguay, in the Las Lomas corporate district.",
+          "image": null,
           "footMain": "50 floors",
-          "footSub": "Under development",
-          "image": null
+          "footSub": "Under development"
         },
         {
           "developer": "CIVIS",
           "location": "Las Lomas, Asunción",
           "name": "Civis X",
           "description": "An approximately 150m tower of design-led apartments on the Las Lomas corporate axis, built for sustained executive rental demand.",
+          "image": null,
           "footMain": "~36–40 floors",
-          "footSub": "~150 m · in construction",
-          "image": null
+          "footSub": "~150 m · in construction"
         },
         {
           "developer": "Petra Urbana",
           "location": "Las Lomas, Asunción",
           "name": "Petra Tower",
           "description": "Paraguay's current tallest completed building at 172m, topped out in 2025 — loft-style residences in the new economic district.",
+          "image": null,
           "footMain": "172 m",
-          "footSub": "Completed 2025",
-          "image": null
+          "footSub": "Completed 2025"
         },
         {
           "developer": "Petra Urbana",
           "location": "Asunción",
           "name": "Petra Imperiale",
           "description": "Planned to become Paraguay's tallest residential tower at 250m — a mixed-use \"resort living\" complex, currently in early development.",
+          "image": null,
           "footMain": "250 m",
-          "footSub": "Announced · in development",
-          "image": null
+          "footSub": "Announced · in development"
         }
       ],
-      "disclaimer": "Developments shown are independent third-party projects, included for illustration only. Inclusion is not an endorsement, and qualification for the Investor Pass depends on meeting the programme's criteria for the specific unit and structure. Availability, pricing, and specifications are set by each developer and should be verified directly."
+      "disclaimer": "Developments shown are independent third-party projects, included for illustration only. Inclusion is not an endorsement, and qualification for the Investor Pass depends on meeting the programme's criteria for the specific unit and structure. Availability, pricing, and specifications are set by each developer and should be verified directly.",
+      "_template": "projects"
     },
     {
-      "_template": "steps",
       "band": "cream",
       "reverse": true,
       "eyebrow": "The process",
@@ -236,18 +235,20 @@
           "title": "Toward citizenship",
           "text": "You maintain residence and your asset, building toward naturalisation eligibility after three years."
         }
-      ]
+      ],
+      "_template": "steps"
     },
     {
-      "_template": "faq",
       "band": "cream",
       "eyebrow": "Real estate route",
-      "heading": "Frequently asked."
+      "heading": "Frequently asked.",
+      "_template": "faq"
     },
     {
-      "_template": "ctaBand",
       "eyebrow": "Real estate route",
       "pull": "Residency, secured by <span class=\"gold\">an asset you own.</span>",
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay",
       "ctas": [
         {
           "label": "Start your real estate file",
@@ -260,8 +261,7 @@
           "variant": "ghost"
         }
       ],
-      "bgImage": "/uploads/home-cta.webp",
-      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+      "_template": "ctaBand"
     }
   ]
 }
