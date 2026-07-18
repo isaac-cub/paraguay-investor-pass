@@ -1,0 +1,21 @@
+---
+// GA4 + Google Search Console verification. Both are driven by settings so
+// they can be turned on by pasting IDs into src/content/settings/index.json —
+// each renders only when its value is set, so the site stays clean until then.
+import { getSettings, pick } from '../lib/content';
+const s = await getSettings();
+const gaId = pick(s?.gaMeasurementId, '');
+const gscToken = pick(s?.googleSiteVerification, '');
+---
+{gscToken && <meta name="google-site-verification" content={gscToken} />}
+{gaId && (
+  <>
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}></script>
+    <script is:inline define:vars={{ gaId }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){ dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', gaId);
+    </script>
+  </>
+)}

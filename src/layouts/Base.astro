@@ -2,6 +2,7 @@
 import '../styles/site.css';
 import Seo from '../components/Seo.astro';
 import JsonLd from '../components/JsonLd.astro';
+import Analytics from '../components/Analytics.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -35,6 +36,7 @@ const schemas = [organization, website, ...(Array.isArray(jsonld) ? jsonld : jso
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <Analytics />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

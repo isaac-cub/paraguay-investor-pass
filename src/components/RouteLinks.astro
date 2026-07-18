@@ -1,0 +1,34 @@
+---
+// Contextual in-body cross-links between the 5 investment routes. Renders on
+// each route page (excluding the current one) to fix the near-orphaned route
+// pages — keyword-bearing anchors that pass equity across the money cluster.
+interface Props {
+  current: string;
+}
+const { current } = Astro.props;
+
+const routes = [
+  { slug: 'real-estate', href: '/real-estate/', name: 'Real estate residency', price: 'from $200,000', blurb: 'Qualify through an income-generating property investment.' },
+  { slug: 'financial-instruments', href: '/financial-instruments/', name: 'Financial instruments residency', price: 'from $200,000', blurb: 'Invest in regulated Paraguayan financial instruments.' },
+  { slug: 'tourism', href: '/tourism/', name: 'Tourism investment residency', price: 'from $150,000', blurb: 'Back an approved tourism-sector project.' },
+  { slug: 'suace', href: '/suace/', name: 'SUACE company residency', price: 'from $70,000', blurb: 'Form a Paraguayan company via the SUACE one-stop window.' },
+  { slug: 'film', href: '/film/', name: 'Film & audiovisual residency', price: 'from $40,000', blurb: 'Contribute to audiovisual production under Ley 6106/2018.' },
+];
+const others = routes.filter((r) => r.slug !== current);
+---
+<section class="section band-paper">
+  <div class="wrap center">
+    <p class="eyebrow eyebrow--center">Compare the routes</p>
+    <h2>Other Paraguay residency-by-investment routes</h2>
+    <div class="grid grid-4" style="margin-top:2.5rem;text-align:left">
+      {others.map((r) => (
+        <a class="card is-link reveal" href={r.href} aria-label={`${r.name} — ${r.price}`}>
+          <span class="num">{r.price}</span>
+          <h3>{r.name}</h3>
+          <p>{r.blurb}</p>
+          <span class="card-go">Explore this route →</span>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>

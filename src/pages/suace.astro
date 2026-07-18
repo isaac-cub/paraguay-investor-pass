@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Blocks from '../components/Blocks.astro';
+import RouteLinks from '../components/RouteLinks.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
 import { getPage, getSettings, pick } from '../lib/content';
 
@@ -21,4 +22,5 @@ const formspreeId = settings?.formspreeId ?? 'xojowyje';
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
   <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+  <RouteLinks current="suace" />
 </Base>
