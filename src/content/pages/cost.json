@@ -1,0 +1,437 @@
+{
+  "slug": "cost",
+  "seoTitle": "Paraguay Residency Cost: The Full 2026 Breakdown",
+  "seoDescription": "What Paraguay residency by investment really costs in 2026: the qualifying investment by route, official government fees, legal fees and incidentals.",
+  "ogImage": "/og/default.png",
+  "faqs": [
+    {
+      "question": "How much does Paraguay residency cost in total?",
+      "answer": "It depends on the route. The qualifying investment ranges from USD 40,000 (film, a non-recoverable contribution) to USD 200,000 (real estate or financial instruments, both of which leave you holding the asset). On top of the investment, budget roughly USD 480–560 in government fees and USD 1,000–2,500 in translation, apostille and incidental costs per applicant, plus a legal fee quoted individually based on your route and complexity."
+    },
+    {
+      "question": "Is the USD 40,000 film route really the cheapest option?",
+      "answer": "It has the lowest cash outlay, but it is a contribution, not a recoverable investment — the funds stay in the production, and any return is speculative. If you want capital you can later sell, let, or hold, the SUACE, tourism, real estate, or financial-instruments routes retain value; the film route does not."
+    },
+    {
+      "question": "Are there government fees on top of the investment?",
+      "answer": "Yes. Paraguay's Dirección Nacional de Migraciones charges its own tariffs for the residency application, separate from your qualifying investment — currently around ₲ 2,926,925 (approximately USD 480, at July 2026 exchange rates) per permanent-residency applicant, per the fee schedule effective 1 July 2026 under Executive Decree N° 6225/2026."
+    },
+    {
+      "question": "Does the cost include citizenship?",
+      "answer": "No. Citizenship is a separate, later step, obtained by naturalisation after the constitutional period of permanent residence, subject to language, civics and physical-presence requirements. The Investor Pass cost breakdown covers the route to permanent residency; naturalisation involves its own separate process and is not purchased alongside the investment."
+    },
+    {
+      "question": "Why don't you list your legal fees on this page?",
+      "answer": "Because a fee that ignores which route you're taking, how many family members are included, and how complex your existing structure is would be a marketing number, not a quote. We confirm legal and professional fees in your consultation, once we understand your circumstances — and we say plainly where another route, or another country, would serve you better before any fee is discussed."
+    },
+    {
+      "question": "Do costs differ for family members applying together?",
+      "answer": "The qualifying investment is set once per application, not per person, but government fees, apostille, translation and incidental costs are generally charged per applicant, so they scale with family size. One exception: on the film route, dependants typically start on two-year temporary residency before converting to permanent status, which is worth building into your planning."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Cost",
+      "eyebrow": "Full cost breakdown · every route",
+      "h1": "Paraguay residency by investment: the full cost breakdown.",
+      "lead": "Four layers make up the true cost — the qualifying investment, official government fees, legal and professional fees, and a modest set of incidentals. Most single applicants land, outside the investment itself, somewhere in the region of USD 1,500&ndash;3,500 &mdash; not the tens of thousands some marketing implies. See the itemised <a href=\"#comparing-cost-across-routes-which-is-actually-cheapest\">route comparison below</a>.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "stats": [
+        {
+          "value": "$40K–200K",
+          "label": "Qualifying investment, by route"
+        },
+        {
+          "value": "~$480",
+          "label": "Government fees, per applicant"
+        },
+        {
+          "value": "$1K–2.5K",
+          "label": "Translation, apostille &amp; incidentals"
+        }
+      ],
+      "bgImage": "/uploads/fin-hero.webp",
+      "bgAlt": "Financial district in Asunción, Paraguay — residency cost breakdown"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "How the total is built",
+      "heading": "The four cost layers, in order.",
+      "headingMax": "20ch",
+      "lead": "Every Paraguay Investor Pass application is built from the same four layers, in the same sequence, whichever route you choose.",
+      "leadMax": "58ch",
+      "cards": [
+        {
+          "num": "01",
+          "title": "The qualifying investment",
+          "text": "The capital, or contribution, that satisfies the threshold for your chosen route under Resolution N&deg; 0283/2026, or, for the film route, the separate INAP pathway. By far the largest line item — and the number most marketing leads with."
+        },
+        {
+          "num": "02",
+          "title": "Official government fees",
+          "text": "The tariffs charged by Paraguay's Dirección Nacional de Migraciones, and related bodies, to process the residency application itself — separate from the investment."
+        },
+        {
+          "num": "03",
+          "title": "Legal and professional fees",
+          "text": "The cost of having the file structured, the investment diligenced, and the application prepared to the standard the authorities require. Confirmed in a personal consultation, not quoted blind."
+        },
+        {
+          "num": "04",
+          "title": "Translation, apostille &amp; incidentals",
+          "text": "The paperwork layer: certified Spanish translations, document legalisation, background-check certificates, and travel to Asunción for the in-country stage."
+        }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Layer one",
+      "heading": "Qualifying investment by route.",
+      "paragraphs": [
+        {
+          "text": "Resolution N&deg; 0283/2026 sets four investment routes; a fifth, lower-cost film route runs on a separate, pre-existing legal basis (Ley N&deg; 6106/2018), administered through Paraguay's audiovisual institute, INAP. All five converge on the same residency and, later, citizenship pathway — the difference is what you invest in and what you hold at the end."
+        }
+      ],
+      "table": [
+        {
+          "label": "Film &amp; audiovisual — USD 40,000",
+          "value": "A contribution to an approved production — nothing recoverable. See the <a href=\"/film/\">Paraguay film residency route</a>."
+        },
+        {
+          "label": "SUACE company — USD 70,000",
+          "value": "An active, capitalised Paraguayan company. See the <a href=\"/suace/\">SUACE business investment route</a>."
+        },
+        {
+          "label": "Approved tourism project — USD 150,000",
+          "value": "A stake in an approved tourism development, with project-linked yield potential. See the <a href=\"/tourism/\">Tourism investment route</a>."
+        },
+        {
+          "label": "Real estate — USD 200,000",
+          "value": "Title to income-generating property. See the <a href=\"/real-estate/\">Real estate residency route</a>."
+        },
+        {
+          "label": "Financial instruments — USD 200,000",
+          "value": "Regulated financial instruments, held in your name for a minimum of two years. See the <a href=\"/financial-instruments/\">Financial instruments route</a>."
+        }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "The film route's USD 80,000, explained",
+        "body": "This is a <strong>show-of-funds requirement</strong>, not a second investment. You need to demonstrate you hold it in available bank funds — you do not contribute it. Confusing the two is the single most common cost-related misunderstanding we see with this route."
+      },
+      "image": "/uploads/home-residency.webp",
+      "imageAlt": "Paraguay Investor Pass — qualifying investment routes"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Layer two",
+      "heading": "Official government fees.",
+      "paragraphs": [
+        {
+          "text": "Effective 1 July 2026, under Executive Decree N&deg; 6225/2026, the Dirección Nacional de Migraciones revised its immigration-procedure tariffs, a 5% adjustment tied to the new legal minimum wage. These are per-applicant fees charged by Migraciones for the residency process itself, distinct from the qualifying investment."
+        },
+        {
+          "text": "On top of them, most applicants also budget for a national identity card (cédula), an Interpol clearance certificate, and a local police-clearance certificate — modest, separately administered fees confirmed as part of your file preparation. See the full <a href=\"/requirements/\">Paraguay residency requirements</a> checklist for the complete document set."
+        }
+      ],
+      "table": [
+        {
+          "label": "Permanent residency application",
+          "value": "₲ 2,926,925 — approximately <strong>USD 480</strong>"
+        },
+        {
+          "label": "Temporary residency application",
+          "value": "₲ 2,926,925 — approximately USD 480 (Law 6984/2022)"
+        },
+        {
+          "label": "Certificate of Residency / Migration Movement Certificate",
+          "value": "₲ 234,154 — approximately USD 39"
+        },
+        {
+          "label": "Permanent Resident Card renewal",
+          "value": "₲ 468,308 — approximately USD 77"
+        },
+        {
+          "label": "Residency cancellation application",
+          "value": "₲ 234,154 — approximately USD 39"
+        }
+      ],
+      "notice": {
+        "title": "The CIE fee is not the residency fee",
+        "body": "The <strong>Foreign Investor Certificate (CIE)</strong> — issued by the Ministry of Industry and Commerce (MIC) within five business days of a complete file — and <strong>permanent residency</strong>, granted later by Migraciones, are not the same procedure. The fee above applies to the residency application, not the CIE itself. Public guidance on Resolution N&deg; 0283/2026 does not point to a separate MIC filing tariff for the CIE; we confirm the current position before your file is submitted."
+      },
+      "asideNoticeFirst": false,
+      "asideTable": [
+        {
+          "label": "USD conversion",
+          "value": "Indicative at ~₲ 6,075 = USD 1 (mid-July 2026); the guaraní floats, so confirm the live rate before filing"
+        },
+        {
+          "label": "Fee basis",
+          "value": "5% adjustment tied to the legal minimum wage, effective 1 July 2026"
+        }
+      ],
+      "image": "/uploads/about-split3.webp",
+      "imageAlt": "Government office in Asunción, Paraguay — Migraciones fee schedule"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Layer three",
+      "heading": "Legal and professional fees.",
+      "paragraphs": [
+        {
+          "text": "We will not invent a number here, because Lincoln Global Partners does not quote residency work blind, and neither should anyone claiming to be transparent about it. Fees scale with <strong>route complexity</strong>, not route price — a SUACE company formation with genuine operating substance typically involves more structuring work than a straightforward real estate purchase, regardless of which one costs more in capital."
+        },
+        {
+          "text": "Fees cover route selection, investment due diligence, file preparation, submission, and liaison with the MIC and Migraciones through to the cédula — not just form-filling. Where a route, or a different country entirely, would serve you better, we say so before any fee is quoted — see <a href=\"/about/\">why Paraguay</a> for how we approach the advice stage."
+        }
+      ],
+      "notice": {
+        "title": "A fixed \"package\" price is a red flag",
+        "body": "If a website advertises a fixed, all-in &ldquo;residency package&rdquo; price without first understanding your route and circumstances, treat that number as a marketing anchor, not a quote. A firm quotation is provided during your consultation, scoped to your route, your family composition, and your existing structure."
+      },
+      "asideNoticeFirst": false,
+      "asideTable": [
+        {
+          "label": "Scope",
+          "value": "Route selection, investment diligence, file preparation, submission, liaison to the cédula"
+        },
+        {
+          "label": "Basis",
+          "value": "Quoted individually — route, family composition, existing structure"
+        },
+        {
+          "label": "Why not fixed",
+          "value": "A blind flat quote ignores the complexity that actually drives cost"
+        }
+      ],
+      "image": "/uploads/suace-split.webp",
+      "imageAlt": "Legal and business formation paperwork — Paraguay professional fees"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Layer four",
+      "heading": "Translation, apostille &amp; incidental costs.",
+      "paragraphs": [
+        {
+          "text": "This layer catches applicants off guard, because it is rarely itemised anywhere. It applies regardless of route, and scales with the number of family members included in the application."
+        }
+      ],
+      "table": [
+        {
+          "label": "Apostille of foreign civil documents",
+          "value": "~USD 20–150 per document — cost and process depend on the issuing country"
+        },
+        {
+          "label": "Certified Spanish translation",
+          "value": "~USD 30–100 per page — must be completed locally by a translator registered with the Paraguayan judiciary; a translation done abroad, even apostilled, is not accepted on its own"
+        },
+        {
+          "label": "Interpol certificate &amp; local police clearance",
+          "value": "Modest fixed fees, payable to the issuing authority; confirmed during file preparation"
+        },
+        {
+          "label": "Cédula (national ID card) issuance",
+          "value": "Modest fixed fee, issued once permanent residency is granted"
+        },
+        {
+          "label": "Travel &amp; accommodation in Asunción",
+          "value": "Varies — most routes require limited but real time in-country for biometrics and signatures; the film route, for example, typically involves roughly eight business days in Asunción"
+        }
+      ],
+      "notice": {
+        "title": "Typical range",
+        "body": "Added up, most single applicants land somewhere between <strong>USD 1,000 and USD 2,500</strong> in translation, apostille and incidental costs. Families with dependent children generally see this scale close to linearly per person, since each family member's documents go through the same apostille-and-translation chain."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/tour-split.webp",
+      "imageAlt": "Travel and document preparation for a Paraguay residency file"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Putting it together",
+      "heading": "Total cost estimate by route.",
+      "headingMax": "22ch",
+      "lead": "The investment figure is fixed by the route; government fees and incidentals are the indicative ranges above; legal fees are excluded here because they are quoted individually — add your confirmed quotation to reach your real all-in number.",
+      "leadMax": "62ch",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Film &amp; audiovisual — USD 40,000 (non-recoverable)",
+          "text": "Plus ~USD 480–560 government fees and ~USD 1,000–2,500 incidentals — subtotal before legal fees of roughly <strong>USD 41,500–43,000</strong>. See the <a href=\"/film/\">Paraguay film residency route</a>."
+        },
+        {
+          "num": "02",
+          "title": "SUACE company — USD 70,000 (retained, in your company)",
+          "text": "Plus the same government-fee and incidental ranges — subtotal before legal fees of roughly <strong>USD 71,500–73,000</strong>. See the <a href=\"/suace/\">SUACE business investment route</a>."
+        },
+        {
+          "num": "03",
+          "title": "Approved tourism project — USD 150,000 (retained, as a stake)",
+          "text": "Plus the same government-fee and incidental ranges — subtotal before legal fees of roughly <strong>USD 151,500–153,000</strong>. See the <a href=\"/tourism/\">Tourism investment route</a>."
+        },
+        {
+          "num": "04",
+          "title": "Real estate — USD 200,000 (retained, as title)",
+          "text": "Plus the same government-fee and incidental ranges — subtotal before legal fees of roughly <strong>USD 201,500–203,000</strong>. See the <a href=\"/real-estate/\">Real estate residency route</a>."
+        },
+        {
+          "num": "05",
+          "title": "Financial instruments — USD 200,000 (retained, held 2 years)",
+          "text": "Plus the same government-fee and incidental ranges — subtotal before legal fees of roughly <strong>USD 201,500–203,000</strong>. See the <a href=\"/financial-instruments/\">Financial instruments route</a>."
+        },
+        {
+          "num": "06",
+          "title": "The pattern across routes",
+          "text": "Across every route except film, government fees and incidentals together represent well under 1% of the total — the qualifying investment dominates almost entirely, and for four of the five routes that capital is retained by you, not spent."
+        }
+      ]
+    },
+    {
+      "_template": "ladder",
+      "band": "navy",
+      "id": "comparing-cost-across-routes-which-is-actually-cheapest",
+      "eyebrow": "The honest comparison",
+      "heading": "Comparing cost across routes: which is actually cheapest?",
+      "headingMax": "22ch",
+      "lead": "&ldquo;Cheapest&rdquo; depends entirely on what you are trying to buy, and this is where we differ from sites that rank routes purely by sticker price.",
+      "leadMax": "56ch",
+      "rungs": [
+        {
+          "fig": "$40K",
+          "title": "Lowest cash outlay — film",
+          "text": "The lowest cash outlay of any route. But it is a contribution, not an asset — the capital does not come back, and any financial upside is speculative.",
+          "href": "/film/"
+        },
+        {
+          "fig": "$70K",
+          "title": "Lowest cost with something retained — SUACE",
+          "text": "Gives you an operating company — real economic substance, not just a receipt.",
+          "href": "/suace/"
+        },
+        {
+          "fig": "$150K",
+          "title": "Best risk-adjusted middle ground — tourism",
+          "text": "Sits between SUACE and the two USD 200,000 routes, with project-linked yield potential rather than a fixed return.",
+          "href": "/tourism/"
+        },
+        {
+          "fig": "$200K",
+          "title": "Most tangible — real estate",
+          "text": "Converts into a hard, appreciating, income-producing asset you hold in your name.",
+          "href": "/real-estate/"
+        },
+        {
+          "fig": "$200K",
+          "title": "Most passive — financial instruments",
+          "text": "Requires no management at all — the trade-off for that passivity is a two-year minimum hold.",
+          "href": "/financial-instruments/"
+        }
+      ],
+      "note": "None of these is objectively &ldquo;the cheapest route&rdquo; once you account for what each one leaves you holding. The honest comparison is cost against what you get for it, not cost in isolation — which is also why we walk every prospective applicant through <a href=\"/#routes\">the full set of routes</a> before recommending one.",
+      "cta": {
+        "label": "Compare all five routes",
+        "href": "/#routes"
+      }
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The honest caveat",
+      "heading": "What the advertised number often leaves out.",
+      "paragraphs": [
+        {
+          "text": "A lot of Paraguay residency content online quotes a single headline figure — &ldquo;residency from USD 40,000&rdquo; — without separating the four layers above. That is not wrong, exactly; USD 40,000 genuinely is the lowest qualifying threshold. But it conflates three different things that deserve to stay separate."
+        }
+      ],
+      "notice": {
+        "title": "Three distinctions worth holding onto",
+        "body": "The <strong>qualifying investment</strong> is not the same as the <strong>all-in cost</strong> of the process — government fees, incidentals and, where applicable, legal fees sit on top.<br /><br />The <strong>Foreign Investor Certificate (CIE)</strong> is not the same as <strong>permanent residency</strong>, and permanent residency is not the same as <strong>citizenship</strong> — each is a separate credential, on a separate timeline. Citizenship is obtained later, by naturalisation, after the constitutional period of residence — it is never simply bought alongside the investment.<br /><br />A <strong>contribution</strong> (film) is not the same as <strong>retained capital</strong> (the other four routes) — treating a USD 40,000 non-recoverable contribution and a USD 200,000 property purchase as directly comparable &ldquo;costs&rdquo; obscures that one is an expense and the other is an asset."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/fin-split.webp",
+      "imageAlt": "Financial planning documents — the real cost of Paraguay residency"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Family applications",
+      "heading": "Family members &amp; additional costs.",
+      "paragraphs": [
+        {
+          "text": "Family members can generally be included in an Investor Pass application, and the specifics are confirmed against your circumstances and chosen route. As a rule of thumb for budgeting: government fees, apostille and translation costs are charged per applicant, so a family of four should expect those layers — not the qualifying investment itself, which is set once per application — to scale roughly by headcount."
+        }
+      ],
+      "notice": {
+        "title": "One route-specific exception",
+        "body": "Under the film route, the main applicant receives direct permanent residency, but dependent family members typically start on two-year temporary residency before converting — worth factoring into your planning if that route is under consideration. See the full <a href=\"/requirements/\">Paraguay residency requirements</a> checklist for the complete document list per family member."
+      },
+      "asideNoticeFirst": false,
+      "asideTable": [
+        {
+          "label": "Qualifying investment",
+          "value": "Set once per application, not per person"
+        },
+        {
+          "label": "Government fees, apostille, translation",
+          "value": "Charged per applicant — scale roughly by headcount"
+        },
+        {
+          "label": "Film route exception",
+          "value": "Dependants typically start on 2-year temporary residency before converting"
+        }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Cost breakdown",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Start your file",
+      "pull": "Clarity on cost, <span class=\"gold\">before you commit capital.</span>",
+      "lead": "Request an itemised breakdown for your route, family composition, and timeline.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
+  ]
+}

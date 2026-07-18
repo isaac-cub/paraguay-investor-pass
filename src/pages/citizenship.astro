@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay Citizenship by Investment? Not Quite';
+const description0 =
+  'No Paraguay citizenship-by-investment scheme exists. The real path is naturalisation after residency — timeline, requirements and dual-citizenship rules.';
+
+const fbFaqs = [
+  { q: 'Is there a Paraguay citizenship-by-investment programme?', a: "No. Paraguay's investment-linked programme, under Resolution N° 0283/2026, grants direct permanent residency, not citizenship. Citizenship follows later, by naturalisation, on the same constitutional terms available to any foreign resident — it cannot be purchased outright." },
+  { q: 'How long do I need to hold residency before I can apply for citizenship?', a: 'Three years of permanent residence, per Article 148 of Paraguay\'s Constitution. For Investor Pass holders this clock starts once permanent residency is granted, since the programme bypasses the ordinary two-year temporary-residency stage most other applicants must complete first.' },
+  { q: 'Who actually decides a naturalisation application — is it the same authority as residency?', a: 'No. Naturalisation is decided by the Corte Suprema de Justicia — Paraguay\'s Supreme Court — in a summary proceeding involving the Fiscal General\'s office, entirely separate from the Ministry of Industry and Commerce (which issues the CIE) and the Dirección Nacional de Migraciones (which grants residency). Three different authorities, three different timelines.' },
+  { q: 'Can I keep my current citizenship if I become a naturalised Paraguayan?', a: 'It depends on your country of origin, and the honest answer is more qualified than most guides suggest. Paraguay\'s Constitution (Art. 149) formally allows dual nationality only through a treaty or constitutional reciprocity — currently understood to cover Spain and Italy — and separately lists voluntary acquisition of another nationality as grounds for loss or suspension of naturalised citizenship (Arts. 150, 153). Reported enforcement against dual nationals from non-treaty countries appears limited, but this is not a settled point — get current, case-specific advice before proceeding.' },
+  { q: 'Do I need to speak Spanish to naturalise?', a: 'Some working ability in Spanish or Guaraní is realistically expected, alongside a civics-style review of Paraguayan history and government. The precise exam format is not uniformly documented in public sources, so treat it as a real requirement to prepare for, and confirm current practice with counsel as your filing date approaches.' },
+  { q: 'What is the realistic total timeline from making the investment to holding a Paraguayan passport?', a: 'Roughly four years is a reasonable planning figure: a matter of days for the CIE, several months for permanent residency, three years of qualifying residence, and then a further filing-to-resolution period with the Supreme Court, commonly described as several months to about a year. Nobody should plan around a faster figure than that.' },
+];
+
+const page = await getPage('citizenship');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Citizenship', path: '/citizenship/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay citizenship by naturalisation, not by investment',
+    description,
+    url: 'https://paraguayinvestorpass.com/citizenship/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>

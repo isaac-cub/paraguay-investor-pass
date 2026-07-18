@@ -27,3 +27,4 @@ pnpm-debug.log*
 # TinaCMS generated
 public/admin/
 tina/__generated__/
+docs/pillars/

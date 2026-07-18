@@ -1,0 +1,383 @@
+{
+  "slug": "requirements",
+  "seoTitle": "Paraguay Residency Requirements: Full Checklist",
+  "seoDescription": "Every document and eligibility rule for Paraguay residency by investment — CIE, permanent residency and the cédula, explained route by route.",
+  "ogImage": "/og/default.png",
+  "faqs": [
+    {
+      "question": "Do I need to speak Spanish to qualify for the Investor Pass?",
+      "answer": "No. There is no language test at the residency stage. Language ability becomes relevant only later, if and when a resident applies for citizenship by naturalisation, which does carry civics and language expectations."
+    },
+    {
+      "question": "Do all my documents need to be apostilled, or just some?",
+      "answer": "Any document issued outside Paraguay and used in the file — birth certificate, marriage certificate, criminal record — needs an apostille if the issuing country is a Hague Convention signatory, or consular legalisation if it is not. Documents obtained inside Paraguay during the process do not need an apostille."
+    },
+    {
+      "question": "Can I use a translation done in my home country?",
+      "answer": "It is not reliably accepted. Paraguayan authorities generally require translation by a traductor público registered in Paraguay, so this step is normally completed in Asunción as part of file preparation, even if the underlying documents were apostilled abroad."
+    },
+    {
+      "question": "How long does the whole process take, from investment to cédula?",
+      "answer": "The CIE is issued within five business days of a complete file. Permanent residency is a separate process, typically running several months. The cédula is then registered once residency is approved. Treat these as three sequential clocks, not one."
+    },
+    {
+      "question": "Does the Foreign Investor Certificate mean I already have residency?",
+      "answer": "No. The CIE confirms the investment qualifies; it is issued by the MIC. Permanent residency is a separate status granted afterward by the Dirección Nacional de Migraciones. They are commonly confused, including by other guides — on this site they are always kept apart."
+    },
+    {
+      "question": "Can my spouse and children be included in the same application?",
+      "answer": "Generally yes, with route-specific and case-specific detail confirmed before filing. Under the film route specifically, dependants typically receive two-year temporary residency initially rather than the direct permanent residency the main applicant receives, with a standard conversion pathway afterward — an example of why the fine print varies by route."
+    },
+    {
+      "question": "Which route has the simplest document file?",
+      "answer": "The financial instruments route is the most administratively contained: no company to form, no property title to diligence, and no business plan — just the personal document set plus a single certificate from a Central Bank–authorised entity. Real estate and SUACE carry additional route-specific paperwork (title, or corporate formation documents) on top of the core file."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Requirements",
+      "eyebrow": "Documents &amp; eligibility · every route",
+      "h1": "Paraguay residency requirements, checklist by checklist.",
+      "lead": "A qualifying investment from USD 40,000, a complete document file, and two sequential approvals — the Foreign Investor Certificate and permanent residency itself. Here is the full checklist, stage by stage, with the caveats most guides leave out.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "stats": [
+        {
+          "value": "5 days",
+          "label": "Foreign Investor Certificate (CIE)"
+        },
+        {
+          "value": "3",
+          "label": "Separate approvals, not one"
+        },
+        {
+          "value": "~180 days",
+          "label": "Typical document-recency window"
+        }
+      ],
+      "bgImage": "/uploads/about-hero.webp",
+      "bgAlt": "Paraguay landscape at dusk — residency requirements checklist"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The single most useful thing to know",
+      "heading": "Three approvals, three requirement sets.",
+      "paragraphs": [
+        {
+          "text": "Guides that treat &ldquo;Paraguay residency requirements&rdquo; as a single checklist are doing applicants a disservice. There are three distinct credentials, issued by two different authorities, on two different timelines — and every document in this checklist exists to support one of them."
+        },
+        {
+          "text": "Citizenship is a fourth, later step — by naturalisation, after the constitutional residence period, not conferred by the investment. It has its own requirements and sits outside this checklist."
+        }
+      ],
+      "table": [
+        {
+          "label": "Foreign Investor Certificate (CIE)",
+          "value": "Issued by the Ministry of Industry and Commerce (MIC), via SUACE. Confirms the investment qualifies — it is not residency. Typically <strong>5 business days</strong> from a complete file."
+        },
+        {
+          "label": "Permanent residency",
+          "value": "Granted by the Dirección Nacional de Migraciones. The actual legal-residency status, granted directly — no two-year temporary stage. Runs on a separate timeline, typically <strong>several months</strong>."
+        },
+        {
+          "label": "Cédula (national ID)",
+          "value": "Issued by Policía Nacional / Identificaciones. The physical ID card that lets a resident open accounts, obtain a RUC and function locally. Registered after residency is approved."
+        }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "Keeping the file from bouncing back",
+        "body": "Every document below supports one of these three approvals. Keeping the separation in mind is what usually keeps a file from being returned for a missing annex."
+      },
+      "image": "/uploads/about-split1.webp",
+      "imageAlt": "Government building in Asunción, Paraguay"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Who can apply",
+      "heading": "Eligibility, in plain terms.",
+      "headingMax": "18ch",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Age",
+          "text": "Applicants must be adults; dependent children are included on the main applicant's file, not assessed independently."
+        },
+        {
+          "num": "02",
+          "title": "Nationality",
+          "text": "Open to foreign nationals generally. A small number of visa-restricted nationalities require an additional letter from Paraguay's Ministry of Foreign Affairs (MRE) before travel."
+        },
+        {
+          "num": "03",
+          "title": "Health",
+          "text": "A standard medical certificate is required; there is no health-based exclusion beyond that."
+        },
+        {
+          "num": "04",
+          "title": "Criminal record",
+          "text": "A clean criminal record from the country of origin, and from any country of recent residence, is required and assessed — not merely requested."
+        },
+        {
+          "num": "05",
+          "title": "Source of funds",
+          "text": "The qualifying investment must be traceable to a legitimate source. Expect to document the paper trail behind the capital, not just proof it exists today."
+        },
+        {
+          "num": "06",
+          "title": "Family inclusion",
+          "text": "Spouses and dependent children can generally be included in the same application; specifics depend on the route and are confirmed before anything is filed."
+        }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "cream",
+      "eyebrow": "Regardless of route",
+      "heading": "The core document set.",
+      "headingMax": "18ch",
+      "lead": "These documents apply no matter which of the five investment routes is chosen. Route-specific investment evidence is covered separately below.",
+      "leadMax": "56ch",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Identity &amp; travel",
+          "text": "Valid passport with at least six months' remaining validity and legible copies of the biographical page.<br />Passport-sized photographs to Migraciones' format."
+        },
+        {
+          "num": "02",
+          "title": "Civil status",
+          "text": "Birth certificate, apostilled and translated.<br />Marriage certificate, if a spouse is included.<br />Birth certificates for any dependent children."
+        },
+        {
+          "num": "03",
+          "title": "Background",
+          "text": "Criminal record certificate from the country of origin, apostilled and dated recently.<br />Criminal record certificate from any country of recent residence.<br />MRE letter, for the small number of visa-restricted nationalities."
+        },
+        {
+          "num": "04",
+          "title": "Health",
+          "text": "A medical certificate confirming general fitness, issued to the standard the file requires."
+        },
+        {
+          "num": "05",
+          "title": "Investment evidence",
+          "text": "Documentation proving the qualifying investment — the specific form varies by route — plus, where applicable, evidence of the source of the invested funds."
+        },
+        {
+          "num": "06",
+          "title": "Administrative",
+          "text": "Completed migration application forms.<br />Power of attorney, where the file is progressed by counsel on the applicant's behalf."
+        }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "The two rules that trip people up",
+      "heading": "Apostille and translation.",
+      "paragraphs": [
+        {
+          "text": "<strong>Apostille.</strong> Any document issued outside Paraguay and destined for a Paraguayan file — birth certificate, marriage certificate, criminal record — must carry an apostille under the Hague Apostille Convention if the issuing country is a signatory. Non-signatory countries require consular legalisation instead, which takes longer and should be started early. Apostilles can only be applied to originals, not photocopies."
+        },
+        {
+          "text": "<strong>Translation.</strong> Once apostilled, foreign-language documents need a certified Spanish translation. Only a <em>traductor público</em> — a sworn translator registered in Paraguay — is reliably accepted; translations completed abroad are frequently rejected on review. In practice, translation is done on the ground in Asunción, as part of file preparation."
+        }
+      ],
+      "notice": {
+        "title": "How recent is &ldquo;recent&rdquo;",
+        "body": "Criminal record certificates and, for the real estate and financial-instruments routes, the investment-evidencing documents are generally expected to be dated within roughly <strong>180 days</strong> of filing. Because apostille and translation can themselves take several weeks, order background documents early — but not so early that they age out before the file is submitted."
+      },
+      "asideNoticeFirst": false,
+      "asideTable": [
+        {
+          "label": "Apostille",
+          "value": "Required for foreign-issued documents from Hague signatories; consular legalisation otherwise"
+        },
+        {
+          "label": "Translation",
+          "value": "Certified Spanish translation by a Paraguay-registered <em>traductor público</em>, done in Asunción"
+        },
+        {
+          "label": "Recency window",
+          "value": "~180 days for criminal records &amp; route-specific investment evidence"
+        }
+      ],
+      "image": "/uploads/about-split3.webp",
+      "imageAlt": "Legal document preparation for a Paraguay residency file"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "What changes route to route",
+      "heading": "Investment evidence, by route.",
+      "paragraphs": [
+        {
+          "text": "The personal document set above is constant across every route. What changes is the evidence of the qualifying investment itself."
+        }
+      ],
+      "table": [
+        {
+          "label": "Real estate — USD 200,000",
+          "value": "A registered transfer deed, or a notarised purchase contract with at least 30% of the declared value paid, for qualifying income-generating property. See the <a href=\"/real-estate/\">Paraguay real estate residency route</a>."
+        },
+        {
+          "label": "Financial instruments — USD 200,000",
+          "value": "A certificate from a Central Bank–authorised entity confirming the value and the required two-year holding term. See <a href=\"/financial-instruments/\">Paraguay financial instruments residency</a>."
+        },
+        {
+          "label": "Approved tourism projects — USD 150,000",
+          "value": "Evidence of the investment into a MIC-approved tourism development, with the project's business plan and reporting schedule. See <a href=\"/tourism/\">Paraguay tourism investment residency</a>."
+        },
+        {
+          "label": "SUACE company — USD 70,000",
+          "value": "Evidence the company has been formed and capitalised to threshold through the SUACE system, with supporting corporate documentation. See the <a href=\"/suace/\">SUACE Paraguay company residency route</a>."
+        },
+        {
+          "label": "Film &amp; audiovisual — USD 40,000",
+          "value": "Evidence of the contribution to an approved production, plus a separate demonstration of at least USD 80,000 in available funds. See the <a href=\"/film/\">Paraguay film residency route</a>."
+        }
+      ],
+      "notice": {
+        "title": "One unconfirmed detail",
+        "body": "Third-party sources suggest the SUACE productive-investment track may also expect a business plan and possibly a job-creation requirement tied to the capitalised company. That detail is not yet reflected in the published resolution text we have reviewed — treat it as indicative, and confirm the current position with counsel before structuring the company."
+      },
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "The film route sits apart",
+        "body": "Film &amp; audiovisual investment runs through a separate, pre-existing pathway administered via Paraguay's audiovisual institute (INAP) under Ley N&deg; 6106/2018 — not Resolution N&deg; 0283/2026. It reaches the same residency and citizenship destination, but its documentation and timeline are governed by different rules. See the <a href=\"/film/\">Paraguay film residency route</a> for the honest caveats."
+      },
+      "image": "/uploads/home-realestate.webp",
+      "imageAlt": "Modern residential apartment tower in Asunción, Paraguay"
+    },
+    {
+      "_template": "steps",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Start to finish",
+      "heading": "The sequence, at a high level.",
+      "paragraphs": [
+        {
+          "text": "Because Investor Pass applicants bypass the standard two-year temporary-residency stage, the overall file looks different from Paraguay's ordinary immigration process — shorter in structure, but not instant."
+        }
+      ],
+      "notice": {
+        "title": "One honest caveat",
+        "body": "Anyone quoting a single headline timeline for &ldquo;getting residency&rdquo; is usually citing the five-day CIE figure alone. Permanent residency runs on its own, longer clock."
+      },
+      "items": [
+        {
+          "title": "Route selection &amp; strategy",
+          "text": "Confirm which of the five routes fits your objectives and budget — see the <a href=\"/#routes\">full route comparison</a> for how they differ in capital, control and ongoing obligations."
+        },
+        {
+          "title": "Document collection",
+          "text": "Apostille and translate the civil-status and background documents in parallel with structuring the investment — usually the longest single stretch of the process."
+        },
+        {
+          "title": "The qualifying investment",
+          "text": "The investment is made and documented to the standard the route requires — purchase, capitalisation, deployment, or contribution."
+        },
+        {
+          "title": "Foreign Investor Certificate",
+          "text": "With a complete file, the MIC issues the CIE within five business days — the fastest, most predictable step in the process."
+        },
+        {
+          "title": "Permanent residency",
+          "text": "The file is progressed with the Dirección Nacional de Migraciones, typically over several months, on a separate clock from the CIE."
+        },
+        {
+          "title": "The cédula",
+          "text": "Once residency is approved, the applicant registers for the Paraguayan national ID card — unlocking bank accounts, a RUC and daily proof of identity."
+        },
+        {
+          "title": "Maintaining status",
+          "text": "Permanent residency is maintained with at least one visit to Paraguay every three years — a low bar by regional standards, but a real one."
+        },
+        {
+          "title": "Citizenship, later",
+          "text": "After three years of permanent residence, and subject to language, civics and physical-presence requirements, a resident may apply for citizenship by naturalisation — a separate application, not an automatic outcome."
+        }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Where files actually stall",
+      "heading": "What tends to cause delay.",
+      "headingMax": "20ch",
+      "lead": "The documents above are all obtainable by any applicant; what causes real delay is almost always sequencing and detail, not eligibility.",
+      "leadMax": "58ch",
+      "cards": [
+        {
+          "num": "01",
+          "title": "Documents aging out",
+          "text": "Apostilled criminal records and investment-evidencing certificates have a practical shelf life. Ordering them too early means re-doing them."
+        },
+        {
+          "num": "02",
+          "title": "Translation done in the wrong place",
+          "text": "A translation completed abroad, however well-intentioned, is frequently not accepted. Budget for translation in Asunción, as part of the process."
+        },
+        {
+          "num": "03",
+          "title": "Undisclosed criminal history",
+          "text": "Even minor, resolved matters should be disclosed and explained rather than omitted — omissions surface in checks and cost far more time."
+        },
+        {
+          "num": "04",
+          "title": "Source-of-funds gaps",
+          "text": "An investment that is real but poorly documented at origin slows both the bank side and the residency file."
+        },
+        {
+          "num": "05",
+          "title": "Treating the CIE as the finish line",
+          "text": "The certificate is a real milestone, but it is not residency. Plan around the several-months residency figure, not the five-day CIE figure."
+        }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Requirements &amp; documents",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Start your file",
+      "pull": "A complete file, <span class=\"gold\">prepared properly the first time.</span>",
+      "lead": "Request guidance on the documents your route requires and the realistic timeline for your circumstances.",
+      "ctas": [
+        {
+          "label": "Start your file",
+          "href": "/contact/",
+          "variant": "gold"
+        },
+        {
+          "label": "Compare routes",
+          "href": "/#routes",
+          "variant": "ghost"
+        }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
+  ]
+}

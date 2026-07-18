@@ -79,6 +79,35 @@
       ]
     },
     {
+      "title": "Guides",
+      "links": [
+        {
+          "href": "/requirements/",
+          "label": "Requirements & Documents"
+        },
+        {
+          "href": "/cost/",
+          "label": "Cost Breakdown"
+        },
+        {
+          "href": "/tax-residency/",
+          "label": "Tax Residency"
+        },
+        {
+          "href": "/citizenship/",
+          "label": "Citizenship"
+        },
+        {
+          "href": "/paraguay-vs-panama/",
+          "label": "Paraguay vs Panama"
+        },
+        {
+          "href": "/paraguay-vs-uruguay/",
+          "label": "Paraguay vs Uruguay"
+        }
+      ]
+    },
+    {
       "title": "Get Started",
       "links": [
         {

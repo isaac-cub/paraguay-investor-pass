@@ -1,0 +1,261 @@
+{
+  "slug": "paraguay-vs-uruguay",
+  "seoTitle": "Paraguay vs Uruguay Residency: An Honest Comparison",
+  "seoDescription": "Paraguay vs Uruguay residency compared: cost, timeline, tax system and citizenship path — an honest, side-by-side guide for HNW families choosing a base.",
+  "ogImage": "/og/default.png",
+  "faqs": [
+    {
+      "question": "Is Paraguay or Uruguay cheaper for residency?",
+      "answer": "Paraguay, by a wide margin. Paraguay's Investor Pass starts at USD 40,000 (film route) and tops out at USD 200,000 (real estate or financial instruments). Uruguay has no equivalent fixed-price investor route to legal residency, and its investment-linked path to tax residency specifically now starts at roughly USD 2,000,000 in real estate, effective 1 January 2026."
+    },
+    {
+      "question": "Which country has better tax benefits for residents?",
+      "answer": "It depends on the time horizon. Paraguay's territorial system has no sunset — foreign-source income stays outside scope indefinitely, for as long as residency and tax registration continue. Uruguay offers a genuinely attractive but time-limited exemption on foreign passive income (commonly described as 11 years for new residents), after which that income is taxed, at a transitional then full rate, unless a fixed lump-sum payment option is elected instead. For a permanent, simple tax position, Paraguay's structure is easier to plan around long term."
+    },
+    {
+      "question": "Does either country tax my worldwide income?",
+      "answer": "No, not in the way citizenship-based systems like the United States' do. Paraguay taxes strictly on a Paraguayan-source basis, with no time limit. Uruguay taxes most income on a source basis too, but specifically brings certain foreign-source passive income (dividends, interest) into scope after a new resident's tax holiday expires — a meaningful difference from Paraguay's approach, and worth understanding before choosing between the two. Neither status changes what your home country's own rules say about you."
+    },
+    {
+      "question": "Which is faster: Paraguay or Uruguay residency?",
+      "answer": "Paraguay, structurally. The Investor Pass issues the Foreign Investor Certificate within about five business days and grants permanent — not temporary — residency within several months, bypassing the standard two-year temporary stage entirely. Uruguay grants practical rights to remain from the date a file is lodged, but the formal permanent residency card is commonly reported to take well over a year to issue, and Uruguay has no equivalent fast-track investor category."
+    },
+    {
+      "question": "Can I get citizenship faster in Paraguay or Uruguay?",
+      "answer": "The residence periods are similar — three years in Paraguay (from permanent residency) versus three years (married or with dependent children) or five years (single) in Uruguay — but Paraguay's Investor Pass shortens the path to that starting line considerably, since permanent residency is granted almost immediately rather than after a multi-year temporary stage. Uruguay's naturalisation process also expects roughly 183 days of physical presence per year throughout the qualifying period, a materially heavier ongoing commitment than Paraguay's residency-maintenance standard."
+    },
+    {
+      "question": "Is Uruguay a better choice than Paraguay for a wealthy family?",
+      "answer": "Not automatically — it depends what \"better\" is optimising for. Uruguay offers longer-established institutional maturity, a higher sovereign credit rating, and a distinct quality-of-life proposition, at a materially higher cost of entry and cost of living. Paraguay offers a faster, more capital-efficient, and — for tax purposes — structurally simpler route to the same eventual destination: permanent residency and, later, citizenship. Families prioritising capital efficiency and simplicity tend to choose Paraguay; families for whom a seven-figure Uruguayan commitment and a higher day-to-day cost base are genuinely immaterial sometimes choose Uruguay instead. We assess this against your actual circumstances rather than defaulting to either answer."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Paraguay vs Uruguay",
+      "eyebrow": "Comparison · Southern Cone residency",
+      "h1": "Paraguay vs Uruguay: an honest residency comparison.",
+      "lead": "Both countries offer a genuine, lawful path from residency to citizenship — but they are built for very different budgets and priorities. Paraguay's Investor Pass grants direct permanent residency from a qualifying investment starting at USD 40,000, under a territorial tax system with no sunset clause. Uruguay pairs a materially higher cost of living with an 11-year, time-limited tax exemption on foreign passive income, and no comparable low-threshold investor route into residency itself.",
+      "ctas": [
+        { "label": "Compare your fit", "href": "/contact/", "variant": "gold" },
+        { "label": "See all routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "stats": [
+        { "value": "$40K", "label": "Paraguay's lowest entry point (film route)" },
+        { "value": "No investor visa", "label": "Uruguay ties residency to income, not investment" },
+        { "value": "Territorial", "label": "Paraguay's permanent tax system vs. Uruguay's 11-year holiday" }
+      ],
+      "bgImage": "/uploads/fin-hero.webp",
+      "bgAlt": "Financial district in Asunción, Paraguay — Paraguay vs Uruguay residency comparison"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Two Southern Cone neighbours",
+      "heading": "Why these two countries get compared.",
+      "paragraphs": [
+        { "text": "Paraguay and Uruguay are neighbours in the Southern Cone, both founding members of Mercosur, and both constitutional republics with a long tradition of political stability relative to the region — genuinely open to foreign residents, not merely tolerant of them. That is roughly where the similarity ends. Uruguay has spent two decades building a reputation as Latin America's most institutionally developed small state, often described as &ldquo;the Switzerland of South America,&rdquo; with a correspondingly higher cost of living and a tax system that still reaches certain foreign income until a resident's temporary holiday expires. Paraguay has spent the same two decades building the opposite proposition: one of the most capital-efficient, least bureaucratic residency programmes in the Americas, on a territorial tax system with no time limit at all, at a fraction of Uruguay's cost of entry and cost of living." },
+        { "text": "Neither country is &ldquo;better&rdquo; in the abstract. They serve different objectives, and this page is written to help you work out which one serves yours — see <a href=\"/about/\">why we take this approach generally</a>." }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "In one line",
+        "body": "Paraguay optimises for capital efficiency and a permanent, simple tax position. Uruguay optimises for institutional maturity and a particular lifestyle — at a materially higher cost."
+      },
+      "image": "/uploads/about-split1.webp",
+      "imageAlt": "Government building in Asunción, Paraguay — Southern Cone context"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Legal residency",
+      "heading": "How you actually get in.",
+      "paragraphs": [
+        { "text": "<strong>Paraguay's Investor Pass is an investment-linked route to direct permanent residency.</strong> Under Resolution N&deg; 0283/2026, a qualifying investment in one of four routes — <a href=\"/suace/\">SUACE company formation</a> from USD 70,000, an <a href=\"/tourism/\">approved tourism project</a> from USD 150,000, <a href=\"/real-estate/\">real estate</a> from USD 200,000, or <a href=\"/financial-instruments/\">financial instruments</a> from USD 200,000 — plus a separate, lower-cost <a href=\"/film/\">film and audiovisual pathway</a> from USD 40,000 under Ley N&deg; 6106/2018, earns the Foreign Investor Certificate (CIE) within roughly five business days of a complete file. The CIE then supports a permanent residency application with Paraguay's Dirección Nacional de Migraciones, which typically resolves over several months and bypasses the ordinary two-year temporary-residency stage entirely. See the full <a href=\"/requirements/\">document checklist</a> for what the file actually requires." },
+        { "text": "<strong>Uruguay has no equivalent investor visa.</strong> Legal residency in Uruguay is not tied to a fixed investment amount. The most common route for internationally mobile applicants — often called the &ldquo;rentista&rdquo; or independent-means category — is built on demonstrating a stable, recurring income, with figures commonly cited around USD 1,500 per month for a single applicant and USD 2,500 per month for a couple, sourced from pensions, rental income, dividends or similar. Buying property or starting a business in Uruguay can support an application by demonstrating genuine economic ties, but neither is itself a fixed-price fast lane the way Paraguay's routes are." },
+        { "text": "<strong>Timeline is the other meaningful gap.</strong> Applicants in Uruguay generally gain the practical right to live and work in the country from the day their residency file is lodged, while the file itself is processed — but the formal permanent residency card commonly takes considerably longer to issue, often reported as well over a year. Paraguay's structure differs in kind, not just degree: the CIE is a matter of days, and permanent — not temporary — residency follows in months, not years, because the Investor Pass is designed to skip the standard temporary stage entirely." }
+      ],
+      "asideNoticeFirst": false,
+      "asideTable": [
+        { "label": "Paraguay route", "value": "Investment-linked — four Resolution routes plus a separate film pathway" },
+        { "label": "Uruguay route", "value": "Income-based (&ldquo;rentista&rdquo;) — no fixed investment" },
+        { "label": "CIE timeline", "value": "~5 business days, once the file is complete" },
+        { "label": "Uruguay card timeline", "value": "Commonly reported as well over a year" },
+        { "label": "Temporary stage", "value": "Paraguay: none for Investor Pass holders. Uruguay: no equivalent fast-track category" }
+      ],
+      "asideNotice": {
+        "title": "The headline gap",
+        "body": "Paraguay's Investor Pass skips the two-year temporary stage entirely and grants permanent residency directly. Uruguay has no comparable investment-linked fast lane into residency itself."
+      }
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Tax system",
+      "heading": "Territorial, permanent vs. a time-limited holiday.",
+      "paragraphs": [
+        { "text": "<strong>Paraguay runs a genuinely territorial system, with no sunset.</strong> Under Ley N&deg; 6380/2019, Paraguay taxes income arising from Paraguayan sources; income earned abroad sits outside the scope of Paraguayan income tax indefinitely, for as long as an individual remains a Paraguayan taxpayer. There is no expiry date on this treatment. Holding Paraguayan legal residency does not, by itself, make someone a Paraguayan tax resident — that requires registering as a taxpayer (RUC) with DNIT. See <a href=\"/tax-residency/\">Paraguay tax residency, explained</a> for the full picture." },
+        { "text": "<strong>Uruguay's system is often described as &ldquo;territorial,&rdquo; but that is not quite accurate.</strong> Uruguay taxes labour and business income largely on a source basis, but since a 2011 reform it has specifically brought certain foreign-source passive income — dividends, interest and similar capital returns — into scope under its personal income tax. What Uruguay offers instead is a time-limited exemption, popularly called the &ldquo;tax holiday&rdquo;: new tax residents can generally exclude that foreign passive income for a period commonly reported as 11 years, after which a transitional reduced rate applies before the ordinary rate takes over — or a resident can elect a flat, lower permanent rate on foreign passive income from the outset instead. This is a recently and repeatedly reformed area of Uruguayan law, so current thresholds should be confirmed with Uruguayan tax counsel before relying on them." },
+        { "text": "<strong>Qualifying for Uruguayan tax residency without spending most of the year there also now costs considerably more.</strong> Alongside the ordinary 183-days-present test and a &ldquo;centre of economic or vital interests&rdquo; test, Uruguay allows tax residency to be established through investment — historically real estate above a threshold indexed in Unidades Indexadas (UI). Effective 1 January 2026, that threshold rose sharply, reported at roughly USD 2,000,000, up from a previously reported USD 500,000&ndash;600,000. An alternative route — a USD 100,000 annual contribution to Uruguay's National Innovation Fund — has also been introduced. These figures come from post-reform secondary reporting rather than a primary Uruguayan tax-authority text, so they should be confirmed directly before relying on them." },
+        { "text": "<strong>The practical upshot:</strong> Paraguay's territorial system is simpler to reason about because it does not change over time. Uruguay's system can be genuinely attractive for the right profile, but it is a temporary exemption with an expiry date and a threshold that has just risen substantially — not a permanent structural feature the way Paraguay's territoriality is. Neither status substitutes for correctly exiting tax residency in your home country; see <a href=\"/tax-residency/\">Paraguay tax residency</a> for how that half of the picture works." }
+      ],
+      "asideNoticeFirst": false,
+      "asideTable": [
+        { "label": "Tax basis", "value": "Paraguay: territorial, no sunset. Uruguay: source-based, with foreign passive income in scope after the holiday" },
+        { "label": "New-resident holiday", "value": "Uruguay only — commonly reported as 11 years" },
+        { "label": "Investment threshold for tax residency", "value": "Uruguay: ~USD 2,000,000 in real estate (2026), or USD 100,000/yr to the Innovation Fund" }
+      ],
+      "asideNotice": {
+        "title": "CRS: the quiet difference",
+        "body": "Uruguay participates in the OECD's Common Reporting Standard for automatic exchange of information; Paraguay, as of the most recent data reviewed, does not. Not a reason on its own to choose either country — but a real difference in how each jurisdiction reports to foreign tax authorities."
+      }
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "Citizenship",
+      "heading": "Naturalisation in both, on different clocks.",
+      "paragraphs": [
+        { "text": "Neither country sells citizenship. Both require a period of lawful residence, followed by a formal naturalisation process — this is one area where Paraguay and Uruguay are structurally similar, even though the specific numbers differ." },
+        { "text": "<strong>Paraguay</strong> requires three years of permanent residence under Article 148 of its Constitution, counted from the grant of permanent residency — which, for Investor Pass holders, starts almost immediately because the direct-residency route skips the temporary stage. The application is filed with the Corte Suprema de Justicia, not an immigration authority, and the realistic floor from investment to passport in hand is around four years once filing-to-resolution time is added. See <a href=\"/citizenship/\">Paraguay citizenship by naturalisation</a> for the full process, including dual-citizenship rules — Paraguay permits it only where a treaty or constitutional reciprocity exists, currently understood to mean Spain and Italy." },
+        { "text": "<strong>Uruguay</strong> requires three years of legal residence for applicants who are married or have dependent children, or five years for single applicants, with a physical-presence expectation commonly cited at 183 or more days per calendar year throughout the qualifying period — materially more demanding, day to day, than Paraguay's &ldquo;one visit every three years&rdquo; standard for maintaining residency. Conversational Spanish is expected at interview stage in both countries' naturalisation processes. Uruguay is generally reported to take a more permissive approach to dual citizenship, without Paraguay's treaty-reciprocity restriction — a genuine point in its favour for applicants from countries outside Paraguay's narrow list, though current practice is worth confirming with Uruguayan counsel directly." }
+      ],
+      "asideNoticeFirst": false,
+      "asideTable": [
+        { "label": "Residence period", "value": "Paraguay: 3 years (Art. 148). Uruguay: 3 years (married/dependants) or 5 years (single)" },
+        { "label": "Presence expectation", "value": "Paraguay: one visit every 3 years to maintain residency. Uruguay: ~183+ days/year effectively expected" },
+        { "label": "Dual citizenship", "value": "Paraguay: only via treaty/reciprocity (Spain, Italy). Uruguay: generally more permissive — confirm current practice" },
+        { "label": "Deciding authority", "value": "Paraguay: Corte Suprema de Justicia. Uruguay: separate naturalisation process" }
+      ],
+      "image": "/uploads/about-split3.webp",
+      "imageAlt": "Administrative building in Paraguay — citizenship by naturalisation"
+    },
+    {
+      "_template": "factRow",
+      "band": "navy",
+      "eyebrow": "Cost of living and cost of entry",
+      "heading": "The gap is measured in orders of magnitude.",
+      "headingMax": "24ch",
+      "lead": "Paraguay remains one of the least expensive countries in the Americas to actually live in day to day, while Montevideo and Punta del Este run closer to a mid-tier Western European city. That gap compounds the residency-cost gap above it. The honest counterpoint: Uruguay's higher cost buys a longer-established, higher sovereign credit rating.",
+      "leadMax": "62ch",
+      "facts": [
+        { "value": "$40K", "label": "Entry point of Paraguay's least expensive route (film)" },
+        { "value": "~$2M", "label": "Uruguay's investment-linked tax-residency threshold, effective 2026" },
+        { "value": "BBB-/Baa3", "label": "Paraguay's investment-grade rating, earned 2024&ndash;2025" },
+        { "value": "BBB+/Baa1", "label": "Uruguay's longer-established investment-grade rating" }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Side by side",
+      "heading": "Comparison table: Paraguay vs Uruguay.",
+      "paragraphs": [
+        { "text": "The Paraguay-side facts below are drawn from, and consistent with, this site's own <a href=\"/tax-residency/\">tax residency</a> and <a href=\"/citizenship/\">citizenship</a> guidance. The Uruguay-side figures are gathered from third-party reporting on a recently reformed, still-settling area of Uruguayan law." }
+      ],
+      "table": [
+        { "label": "Qualifying investment for residency", "value": "<strong>Paraguay:</strong> from USD 40,000 (film route) to USD 200,000 (real estate / financial instruments), route-dependent — <strong>Uruguay:</strong> no fixed investment for legal residency; income-based route from roughly USD 1,500/month (single)" },
+        { "label": "Investment-linked fast lane", "value": "<strong>Paraguay:</strong> yes — five statutory routes under Resolution N&deg; 0283/2026 and Ley N&deg; 6106/2018 — <strong>Uruguay:</strong> no dedicated investor-residency visa; investment mainly relevant to the separate tax-residency test" },
+        { "label": "Time to permanent residency", "value": "<strong>Paraguay:</strong> CIE in ~5 business days; permanent residency in several months, no prior temporary stage — <strong>Uruguay:</strong> practical right to remain from filing; formal permanent card commonly reported to take well over a year" },
+        { "label": "Ongoing presence to keep residency", "value": "<strong>Paraguay:</strong> one visit every 3 years — <strong>Uruguay:</strong> not fixed for legal residency; ~183+ days/year effectively expected for tax residency and naturalisation" },
+        { "label": "Tax system", "value": "<strong>Paraguay:</strong> territorial, permanent — foreign-source income outside scope indefinitely — <strong>Uruguay:</strong> source-based for most income, but foreign passive income (dividends, interest) comes into scope after an 11-year new-resident holiday" },
+        { "label": "Investment threshold for tax residency specifically", "value": "<strong>Paraguay:</strong> not a separate test — tied to the same Investor Pass routes — <strong>Uruguay:</strong> from roughly USD 2,000,000 in real estate (effective 1 Jan 2026), USD 100,000/year to the National Innovation Fund, or the 183-day presence test" },
+        { "label": "CRS (automatic exchange of information)", "value": "<strong>Paraguay:</strong> not currently a participant — <strong>Uruguay:</strong> participant" },
+        { "label": "Time to citizenship eligibility", "value": "<strong>Paraguay:</strong> 3 years' permanent residence (Art. 148) — <strong>Uruguay:</strong> 3 years (married/dependants) or 5 years (single), with ~183 days/year presence expected" },
+        { "label": "Dual citizenship", "value": "<strong>Paraguay:</strong> only via treaty/reciprocity (Spain, Italy) — <strong>Uruguay:</strong> generally permitted, more broadly — confirm current practice" },
+        { "label": "Sovereign credit rating", "value": "<strong>Paraguay:</strong> BBB- (S&amp;P) / Baa3 (Moody's) — investment grade since 2024&ndash;2025 — <strong>Uruguay:</strong> BBB+ (S&amp;P) / Baa1 (Moody's) — investment grade, longer established" },
+        { "label": "Cost of living", "value": "<strong>Paraguay:</strong> among the lowest in the Americas — <strong>Uruguay:</strong> among the highest in Latin America, closer to Western Europe" },
+        { "label": "Mercosur member", "value": "Both — Paraguay and Uruguay are founding Mercosur members" }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "A live area of law",
+        "body": "Several Uruguayan figures above — the 2026 tax-holiday threshold, income-based residency figures, and processing timelines — are sourced from secondary reporting rather than a primary statute reviewed directly for this page. Confirm current figures with Uruguayan counsel before they factor into a decision."
+      }
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Which country actually fits you",
+      "heading": "Paraguay is very likely the right answer if&hellip;",
+      "headingMax": "26ch",
+      "cards": [
+        {
+          "title": "The lowest capital commitment",
+          "text": "You want the lowest capital commitment into a genuine residency-to-citizenship pathway — the <a href=\"/film/\">film route</a> at USD 40,000 or <a href=\"/suace/\">SUACE</a> at USD 70,000 are the most capital-efficient entries in the region."
+        },
+        {
+          "title": "A tax system with no expiry date",
+          "text": "You want a territorial tax system that does not carry an expiry date, and you're comfortable doing the registration work (RUC, DNIT) to actually establish <a href=\"/tax-residency/\">Paraguay tax residency</a>."
+        },
+        {
+          "title": "An asset, not a receipt",
+          "text": "You want an asset you can point to at the end of the process — <a href=\"/real-estate/\">real estate</a> at USD 200,000 converts your qualifying investment into title, not just a receipt."
+        },
+        {
+          "title": "A hands-off, passive route",
+          "text": "You want a hands-off route — <a href=\"/financial-instruments/\">financial instruments</a> at USD 200,000, held two years, requires no ongoing management."
+        },
+        {
+          "title": "Project-linked upside",
+          "text": "You want project-linked upside alongside your residency — the <a href=\"/tourism/\">tourism route</a> at USD 150,000."
+        },
+        {
+          "title": "A genuine second base, not a primary home",
+          "text": "Low ongoing presence requirements matter to you, because your life and business are based elsewhere and Paraguay is genuinely a second base, not your primary home."
+        }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "cream",
+      "eyebrow": "The other side of the comparison",
+      "heading": "Uruguay deserves serious consideration instead if&hellip;",
+      "headingMax": "28ch",
+      "lead": "Most of the families we work with are optimising for capital efficiency, a simple and permanent tax position, and a credible-but-not-maximal presence requirement — exactly the profile Paraguay's Investor Pass was built for. Where Uruguay is genuinely the better fit, we say so, consistent with <a href=\"/about/\">how we approach every recommendation</a>. If you'd like your specific circumstances assessed directly against both, <a href=\"/contact/\">request information</a> and we'll walk through it plainly.",
+      "leadMax": "72ch",
+      "cards": [
+        {
+          "title": "A seven-figure real-estate budget",
+          "text": "Your budget genuinely accommodates a seven-figure real-estate commitment specifically for the investment-linked tax-residency route, and you value the institutional maturity that comes with it."
+        },
+        {
+          "title": "Cost of living isn't a constraint",
+          "text": "A materially higher cost of living is not a real constraint, and Montevideo or Punta del Este's particular lifestyle — European-inflected, English widely spoken in professional circles, strong healthcare — is a specific draw."
+        },
+        {
+          "title": "You can be there most of the year",
+          "text": "You're prepared to spend most of the year physically present to satisfy Uruguay's residence and naturalisation tests, rather than maintaining a lighter-touch second residency."
+        },
+        {
+          "title": "Dual citizenship flexibility is a firm requirement",
+          "text": "Broader dual-citizenship flexibility, without Paraguay's treaty-reciprocity restriction, is a firm requirement for your nationality."
+        }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Paraguay vs Uruguay",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Compare your fit",
+      "pull": "Which country actually <span class=\"gold\">fits your family?</span>",
+      "lead": "Request a direct comparison against your nationality, budget and presence tolerance.",
+      "ctas": [
+        { "label": "Request information", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare all routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
+  ]
+}

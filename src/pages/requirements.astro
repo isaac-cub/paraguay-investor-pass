@@ -1,0 +1,44 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay Residency Requirements: Full Checklist';
+const description0 =
+  'Every document and eligibility rule for Paraguay residency by investment — CIE, permanent residency and the cédula, explained route by route.';
+
+const fbFaqs = [
+  { q: 'Do I need to speak Spanish to qualify for the Investor Pass?', a: 'No. There is no language test at the residency stage. Language ability becomes relevant only later, if and when a resident applies for citizenship by naturalisation, which does carry civics and language expectations.' },
+  { q: 'Do all my documents need to be apostilled, or just some?', a: "Any document issued outside Paraguay and used in the file — birth certificate, marriage certificate, criminal record — needs an apostille if the issuing country is a Hague Convention signatory, or consular legalisation if it is not. Documents obtained inside Paraguay during the process do not need an apostille." },
+  { q: 'Can I use a translation done in my home country?', a: 'It is not reliably accepted. Paraguayan authorities generally require translation by a traductor público registered in Paraguay, so this step is normally completed in Asunción as part of file preparation, even if the underlying documents were apostilled abroad.' },
+  { q: 'How long does the whole process take, from investment to cédula?', a: 'The CIE is issued within five business days of a complete file. Permanent residency is a separate process, typically running several months. The cédula is then registered once residency is approved. Treat these as three sequential clocks, not one.' },
+  { q: 'Does the Foreign Investor Certificate mean I already have residency?', a: 'No. The CIE confirms the investment qualifies; it is issued by the MIC. Permanent residency is a separate status granted afterward by the Dirección Nacional de Migraciones. They are commonly confused, including by other guides — on this site they are always kept apart.' },
+  { q: 'Can my spouse and children be included in the same application?', a: 'Generally yes, with route-specific and case-specific detail confirmed before filing. Under the film route specifically, dependants typically receive two-year temporary residency initially rather than the direct permanent residency the main applicant receives, with a standard conversion pathway afterward — an example of why the fine print varies by route.' },
+  { q: 'Which route has the simplest document file?', a: 'The financial instruments route is the most administratively contained: no company to form, no property title to diligence, and no business plan — just the personal document set plus a single certificate from a Central Bank–authorised entity. Real estate and SUACE carry additional route-specific paperwork (title, or corporate formation documents) on top of the core file.' },
+];
+
+const page = await getPage('requirements');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Requirements', path: '/requirements/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay residency requirements: documents and eligibility',
+    description,
+    url: 'https://paraguayinvestorpass.com/requirements/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>

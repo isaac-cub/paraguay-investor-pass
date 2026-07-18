@@ -1,0 +1,187 @@
+{
+  "slug": "citizenship",
+  "seoTitle": "Paraguay Citizenship by Investment? Not Quite",
+  "seoDescription": "No Paraguay citizenship-by-investment scheme exists. The real path is naturalisation after residency — timeline, requirements and dual-citizenship rules.",
+  "ogImage": "/og/default.png",
+  "faqs": [
+    {
+      "question": "Is there a Paraguay citizenship-by-investment programme?",
+      "answer": "No. Paraguay's investment-linked programme, under Resolution N° 0283/2026, grants direct permanent residency, not citizenship. Citizenship follows later, by naturalisation, on the same constitutional terms available to any foreign resident — it cannot be purchased outright."
+    },
+    {
+      "question": "How long do I need to hold residency before I can apply for citizenship?",
+      "answer": "Three years of permanent residence, per Article 148 of Paraguay's Constitution. For Investor Pass holders this clock starts once permanent residency is granted, since the programme bypasses the ordinary two-year temporary-residency stage most other applicants must complete first."
+    },
+    {
+      "question": "Who actually decides a naturalisation application — is it the same authority as residency?",
+      "answer": "No. Naturalisation is decided by the Corte Suprema de Justicia — Paraguay's Supreme Court — in a summary proceeding involving the Fiscal General's office, entirely separate from the Ministry of Industry and Commerce (which issues the CIE) and the Dirección Nacional de Migraciones (which grants residency). Three different authorities, three different timelines."
+    },
+    {
+      "question": "Can I keep my current citizenship if I become a naturalised Paraguayan?",
+      "answer": "It depends on your country of origin, and the honest answer is more qualified than most guides suggest. Paraguay's Constitution (Art. 149) formally allows dual nationality only through a treaty or constitutional reciprocity — currently understood to cover Spain and Italy — and separately lists voluntary acquisition of another nationality as grounds for loss or suspension of naturalised citizenship (Arts. 150, 153). Reported enforcement against dual nationals from non-treaty countries appears limited, but this is not a settled point — get current, case-specific advice before proceeding."
+    },
+    {
+      "question": "Do I need to speak Spanish to naturalise?",
+      "answer": "Some working ability in Spanish or Guaraní is realistically expected, alongside a civics-style review of Paraguayan history and government. The precise exam format is not uniformly documented in public sources, so treat it as a real requirement to prepare for, and confirm current practice with counsel as your filing date approaches."
+    },
+    {
+      "question": "What is the realistic total timeline from making the investment to holding a Paraguayan passport?",
+      "answer": "Roughly four years is a reasonable planning figure: a matter of days for the CIE, several months for permanent residency, three years of qualifying residence, and then a further filing-to-resolution period with the Supreme Court, commonly described as several months to about a year. Nobody should plan around a faster figure than that."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Citizenship",
+      "eyebrow": "Naturalisation · not investment",
+      "h1": "Paraguay citizenship: by&nbsp;naturalisation, not by&nbsp;investment.",
+      "lead": "Paraguay does not sell citizenship, and there is no &ldquo;citizenship by investment&rdquo; programme here. What investment buys — through the <a href=\"/\">Investor Pass</a> — is direct permanent residency. Citizenship follows later, and separately, by naturalisation before Paraguay's Supreme Court.",
+      "ctas": [
+        { "label": "Start your file", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "stats": [
+        { "value": "3 yrs", "label": "Constitutional residence period (Art.&nbsp;148)" },
+        { "value": "~4 yrs", "label": "Realistic floor, investment to passport" },
+        { "value": "Corte Suprema", "label": "Decides naturalisation — not the MIC or Migraciones" }
+      ],
+      "bgImage": "/uploads/about-hero.webp",
+      "bgAlt": "Paraguay landscape at dusk — the path to Paraguayan citizenship"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The distinction that matters most",
+      "heading": "CIE, residency and citizenship are three different things.",
+      "paragraphs": [
+        { "text": "Citizenship-by-investment, properly defined, is a direct transaction — a qualifying contribution or purchase against which a passport is issued, often within months, with no residence requirement at all. Countries like St Kitts and Nevis or Malta run programmes of that kind. Paraguay does not." },
+        { "text": "What Resolution N&deg; 0283/2026 creates is an investment-linked route to <strong>permanent residency</strong> — the Investor Pass. A qualifying investment, certified by the Foreign Investor Certificate (CIE), unlocks direct permanent residency, bypassing Paraguay's ordinary two-year temporary-residency stage. That is a genuinely valuable second-residency route. It was never designed to be a citizenship product." },
+        { "text": "Every legitimate route into Paraguay — <a href=\"/real-estate/\">Paraguay real estate residency</a>, <a href=\"/financial-instruments/\">Paraguay financial instruments residency</a>, <a href=\"/tourism/\">Paraguay tourism investment residency</a>, <a href=\"/suace/\">SUACE Paraguay company residency</a>, or the separate <a href=\"/film/\">Paraguay film residency route</a> — converges on the same destination: permanent residency first, naturalisation later, on the same constitutional terms as any other foreign resident." }
+      ],
+      "table": [
+        { "label": "Foreign Investor Certificate (CIE)", "value": "Confirms the investment qualifies under Resolution N&deg; 0283/2026. Issued by the Ministry of Industry and Commerce (MIC), via SUACE. Investment-linked — typically <strong>5 business days</strong> from a complete file." },
+        { "label": "Permanent residency", "value": "The actual legal-residency status. Granted by the Direcci&oacute;n Nacional de Migraciones. Investment earns <em>direct</em> access, skipping the temporary stage — not citizenship itself." },
+        { "label": "Citizenship (by naturalisation)", "value": "Full Paraguayan nationality. Granted by the Corte Suprema de Justicia, with the Fiscal General's involvement. Not investment-linked — granted on residence, conduct and statutory conditions." }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "One phrase to be sceptical of",
+        "body": "If a site or adviser promises a Paraguayan passport in months with no residence requirement, it is describing a programme Paraguay does not run. Investment shortens the road to residency — it does not shorten, or replace, naturalisation itself."
+      },
+      "image": "/uploads/home-residency.webp",
+      "imageAlt": "Paraguayan residency and identity documentation"
+    },
+    {
+      "_template": "steps",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "The path, step by step",
+      "heading": "From Investor Pass to naturalisation.",
+      "paragraphs": [
+        { "text": "The path is straightforward once the sequence is clear: a qualifying investment and certificate, direct permanent residency, a three-year constitutional clock, and only then an application to an entirely different authority — Paraguay's Supreme Court." }
+      ],
+      "notice": {
+        "title": "Two different authorities",
+        "body": "The CIE and permanent residency are handled by the MIC and Migraciones. Naturalisation is decided separately by the Corte Suprema de Justicia. Guides that quote the five-day CIE figure as if it applies to citizenship are describing the wrong government body's process."
+      },
+      "items": [
+        { "title": "Qualifying investment &amp; CIE", "text": "The investment is made and certified — see <a href=\"/requirements/\">Paraguay residency requirements</a> for the full document set by route." },
+        { "title": "Direct permanent residency", "text": "Because the Investor Pass bypasses the two-year temporary stage, the applicant holds permanent residency once Migraciones approves the file, typically over several months." },
+        { "title": "The three-year clock starts", "text": "Article 148 of Paraguay's Constitution sets the qualifying residence period at three years, counted from permanent residency for Investor Pass holders." },
+        { "title": "Maintaining status", "text": "Permanent residency is maintained with one visit to Paraguay every three years — a low bar. Naturalisation itself expects genuine ties (<em>arraigo</em>): a regular profession or income and an ordinary connection to the country." },
+        { "title": "Filing with the Supreme Court", "text": "Once the three years are met, the naturalisation application is filed directly with the Corte Suprema de Justicia, with the Fiscal General del Estado involved in the review." },
+        { "title": "Documentation", "text": "The file typically includes the Paraguayan c&eacute;dula, passport, apostilled birth certificate, permanent-residency card and a Certificado de Radicaci&oacute;n from Migraciones confirming the residence period." },
+        { "title": "Resolution &amp; oath", "text": "The Court issues a written resolution, published in the Gaceta Oficial, followed by a formal oath and the Carta de Naturalizaci&oacute;n." },
+        { "title": "The passport", "text": "With naturalisation confirmed, the new citizen registers for a Paraguayan passport through the ordinary civil process." }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "Who qualifies",
+      "heading": "Four constitutional conditions, no shortcut.",
+      "headingMax": "20ch",
+      "lead": "Article 148 sets four cumulative conditions for naturalisation. There is no fifth, investment-based route around them.",
+      "leadMax": "56ch",
+      "cards": [
+        { "num": "01", "title": "Legal age", "text": "The applicant must be an adult." },
+        { "num": "02", "title": "Three years' residence", "text": "Counted from permanent residency for Investor Pass holders, per Article 148." },
+        { "num": "03", "title": "A regular profession or income", "text": "Evidence of an ordinary economic life in Paraguay — the constitutional basis for the <em>arraigo</em> (genuine-ties) expectation, not merely a residency card kept current." },
+        { "num": "04", "title": "Good conduct", "text": "In practice, a clean criminal record and no adverse findings during the Court's review." },
+        { "num": "05", "title": "Language &amp; civics", "text": "Working ability in Spanish or Guaran&iacute; is realistically expected, alongside a civics-style review of Paraguayan history and government — the exact exam format is not uniformly documented, so confirm current practice with counsel." },
+        { "num": "06", "title": "No investment shortcut", "text": "The qualifying investment accelerates the residency stage. It has no bearing on the naturalisation conditions themselves." }
+      ]
+    },
+    {
+      "_template": "factRow",
+      "band": "navy",
+      "eyebrow": "The honest timeline",
+      "heading": "Investment to passport: a realistic four years.",
+      "headingMax": "22ch",
+      "lead": "Add it up honestly and the realistic floor from a completed investment to a Paraguayan passport in hand is around four years — meaningfully faster than routes requiring a prior temporary-residency stage, but a multi-year commitment, not a transaction.",
+      "leadMax": "60ch",
+      "facts": [
+        { "value": "5 days", "label": "Foreign Investor Certificate, once the file is complete" },
+        { "value": "Months", "label": "Permanent residency, on Migraciones' own timeline" },
+        { "value": "3 years", "label": "Constitutional residence period before eligibility (Art.&nbsp;148)" },
+        { "value": "6&ndash;12 mo.", "label": "Naturalisation filing to resolution, commonly cited &mdash; no fixed statutory deadline confirmed" }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Dual citizenship",
+      "heading": "The part most guides oversimplify.",
+      "paragraphs": [
+        { "text": "Paraguay's Constitution does not offer dual citizenship freely. Article 149 permits multiple nationality only through an international treaty or reciprocity of constitutional rank between Paraguay and the applicant's country of origin — in practice, Spain and Italy are the commonly cited examples. For most Western nationalities this programme serves — the United States, the United Kingdom, Canada, Australia, and most of the EU outside Spain and Italy — no such treaty is currently in force." },
+        { "text": "Article 150 lists voluntary acquisition of another nationality as a ground on which a naturalised Paraguayan can lose Paraguayan nationality, and Article 153 lists the same act as grounds for suspension, again with an exception only for reciprocal treaty arrangements. Read literally, a naturalised Paraguayan who holds a non-treaty nationality is exposed to that provision." },
+        { "text": "The honest, complete picture has a second half: enforcement in practice appears considerably less absolute than the text alone suggests. Independent sources researching this question report no confirmed case of a naturalised citizen losing Paraguayan nationality on these grounds — but this is a genuine gap between constitutional text and documented enforcement, not a settled point, and deserves case-specific advice rather than a confident headline answer." }
+      ],
+      "notice": {
+        "title": "Confirm before you file",
+        "body": "Get Paraguayan counsel's current read on enforcement practice, and separately confirm your <em>home</em> country's own rules on acquiring a foreign citizenship — some jurisdictions impose their own restrictions independent of anything Paraguay does."
+      },
+      "image": "/uploads/about-split1.webp",
+      "imageAlt": "Government building in Asunci&oacute;n, Paraguay"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "The Paraguayan passport",
+      "heading": "A solid, honestly positioned document.",
+      "paragraphs": [
+        { "text": "Once naturalisation is complete, the resulting passport is a genuine, useful travel and mobility document — not a marquee &ldquo;golden passport,&rdquo; but a solid one. Recent editions of the Henley Passport Index place Paraguay in the high-20s to low-30s globally, with visa-free or visa-on-arrival access reported at roughly 145 destinations in 2026, including the Schengen area, the United Kingdom, Japan and Singapore. Exact rank and count vary modestly by index and edition." },
+        { "text": "The more distinctive benefit for this audience is regional, not global: as a Mercosur member, Paraguayan citizenship carries the right to live and work throughout Argentina, Brazil, Uruguay and the bloc's other members on materially simplified terms — available in a more limited form to permanent residents too, well before naturalisation." }
+      ],
+      "asideNoticeFirst": false,
+      "asideTable": [
+        { "label": "Global ranking", "value": "High-20s to low-30s, Henley Passport Index (2026 editions)" },
+        { "label": "Visa-free / on-arrival", "value": "~145 destinations, incl. Schengen, UK, Japan, Singapore" },
+        { "label": "Regional access", "value": "Full Mercosur mobility &mdash; Argentina, Brazil, Uruguay &amp; other members" },
+        { "label": "Available to", "value": "Full citizens (complete); permanent residents (limited, earlier)" }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Citizenship &amp; naturalisation",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Start your file",
+      "pull": "Residency first. Citizenship, <span class=\"gold\">on your own honest timeline.</span>",
+      "lead": "Request guidance on the naturalisation timeline and dual-citizenship question for your specific nationality.",
+      "ctas": [
+        { "label": "Start your file", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunci&oacute;n waterfront skyline at dusk, Paraguay"
+    }
+  ]
+}

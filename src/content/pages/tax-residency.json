@@ -1,0 +1,207 @@
+{
+  "slug": "tax-residency",
+  "seoTitle": "Paraguay Tax Residency & Territorial Tax Explained",
+  "seoDescription": "How Paraguay tax residency actually works: territorial taxation, how it differs from legal residency, and the honest caveats on CRS and home-country rules.",
+  "ogImage": "/og/default.png",
+  "faqs": [
+    {
+      "question": "Is Paraguay tax residency the same as Paraguay legal residency?",
+      "answer": "No. Legal residency is an immigration status, granted by Migraciones and — through the Investor Pass — obtainable directly, without the standard two-year temporary stage. Tax residency is a separate fiscal status, established through registration with Paraguay's tax authority (DNIT) via a RUC, and it does not follow automatically from holding a Paraguayan cédula or CIE."
+    },
+    {
+      "question": "Does Paraguay really not tax foreign income?",
+      "answer": "Under Ley N° 6380/2019, Paraguay applies a territorial system: income from Paraguayan sources is taxed, and income from foreign sources is generally outside the scope of Paraguayan income tax. This is a genuine, codified feature of the law, not marketing — but it applies once you are a Paraguayan taxpayer, and it says nothing about whether your home country still taxes that same income under its own rules."
+    },
+    {
+      "question": "Is there a day-count rule for becoming Paraguay tax resident, like 183 days elsewhere?",
+      "answer": "Paraguay's tax code does not apply a fixed statutory day-count test the way many countries do. Individual tax residency is instead established through legal residency plus registration as a taxpayer (RUC), assessed alongside genuine ties such as centre of economic interest. In practice, this means status and registration matter more than a specific number of nights spent in the country — though building a real, demonstrable connection to Paraguay strengthens the position considerably."
+    },
+    {
+      "question": "Will moving to Paraguay end my tax obligations in my home country?",
+      "answer": "Not automatically, and not for everyone. Each country decides who it treats as tax resident, or who has properly ceased to be, using its own rules — day counts, ties tests, domicile concepts, or in the case of US citizens, citizenship-based taxation that does not depend on residency at all. Paraguay's system cannot override another country's rules. Ending a prior tax residency correctly is usually a separate, parallel piece of work, done with advice in that country."
+    },
+    {
+      "question": "Does Paraguay participate in the OECD's CRS automatic information exchange?",
+      "answer": "As of the most recent OECD participating-jurisdictions data we have reviewed, Paraguay has not signed on to CRS. That affects what Paraguayan financial institutions are obligated to report abroad — it does not remove reporting obligations that exist independently under a person's home-country law (such as FATCA for US persons), and participation lists change, so current status should always be confirmed rather than assumed."
+    },
+    {
+      "question": "Do I need a tax advisor in my home country as well as in Paraguay?",
+      "answer": "In virtually every case, yes. A credible Paraguay tax-residency position is built on two sides at once: establishing genuine tax residency in Paraguay, and correctly exiting or managing tax residency in the country you are leaving (or continuing to satisfy obligations that follow you regardless, such as US citizenship-based taxation). We coordinate the Paraguay side and work alongside qualified counsel in the client's home jurisdiction for the other half — neither side alone is sufficient."
+    }
+  ],
+  "blocks": [
+    {
+      "_template": "hero",
+      "crumb": "Tax Residency",
+      "eyebrow": "Territorial tax · explained",
+      "h1": "Paraguay tax residency: territorial tax,&nbsp;explained.",
+      "lead": "Paraguay taxes on a territorial basis — income arising outside Paraguay is generally outside the scope of Paraguayan income tax. But that only applies once you are a Paraguayan <em>tax</em> resident, a separate status from the <em>legal</em> residency the <a href=\"/\">Investor Pass</a> grants, decided by entirely different rules.",
+      "ctas": [
+        { "label": "Start your file", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "stats": [
+        { "value": "Territorial", "label": "Tax by source, not worldwide reach" },
+        { "value": "2 statuses", "label": "Legal residency &amp; tax residency are separate" },
+        { "value": "No day-count test", "label": "Status + RUC registration decide tax residency" }
+      ],
+      "bgImage": "/uploads/fin-hero.webp",
+      "bgAlt": "Financial district in Asunción, Paraguay — territorial tax residency"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "The distinction that matters most",
+      "heading": "Legal residency and tax residency are two different questions.",
+      "paragraphs": [
+        { "text": "Nearly every guide to Paraguay's Investor Pass leads with &ldquo;0% tax&rdquo; and stops there. That skips a step that matters enormously to anyone actually structuring around it." },
+        { "text": "Investors who obtain the <a href=\"/\">Investor Pass</a> expecting it to automatically switch off tax in their home country are working from a misconception. What it does is open the door to a jurisdiction with a favourable tax system &mdash; territorial taxation, low headline rates &mdash; <em>if and once</em> tax residency is established there, and <em>alongside</em> whatever the applicant's home country rules say. Both halves matter, and we walk applicants through both before any investment is committed." }
+      ],
+      "table": [
+        { "label": "Legal residency", "value": "An immigration status. The Investor Pass, under Resolution N&deg; 0283/2026, grants direct permanent residency &mdash; maintained with one visit every three years. It says nothing, on its own, about where you owe tax." },
+        { "label": "Tax residency", "value": "A fiscal status, governed by Paraguay's tax code (Ley N&deg; 6380/2019) and, separately, by every other country's own rules. It is entirely possible to hold Paraguayan permanent residency without being a Paraguayan tax resident &mdash; or the reverse." }
+      ],
+      "asideNoticeFirst": false,
+      "asideNotice": {
+        "title": "Not the same credential",
+        "body": "The Foreign Investor Certificate (CIE), permanent residency, and tax residency are three separate things, decided by three different processes. See the <a href=\"/requirements/\">Paraguay residency requirements checklist</a> for how the CIE and residency stages work, and <a href=\"/citizenship/\">Paraguay citizenship by naturalisation</a> for the fourth, later status."
+      },
+      "image": "/uploads/home-residency.webp",
+      "imageAlt": "Paraguayan residency and identity documentation"
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "How it works",
+      "heading": "How Paraguay taxes: the territorial system.",
+      "paragraphs": [
+        { "text": "Paraguay's income tax framework runs on <strong>source</strong>, not worldwide reach. Under Ley N&deg; 6380/2019, the taxes on personal and corporate income (IRP and IRE) apply to income &ldquo;from Paraguayan sources&rdquo; &mdash; earned from activity carried out in Paraguay, or from assets economically used inside the country. Income earned abroad &mdash; foreign employment, foreign investments, foreign pensions, the sale of foreign assets &mdash; generally sits outside the scope of these taxes entirely." },
+        { "text": "The headline rates, once income is inside Paraguayan scope, are low by regional standards &mdash; among the lower personal-tax regimes in the Americas, though not literally a single flat number for individuals the way some marketing implies." }
+      ],
+      "table": [
+        { "label": "IRE (corporate income tax)", "value": "10% flat &mdash; Paraguay-source business income" },
+        { "label": "IRP (personal income tax)", "value": "8% / 9% / 10%, progressive &mdash; Paraguay-source personal-services income; earners under roughly PYG 80 million/year (~USD 12,000) owe no tax, though filing obligations still apply" },
+        { "label": "IDU (dividends &amp; profits tax)", "value": "8% for residents, 15% for non-residents &mdash; on distributions from a Paraguayan company. See <a href=\"/cost/\">Paraguay residency cost</a> for how this interacts with a SUACE company." },
+        { "label": "VAT", "value": "10% standard rate &mdash; most goods and services supplied inside Paraguay" }
+      ],
+      "notice": {
+        "title": "Precision matters here",
+        "body": "The &ldquo;10% flat&rdquo; figure quoted across most Paraguay content is the top corporate rate and the top personal-services bracket &mdash; personal income tax is in fact progressive (8/9/10%). Capital income such as interest is generally taxed at a flat 8% when it falls inside Paraguayan source. None of this is exotic: it is a conventional, moderate, territorial system &mdash; the advantage is that it does not reach outside Paraguay's borders for income earned elsewhere, not that it taxes nothing at all."
+      },
+      "asideNoticeFirst": false,
+      "image": "/uploads/fin-split.webp",
+      "imageAlt": "Financial planning documents — Paraguay's territorial tax system"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "In practice",
+      "heading": "What counts as foreign-source income.",
+      "headingMax": "20ch",
+      "lead": "For an internationally mobile individual or family, foreign-source income &mdash; generally outside the scope of Paraguayan tax once you are a Paraguayan taxpayer &mdash; typically includes the following.",
+      "leadMax": "58ch",
+      "cards": [
+        { "num": "01", "title": "Foreign salary &amp; consulting", "text": "Income for work physically performed outside Paraguay." },
+        { "num": "02", "title": "Foreign dividends &amp; interest", "text": "Returns from companies and accounts held outside Paraguay." },
+        { "num": "03", "title": "Foreign capital gains", "text": "Gains on the sale of foreign real estate, securities, or businesses." },
+        { "num": "04", "title": "Foreign pensions", "text": "Pension income sourced from outside Paraguay." },
+        { "num": "05", "title": "Foreign rental income", "text": "Rent from property located outside Paraguay." },
+        { "num": "06", "title": "The one grey area", "text": "Personal services rendered <em>from</em> Paraguay, even remotely for a foreign client, can raise source questions depending on how and where the work is performed. We review each applicant's income mix on its own facts before any tax-residency planning is finalised." }
+      ]
+    },
+    {
+      "_template": "steps",
+      "band": "cream",
+      "reverse": true,
+      "eyebrow": "How it works",
+      "heading": "Becoming a Paraguay tax resident.",
+      "paragraphs": [
+        { "text": "Paraguay's tax code does not apply a fixed day-count test &mdash; there is no statutory &ldquo;183 days&rdquo; trigger the way there is in many jurisdictions. Individual tax residency is instead established through a combination of status and registration." }
+      ],
+      "notice": {
+        "title": "Two honest caveats",
+        "body": "Holding the Investor Pass &mdash; the CIE, or even the permanent residency card &mdash; does not automatically make someone a Paraguayan tax resident; the registration step matters, and so does building a genuine connection to the country. And a low bar to <em>maintain</em> legal residency (one visit every three years) is not the same as a low bar to be treated as tax resident elsewhere instead &mdash; a resident who keeps a real home, family and economic life abroad is likely still tax resident there under that country's own rules, regardless of Paraguayan status."
+      },
+      "items": [
+        { "title": "Hold legal residency", "text": "In practice this means completing the Investor Pass process through to permanent residency, granted by the Dirección Nacional de Migraciones &mdash; see <a href=\"/requirements/\">Paraguay residency requirements</a> for the full document and process checklist." },
+        { "title": "Obtain the cédula", "text": "Paraguay's national identity card, issued once permanent residency is approved, is the credential that lets a resident open accounts, sign contracts, and register for tax purposes." },
+        { "title": "Register for a RUC and file", "text": "A Registro Único del Contribuyente (RUC) &mdash; Paraguay's tax identification number &mdash; is what formally puts an individual inside the DNIT system. This step, not the CIE and not the residency approval alone, is what functionally establishes someone as a Paraguayan taxpayer." }
+      ]
+    },
+    {
+      "_template": "cardGrid",
+      "band": "paper",
+      "eyebrow": "The honest caveats",
+      "heading": "What territorial tax does not do.",
+      "headingMax": "20ch",
+      "lead": "This is the section most competitor content skips, and the one that actually protects a client. Becoming Paraguayan tax resident does not end tax residency, or tax liability, anywhere else &mdash; every country applies its own rules on its own terms.",
+      "leadMax": "62ch",
+      "cards": [
+        { "num": "01", "title": "US citizens &amp; green-card holders", "text": "Taxed by the United States on worldwide income regardless of residence &mdash; citizenship-based taxation, not a Paraguay-specific issue. A Paraguay tax residency does not change US filing obligations; it can interact with foreign tax credits and certain exclusions, but that is a US-side analysis." },
+        { "num": "02", "title": "UK, Canadian, Australian &amp; most European nationals", "text": "Taxed on a residency basis, but each country runs its own statutory residence test &mdash; day counts, ties tests, domicile concepts. Obtaining a Paraguayan residency does nothing to that test automatically; the exit has to be managed on the home-country side, in parallel." },
+        { "num": "03", "title": "Exit taxes", "text": "Some countries apply exit taxes or deemed-disposal rules on ceasing residency &mdash; a tax event independent of anything happening in Paraguay." },
+        { "num": "04", "title": "Two-sided planning, always", "text": "A credible position is built on both sides at once: genuine tax residency in Paraguay, and a correctly managed exit or ongoing compliance at home. Neither side alone is sufficient." }
+      ]
+    },
+    {
+      "_template": "split",
+      "band": "cream",
+      "reverse": false,
+      "eyebrow": "Information exchange",
+      "heading": "CRS and financial-account reporting.",
+      "paragraphs": [
+        { "text": "Paraguay has not signed on to the OECD's Common Reporting Standard (CRS) for automatic exchange of financial-account information, unlike the large majority of OECD and G20 members. That means Paraguayan financial institutions are not currently obligated to report account information to foreign tax authorities under CRS." },
+        { "text": "It does <strong>not</strong> mean foreign-held assets, or income earned outside Paraguay, become invisible to a home tax authority &mdash; most Western countries run other reporting requirements (FATCA for US persons, direct disclosure obligations, bilateral tax-treaty exchange) that operate independently of CRS. Structuring around non-participation in an information-exchange standard, rather than around a legitimate territorial tax framework, is not a strategy we recommend or assist with." }
+      ],
+      "notice": {
+        "title": "This is not tax advice, and it cannot be, on a page like this one",
+        "body": "Whether territorial taxation benefits a specific individual depends on citizenship, existing tax residency, the composition of income, any tax treaties in play, and how the home country's exit rules operate. We do not provide final tax positions on a website &mdash; we provide them, cross-checked against qualified tax counsel in the relevant jurisdictions, as part of a personal consultation."
+      },
+      "asideNoticeFirst": false,
+      "asideTable": [
+        { "label": "CRS status", "value": "Paraguay has not signed on, as of the most recent data reviewed &mdash; confirm current status before it factors into any plan" },
+        { "label": "FATCA", "value": "Applies independently to US persons, regardless of Paraguay's CRS status" },
+        { "label": "Recommended approach", "value": "Coordinate the Paraguay side with qualified counsel in your home jurisdiction" }
+      ],
+      "image": "/uploads/about-split3.webp",
+      "imageAlt": "Government office in Asunción, Paraguay — tax registration and reporting"
+    },
+    {
+      "_template": "cardGrid",
+      "band": "cream",
+      "eyebrow": "Fit",
+      "heading": "Who territorial residency genuinely suits.",
+      "headingMax": "22ch",
+      "lead": "Given the caveats above, territorial tax residency in Paraguay tends to be most valuable for a specific profile &mdash; and it applies identically whichever qualifying investment gets an applicant there: <a href=\"/real-estate/\">real estate</a>, <a href=\"/financial-instruments/\">financial instruments</a>, <a href=\"/tourism/\">tourism</a>, <a href=\"/suace/\">SUACE</a>, or <a href=\"/film/\">film</a>.",
+      "leadMax": "64ch",
+      "cards": [
+        { "num": "01", "title": "A genuine exit, not just a new address", "text": "Individuals and families prepared to properly exit their prior tax residency &mdash; not merely acquire a new one &mdash; under that country's own rules." },
+        { "num": "02", "title": "Substantially foreign-source income", "text": "Entrepreneurs and investors whose income is largely foreign business profits, foreign investment income, or foreign pensions, where the territorial exclusion does real work." },
+        { "num": "03", "title": "Genuine local substance", "text": "Those building a long-term base in the region, where a company or property investment creates real economic substance &mdash; not just a paper filing." },
+        { "num": "04", "title": "Non-US nationals, especially", "text": "For whom a correctly managed exit from a prior residency-based system, combined with genuine time and life in Paraguay, can produce a clean territorial tax position." },
+        { "num": "05", "title": "Not the right fit", "text": "Anyone expecting the Investor Pass alone to end a tax obligation elsewhere without also doing the home-country work. We say so plainly, the same way we would about any route, or country, that is not the right match &mdash; see <a href=\"/about/\">why we take this approach</a>." }
+      ]
+    },
+    {
+      "_template": "faq",
+      "band": "cream",
+      "wrapProse": true,
+      "eyebrow": "Tax residency",
+      "heading": "Frequently asked."
+    },
+    {
+      "_template": "ctaBand",
+      "eyebrow": "Start your file",
+      "pull": "Territorial tax, <span class=\"gold\">structured on both sides of the border.</span>",
+      "lead": "Request guidance on Paraguay tax residency for your citizenship, income mix, and home-country position.",
+      "ctas": [
+        { "label": "Start your file", "href": "/contact/", "variant": "gold" },
+        { "label": "Compare routes", "href": "/#routes", "variant": "ghost" }
+      ],
+      "bgImage": "/uploads/home-cta.webp",
+      "bgAlt": "Asunción waterfront skyline at dusk, Paraguay"
+    }
+  ]
+}

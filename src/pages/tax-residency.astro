@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay Tax Residency & Territorial Tax Explained';
+const description0 =
+  "How Paraguay tax residency actually works: territorial taxation, how it differs from legal residency, and the honest caveats on CRS and home-country rules.";
+
+const fbFaqs = [
+  { q: "Is Paraguay tax residency the same as Paraguay legal residency?", a: "No. Legal residency is an immigration status, granted by Migraciones and — through the Investor Pass — obtainable directly, without the standard two-year temporary stage. Tax residency is a separate fiscal status, established through registration with Paraguay's tax authority (DNIT) via a RUC, and it does not follow automatically from holding a Paraguayan cédula or CIE." },
+  { q: "Does Paraguay really not tax foreign income?", a: "Under Ley N° 6380/2019, Paraguay applies a territorial system: income from Paraguayan sources is taxed, and income from foreign sources is generally outside the scope of Paraguayan income tax. This is a genuine, codified feature of the law, not marketing — but it applies once you are a Paraguayan taxpayer, and it says nothing about whether your home country still taxes that same income under its own rules." },
+  { q: "Is there a day-count rule for becoming Paraguay tax resident, like 183 days elsewhere?", a: "Paraguay's tax code does not apply a fixed statutory day-count test the way many countries do. Individual tax residency is instead established through legal residency plus registration as a taxpayer (RUC), assessed alongside genuine ties such as centre of economic interest. In practice, this means status and registration matter more than a specific number of nights spent in the country — though building a real, demonstrable connection to Paraguay strengthens the position considerably." },
+  { q: "Will moving to Paraguay end my tax obligations in my home country?", a: "Not automatically, and not for everyone. Each country decides who it treats as tax resident, or who has properly ceased to be, using its own rules — day counts, ties tests, domicile concepts, or in the case of US citizens, citizenship-based taxation that does not depend on residency at all. Paraguay's system cannot override another country's rules. Ending a prior tax residency correctly is usually a separate, parallel piece of work, done with advice in that country." },
+  { q: "Does Paraguay participate in the OECD's CRS automatic information exchange?", a: "As of the most recent OECD participating-jurisdictions data we have reviewed, Paraguay has not signed on to CRS. That affects what Paraguayan financial institutions are obligated to report abroad — it does not remove reporting obligations that exist independently under a person's home-country law (such as FATCA for US persons), and participation lists change, so current status should always be confirmed rather than assumed." },
+  { q: "Do I need a tax advisor in my home country as well as in Paraguay?", a: "In virtually every case, yes. A credible Paraguay tax-residency position is built on two sides at once: establishing genuine tax residency in Paraguay, and correctly exiting or managing tax residency in the country you are leaving (or continuing to satisfy obligations that follow you regardless, such as US citizenship-based taxation). We coordinate the Paraguay side and work alongside qualified counsel in the client's home jurisdiction for the other half — neither side alone is sufficient." },
+];
+
+const page = await getPage('tax-residency');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Tax Residency', path: '/tax-residency/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay tax residency & territorial tax, explained',
+    description,
+    url: 'https://paraguayinvestorpass.com/tax-residency/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>

@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay Residency Cost: The Full 2026 Breakdown';
+const description0 =
+  'What Paraguay residency by investment really costs in 2026: the qualifying investment by route, official government fees, legal fees and incidentals.';
+
+const fbFaqs = [
+  { q: 'How much does Paraguay residency cost in total?', a: 'It depends on the route. The qualifying investment ranges from USD 40,000 (film, a non-recoverable contribution) to USD 200,000 (real estate or financial instruments, both of which leave you holding the asset). On top of the investment, budget roughly USD 480–560 in government fees and USD 1,000–2,500 in translation, apostille and incidental costs per applicant, plus a legal fee quoted individually based on your route and complexity.' },
+  { q: 'Is the USD 40,000 film route really the cheapest option?', a: 'It has the lowest cash outlay, but it is a contribution, not a recoverable investment — the funds stay in the production, and any return is speculative. If you want capital you can later sell, let, or hold, the SUACE, tourism, real estate, or financial-instruments routes retain value; the film route does not.' },
+  { q: 'Are there government fees on top of the investment?', a: "Yes. Paraguay's Dirección Nacional de Migraciones charges its own tariffs for the residency application, separate from your qualifying investment — currently around ₲ 2,926,925 (approximately USD 480, at July 2026 exchange rates) per permanent-residency applicant, per the fee schedule effective 1 July 2026 under Executive Decree N° 6225/2026." },
+  { q: 'Does the cost include citizenship?', a: 'No. Citizenship is a separate, later step, obtained by naturalisation after the constitutional period of permanent residence, subject to language, civics and physical-presence requirements. The Investor Pass cost breakdown covers the route to permanent residency; naturalisation involves its own separate process and is not purchased alongside the investment.' },
+  { q: "Why don't you list your legal fees on this page?", a: "Because a fee that ignores which route you're taking, how many family members are included, and how complex your existing structure is would be a marketing number, not a quote. We confirm legal and professional fees in your consultation, once we understand your circumstances — and we say plainly where another route, or another country, would serve you better before any fee is discussed." },
+  { q: 'Do costs differ for family members applying together?', a: "The qualifying investment is set once per application, not per person, but government fees, apostille, translation and incidental costs are generally charged per applicant, so they scale with family size. One exception: on the film route, dependants typically start on two-year temporary residency before converting to permanent status, which is worth building into your planning." },
+];
+
+const page = await getPage('cost');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Cost', path: '/cost/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay residency by investment: full cost breakdown',
+    description,
+    url: 'https://paraguayinvestorpass.com/cost/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>

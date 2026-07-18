@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay vs Uruguay Residency: An Honest Comparison';
+const description0 =
+  'Paraguay vs Uruguay residency compared: cost, timeline, tax system and citizenship path — an honest, side-by-side guide for HNW families choosing a base.';
+
+const fbFaqs = [
+  { q: 'Is Paraguay or Uruguay cheaper for residency?', a: "Paraguay, by a wide margin. Paraguay's Investor Pass starts at USD 40,000 (film route) and tops out at USD 200,000 (real estate or financial instruments). Uruguay has no equivalent fixed-price investor route to legal residency, and its investment-linked path to tax residency specifically now starts at roughly USD 2,000,000 in real estate, effective 1 January 2026." },
+  { q: 'Which country has better tax benefits for residents?', a: "It depends on the time horizon. Paraguay's territorial system has no sunset — foreign-source income stays outside scope indefinitely, for as long as residency and tax registration continue. Uruguay offers a genuinely attractive but time-limited exemption on foreign passive income (commonly described as 11 years for new residents), after which that income is taxed, at a transitional then full rate, unless a fixed lump-sum payment option is elected instead. For a permanent, simple tax position, Paraguay's structure is easier to plan around long term." },
+  { q: 'Does either country tax my worldwide income?', a: "No, not in the way citizenship-based systems like the United States' do. Paraguay taxes strictly on a Paraguayan-source basis, with no time limit. Uruguay taxes most income on a source basis too, but specifically brings certain foreign-source passive income (dividends, interest) into scope after a new resident's tax holiday expires — a meaningful difference from Paraguay's approach, and worth understanding before choosing between the two. Neither status changes what your home country's own rules say about you." },
+  { q: 'Which is faster: Paraguay or Uruguay residency?', a: 'Paraguay, structurally. The Investor Pass issues the Foreign Investor Certificate within about five business days and grants permanent — not temporary — residency within several months, bypassing the standard two-year temporary stage entirely. Uruguay grants practical rights to remain from the date a file is lodged, but the formal permanent residency card is commonly reported to take well over a year to issue, and Uruguay has no equivalent fast-track investor category.' },
+  { q: 'Can I get citizenship faster in Paraguay or Uruguay?', a: "The residence periods are similar — three years in Paraguay (from permanent residency) versus three years (married or with dependent children) or five years (single) in Uruguay — but Paraguay's Investor Pass shortens the path to that starting line considerably, since permanent residency is granted almost immediately rather than after a multi-year temporary stage. Uruguay's naturalisation process also expects roughly 183 days of physical presence per year throughout the qualifying period, a materially heavier ongoing commitment than Paraguay's residency-maintenance standard." },
+  { q: 'Is Uruguay a better choice than Paraguay for a wealthy family?', a: 'Not automatically — it depends what "better" is optimising for. Uruguay offers longer-established institutional maturity, a higher sovereign credit rating, and a distinct quality-of-life proposition, at a materially higher cost of entry and cost of living. Paraguay offers a faster, more capital-efficient, and — for tax purposes — structurally simpler route to the same eventual destination: permanent residency and, later, citizenship. Families prioritising capital efficiency and simplicity tend to choose Paraguay; families for whom a seven-figure Uruguayan commitment and a higher day-to-day cost base are genuinely immaterial sometimes choose Uruguay instead. We assess this against your actual circumstances rather than defaulting to either answer.' },
+];
+
+const page = await getPage('paraguay-vs-uruguay');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Paraguay vs Uruguay', path: '/paraguay-vs-uruguay/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay vs Uruguay residency compared',
+    description,
+    url: 'https://paraguayinvestorpass.com/paraguay-vs-uruguay/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>

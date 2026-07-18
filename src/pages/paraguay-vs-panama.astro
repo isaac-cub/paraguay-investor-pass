@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import Blocks from '../components/Blocks.astro';
+import { breadcrumb, faqPage } from '../lib/schema';
+import { getPage, getSettings, pick } from '../lib/content';
+
+const fbTitle = 'Paraguay vs Panama Residency: Honest 2026 Comparison';
+const description0 =
+  'Paraguay vs Panama residency compared: cost, timeline, tax and citizenship path — honestly, so you choose the country that actually fits your goals.';
+
+const fbFaqs = [
+  { q: 'Is Paraguay or Panama cheaper for residency by investment?', a: "Paraguay, at every comparable stage. Its lowest route (SUACE company formation) starts at USD 70,000, against Panama's lowest permanent-residency-eligible threshold of USD 200,000 (Friendly Nations Visa). Even matched at USD 200,000, Paraguay grants direct permanent residency while Panama's Friendly Nations route requires a two-year provisional stage first." },
+  { q: 'Which country gives citizenship faster, Paraguay or Panama?', a: "Paraguay. Naturalisation eligibility opens after three years of permanent residence (Constitution, Art. 148), and permanent residency itself is typically granted within months of a qualifying investment. Panama's naturalisation window opens after five years of permanent residence specifically — provisional years don't count — making its cheaper Friendly Nations track roughly 7.5–8 years to citizenship eligibility overall, against Paraguay's 3–4 years." },
+  { q: 'Are both Paraguay and Panama really territorial tax systems?', a: "Yes, genuinely. In both, foreign-source income is generally outside the scope of local income tax, assessed on individual facts. They differ on local rates (Paraguay: 10% flat corporate, 8–10% progressive personal; Panama: 25% corporate, up to 25% personal) and on VAT (Paraguay 10%, Panama 7%). Neither system overrides your home country's own tax residency rules — see Paraguay's tax residency page for the full caveats." },
+  { q: 'Does Panama allow dual citizenship the way Paraguay does?', a: "Not as cleanly. Panama's naturalisation process includes a formal oath renouncing prior citizenship, with a narrower carve-out for Spanish and other Latin American nationals; in practice the oath is rarely enforced against applicants who don't formally renounce in their home country, but it remains a real legal step. Paraguay recognises dual nationality in defined circumstances, without an equivalent renunciation requirement." },
+  { q: 'Can I qualify for direct permanent residency in Panama the way I can in Paraguay?', a: "Yes, but only through Panama's Qualified Investor Visa, at USD 300,000 in real estate (rising to USD 500,000 after 15 October 2026), USD 500,000 in securities, or USD 750,000 in a fixed bank deposit. Panama's lower-cost Friendly Nations Visa, at USD 200,000, requires two years of provisional residency first — every Paraguay route under Resolution N° 0283/2026 skips that stage entirely." },
+  { q: 'Should I choose Paraguay or Panama for a Plan B?', a: "It depends on what you're optimising for. Paraguay wins on cost, speed to permanent residency, speed to citizenship, and maintenance burden. Panama wins on currency stability (the US dollar), depth of existing expat infrastructure, and regional business connectivity, particularly above the USD 300,000 investment level. We work exclusively on the Paraguay side, and we'll tell a prospective client plainly if their goals actually point toward Panama, or elsewhere, instead." },
+];
+
+const page = await getPage('paraguay-vs-panama');
+const title = pick(page?.seoTitle, fbTitle);
+const description = pick(page?.seoDescription, description0);
+const ogImage = page?.ogImage ?? undefined;
+const faqs = pick(page?.faqs as any[] | undefined, fbFaqs).map((f: any) => ({ question: f.question ?? f.q, answer: f.answer ?? f.a }));
+const blocks = (page?.blocks as any[] | undefined) ?? [];
+
+const jsonld = [
+  breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Paraguay vs Panama', path: '/paraguay-vs-panama/' }]),
+  faqPage(faqs),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Paraguay vs Panama residency: an honest 2026 comparison',
+    description,
+    url: 'https://paraguayinvestorpass.com/paraguay-vs-panama/',
+  },
+];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
+---
+<Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
+</Base>
