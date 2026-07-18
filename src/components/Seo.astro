@@ -5,7 +5,10 @@ interface Props {
   ogImage?: string;
   type?: string;
 }
-const { title, description, ogImage = '/og/default.png', type = 'website' } = Astro.props;
+import { getSettings, pick } from '../lib/content';
+const s = await getSettings();
+const { title, description, ogImage = pick(s?.defaultOgImage, '/og/default.png'), type = 'website' } = Astro.props;
+const siteName = pick(s?.brandName, 'Paraguay Investor Pass');
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
 const ogUrl = new URL(ogImage, Astro.site).href;
 ---
@@ -18,7 +21,7 @@ const ogUrl = new URL(ogImage, Astro.site).href;
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogUrl} />
-<meta property="og:site_name" content="Paraguay Investor Pass" />
+<meta property="og:site_name" content={siteName} />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />

@@ -1,9 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import TinaIsland from '@tinacms/astro/TinaIsland.astro';
-import PageBody from '../components/islands/PageBody.astro';
-import { islands } from '../lib/islands';
-import { getPageData } from '../lib/data';
+import Blocks from '../components/Blocks.astro';
 import { breadcrumb } from '../lib/schema';
 import { getPage, getSettings, pick } from '../lib/content';
 
@@ -15,7 +12,6 @@ const ogImage = page?.ogImage ?? undefined;
 const faqs = ((page?.faqs as any[] | undefined) ?? []).map((f: any) => ({ question: f.question, answer: f.answer }));
 const blocks = (page?.blocks as any[] | undefined) ?? [];
 const formspreeId = pick(settings?.formspreeId, 'YOUR_FORM_ID');
-const pageData = await getPageData('contact');
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Contact', path: '/contact/' }]),
@@ -29,7 +25,5 @@ const jsonld = [
 ];
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
-  <TinaIsland name="page" wrapper={islands.page.wrapper} params={{ slug: 'contact' }} primary>
-    <PageBody page={pageData.data.pages} formspreeId={formspreeId} />
-  </TinaIsland>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
 </Base>

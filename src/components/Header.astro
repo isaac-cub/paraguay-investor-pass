@@ -15,10 +15,12 @@ const nav = pick(s?.nav, [
   { href: '/about/', label: 'About' },
 ]);
 const navCta = pick(s?.navCta, { href: '/contact/', label: 'Begin' });
+const brandMark = pick(s?.brandMark, 'Paraguay');
+const brandSmall = pick(s?.brandSmall, 'Investor Pass');
 ---
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Paraguay Investor Pass — home"><b>PARAGUAY</b><small>Investor Pass</small></a>
+    <a class="brand" href="/" aria-label="Paraguay Investor Pass — home"><b>{brandMark.toUpperCase()}</b><small>{brandSmall}</small></a>
     <nav class="nav" aria-label="Primary">
       {nav.map((item) => (
         <a href={item.href} aria-current={isCurrent(item.href) ? 'page' : undefined}>{item.label}</a>

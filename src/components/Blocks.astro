@@ -8,7 +8,9 @@
 // the Tina admin can click an element on the page and open its field. When
 // data comes from the plain-JSON fallback (no Tina metadata) tinaField returns
 // undefined and the attribute is simply omitted — render is unaffected.
-import { tinaField } from '@tinacms/astro/tina-field';
+// CMS layer removed — static build. Stub keeps the (now inert) tinaField()
+// call sites compiling; returns undefined so the attribute is omitted.
+const tinaField = (..._args: any[]): undefined => undefined;
 
 interface Props {
   blocks?: any[];
@@ -45,7 +47,7 @@ const kindOf = (b: any) => b._template || KIND[b.__typename];
         {b.bgImage && <img class="hero-bg" src={b.bgImage} alt={b.bgAlt || ''} data-tina-field={tinaField(b, 'bgImage')} />}
         <div class="wrap">
           {b.crumb && (
-            <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Investor Pass</a><span>/</span><span data-tina-field={tinaField(b, 'crumb')} set:html={b.crumb}></span></nav>
+            <nav class="crumbs" aria-label="Breadcrumb"><a href="/" data-tina-field={tinaField(b, 'crumbRoot')}>{b.crumbRoot || 'Investor Pass'}</a><span>/</span><span data-tina-field={tinaField(b, 'crumb')} set:html={b.crumb}></span></nav>
           )}
           {b.eyebrow && <p class="eyebrow" data-tina-field={tinaField(b, 'eyebrow')}>{b.eyebrow}</p>}
           <h1 set:html={b.h1} data-tina-field={tinaField(b, 'h1')}></h1>
@@ -139,7 +141,7 @@ const kindOf = (b: any) => b._template || KIND[b.__typename];
           {b.lead && <p class="center lead" style={maxStyle(b.leadMax, true)} set:html={b.lead} data-tina-field={tinaField(b, 'lead')}></p>}
           <nav class="ladder" aria-label="Investment routes by capital">
             {(b.rungs || []).map((r: any) => (
-              <a href={r.href} data-tina-field={tinaField(r, 'title')}><span class="rung-fig" data-tina-field={tinaField(r, 'fig')}>{r.fig}</span><span class="rung-body"><b data-tina-field={tinaField(r, 'title')}>{r.title}</b><span set:html={r.text} data-tina-field={tinaField(r, 'text')}></span></span><span class="rung-go">Explore →</span></a>
+              <a href={r.href} data-tina-field={tinaField(r, 'title')}><span class="rung-fig" data-tina-field={tinaField(r, 'fig')}>{r.fig}</span><span class="rung-body"><b data-tina-field={tinaField(r, 'title')}>{r.title}</b><span set:html={r.text} data-tina-field={tinaField(r, 'text')}></span></span><span class="rung-go" data-tina-field={tinaField(b, 'rungCtaLabel')}>{b.rungCtaLabel || 'Explore'} →</span></a>
             ))}
           </nav>
           {b.note && <p class="form-note center" style="margin-top:1.4rem;max-width:60ch;margin-inline:auto" set:html={b.note} data-tina-field={tinaField(b, 'note')}></p>}

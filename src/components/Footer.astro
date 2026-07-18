@@ -12,6 +12,7 @@ const disclaimer = pick(
 );
 const brandName = pick(s?.brandName, 'Paraguay Investor Pass');
 const footerBadge = pick(s?.footerBadge, 'República del Paraguay · Residency by Investment');
+const footerBottomNote = pick(s?.footerBottomNote, 'República del Paraguay');
 const footerColumns = pick(s?.footerColumns, [
   { title: 'The Programme', links: [
     { href: '/', label: 'Investor Pass Guide' },
@@ -38,7 +39,7 @@ const footerColumns = pick(s?.footerColumns, [
       <div class="foot-brand">
         <b>{brandName.toUpperCase()}</b>
         <p>{tagline}</p>
-        <p style="font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:var(--gold);text-transform:uppercase;margin-top:1rem">{footerBadge}</p>
+        <p style="font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;color:#fff;text-transform:uppercase;margin-top:1rem">{footerBadge}</p>
       </div>
       {footerColumns.map((col: any) => (
         <div class="foot-col">
@@ -49,8 +50,8 @@ const footerColumns = pick(s?.footerColumns, [
     </div>
     <p class="foot-disclaimer">{disclaimer}</p>
     <div class="foot-bottom">
-      <span>© <span id="yr">{year}</span> Paraguay Investor Pass. All rights reserved.</span>
-      <span>República del Paraguay</span>
+      <span>© <span id="yr">{year}</span> {brandName}. All rights reserved.</span>
+      <span>{footerBottomNote}</span>
     </div>
   </div>
 </footer>

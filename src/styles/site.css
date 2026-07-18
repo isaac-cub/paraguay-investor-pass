@@ -17,8 +17,8 @@
   --line:        #DCD5C6;   /* warm hairline */
   --ink:         #16223D;   /* deep navy ink */
   --muted:       #5A6072;
-  --on-navy:     #ECE6DA;   /* warm off-white on navy */
-  --on-navy-dim: #AAB0C0;
+  --on-navy:     #FFFFFF;   /* white on navy */
+  --on-navy-dim: #FFFFFF;   /* white on navy (was dim gray-blue) */
   /* National flag — accurate tricolour for emblems/ribbons */
   --py-red:      #D52B1E;
   --py-blue:     #0038A8;
@@ -352,6 +352,7 @@ strong{ color:var(--navy); font-weight:600; }
 }
 .field textarea{ resize:vertical; min-height:120px; }
 .form-note{ font-size:.82rem; color:var(--muted); margin-top:.6rem; }
+.band-navy .form-note{ color:#fff; }
 .form-card{ background:var(--paper); border:1px solid var(--line); border-radius:var(--r); padding:2rem 1.8rem; box-shadow:0 24px 60px -40px rgba(8,21,48,.32); }
 @media (max-width:620px){ .form-card{ padding:1.5rem 1.2rem; } }
 
@@ -368,11 +369,11 @@ strong{ color:var(--navy); font-weight:600; }
 @media (max-width:480px){ .foot-grid{ grid-template-columns:1fr; } }
 .foot-brand b{ font-family:var(--caps); font-size:1.1rem; letter-spacing:.14em; color:#fff; display:block; }
 .foot-brand p{ font-size:.92rem; margin-top:1rem; max-width:30ch; }
-.foot-col h5{ font-family:var(--mono); font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin:0 0 1rem; }
-.foot-col a{ display:block; padding:.35rem 0; font-size:.92rem; color:var(--on-navy-dim); transition:color .2s ease; }
-.foot-col a:hover{ color:var(--gold); }
+.foot-col h5{ font-family:var(--mono); font-size:.7rem; letter-spacing:.16em; text-transform:uppercase; color:#fff; margin:0 0 1rem; }
+.foot-col a{ display:block; padding:.35rem 0; font-size:.92rem; color:rgba(255,255,255,.85); transition:color .2s ease; }
+.foot-col a:hover{ color:#fff; }
 .foot-bottom{ margin-top:3rem; padding-top:1.6rem; border-top:1px solid rgba(255,255,255,.1); display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; font-family:var(--mono); font-size:.68rem; letter-spacing:.06em; color:var(--on-navy-dim); }
-.foot-disclaimer{ margin-top:1.5rem; font-size:.74rem; line-height:1.6; color:#717a90; max-width:80ch; }
+.foot-disclaimer{ margin-top:1.5rem; font-size:.74rem; line-height:1.6; color:rgba(255,255,255,.75); max-width:80ch; }
 
 /* ---------- Reveal animation ---------- */
 .reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
@@ -386,19 +387,21 @@ strong{ color:var(--navy); font-weight:600; }
 :focus-visible{ outline:2px solid var(--gold); outline-offset:3px; }
 ::selection{ background:var(--gold); color:var(--navy-deep); }
 
-/* ---------- Paraguay flag: on-dark accent legibility ---------- */
-.site-header .brand small{ color:var(--gold-bright); }
-.nav a::after{ background:var(--gold-bright); }
-.nav a[aria-current="page"]:not(.btn){ color:var(--gold-bright); }
-.hero .eyebrow, .band-navy .eyebrow{ color:var(--gold-bright); }
+/* ---------- On-dark typography: everything white for contrast ---------- */
+.site-header .brand small{ color:#fff; }
+.nav a::after{ background:#fff; }
+.nav a[aria-current="page"]:not(.btn){ color:#fff; }
+.hero .eyebrow, .band-navy .eyebrow{ color:#fff; }
 .hero .eyebrow::before,
 .hero .eyebrow--center::after,
 .band-navy .eyebrow::before,
-.band-navy .eyebrow--center::after{ background:var(--gold-bright); }
-.hero-meta .stat b{ color:var(--gold-bright); }
+.band-navy .eyebrow--center::after{ background:rgba(255,255,255,.7); }
+.hero-meta .stat b{ color:#fff; }
 .band-navy .ladder .rung-fig,
-.band-navy .ladder .rung-go{ color:var(--gold-bright); }
-.pull .gold{ color:var(--gold-bright); }
+.band-navy .ladder .rung-go{ color:#fff; }
+.band-navy .pull .gold{ color:#fff; }
+.hero .lead{ color:#fff; }
+.crumbs a{ color:#fff; }
 
 /* ---------- Project showcase ---------- */
 .projects{ display:grid; grid-template-columns:repeat(2,1fr); gap:1.4rem; margin-top:2.5rem; }

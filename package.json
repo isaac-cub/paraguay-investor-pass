@@ -6,21 +6,13 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "tinacms dev -c \"astro dev --port 4321\"",
-    "dev:astro": "astro dev",
+    "dev": "astro dev --port 4321",
     "build": "astro build",
-    "build:cms": "NODE_OPTIONS=--max-old-space-size=6144 tinacms build --skip-cloud-checks && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
-    "@astrojs/vercel": "^10.0.8",
-    "@tinacms/astro": "0.5.1",
-    "@tinacms/cli": "^2.5.1",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "astro": "^6.4.8",
-    "tinacms": "^3.9.3"
+    "astro": "^6.4.8"
   }
 }

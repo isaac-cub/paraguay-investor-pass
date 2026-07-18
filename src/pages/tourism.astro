@@ -1,11 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
-import TinaIsland from '@tinacms/astro/TinaIsland.astro';
-import PageBody from '../components/islands/PageBody.astro';
-import { islands } from '../lib/islands';
-import { getPageData } from '../lib/data';
+import Blocks from '../components/Blocks.astro';
 import { breadcrumb, faqPage, service } from '../lib/schema';
-import { getPage, pick } from '../lib/content';
+import { getPage, getSettings, pick } from '../lib/content';
 
 const page = await getPage('tourism');
 const title = pick(page?.seoTitle, 'Paraguay Tourism Investment Residency | from $150K');
@@ -13,16 +10,15 @@ const description = pick(page?.seoDescription, 'Earn Paraguay residency by inves
 const ogImage = page?.ogImage ?? undefined;
 const faqs = ((page?.faqs as any[] | undefined) ?? []).map((f: any) => ({ question: f.question, answer: f.answer }));
 const blocks = (page?.blocks as any[] | undefined) ?? [];
-const pageData = await getPageData('tourism');
 
 const jsonld = [
   breadcrumb([{ name: 'Investor Pass', path: '/' }, { name: 'Tourism', path: '/tourism/' }]),
   faqPage(faqs),
   service({ name: 'Paraguay residency via approved tourism projects', description, price: 150000, path: '/tourism/' }),
 ];
+const settings = await getSettings();
+const formspreeId = settings?.formspreeId ?? 'xojowyje';
 ---
 <Base title={title} description={description} ogImage={ogImage} jsonld={jsonld}>
-  <TinaIsland name="page" wrapper={islands.page.wrapper} params={{ slug: 'tourism' }} primary>
-    <PageBody page={pageData.data.pages} />
-  </TinaIsland>
+  <Blocks blocks={blocks} faqs={faqs} formspreeId={formspreeId} />
 </Base>
